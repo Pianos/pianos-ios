@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F46D5411A71E8BC000BDF44 /* HttpModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F46D5401A71E8BC000BDF44 /* HttpModule.m */; };
 		8FCF1B6E1A6F534E0060B9F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B6D1A6F534E0060B9F6 /* main.m */; };
 		8FCF1B711A6F534E0060B9F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B701A6F534E0060B9F6 /* AppDelegate.m */; };
 		8FCF1B741A6F534E0060B9F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B731A6F534E0060B9F6 /* ViewController.m */; };
@@ -71,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F46D53F1A71E8BC000BDF44 /* HttpModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpModule.h; sourceTree = "<group>"; };
+		8F46D5401A71E8BC000BDF44 /* HttpModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpModule.m; sourceTree = "<group>"; };
 		8FCF1B681A6F534D0060B9F6 /* PianoPushPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPushPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCF1B6C1A6F534D0060B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FCF1B6D1A6F534E0060B9F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -186,6 +189,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F46D5421A71E8C5000BDF44 /* httpModule */ = {
+			isa = PBXGroup;
+			children = (
+				8F46D53F1A71E8BC000BDF44 /* HttpModule.h */,
+				8F46D5401A71E8BC000BDF44 /* HttpModule.m */,
+			);
+			name = httpModule;
+			sourceTree = "<group>";
+		};
 		8FCF1B5F1A6F534D0060B9F6 = {
 			isa = PBXGroup;
 			children = (
@@ -217,10 +229,11 @@
 				8FCF1B751A6F534E0060B9F6 /* Main.storyboard */,
 				8FCF1B781A6F534E0060B9F6 /* Images.xcassets */,
 				8FCF1B7A1A6F534E0060B9F6 /* LaunchScreen.xib */,
-				8FCF1B951A6F58410060B9F6 /* CLImageEditor */,
-				8FCF1B6B1A6F534D0060B9F6 /* Supporting Files */,
 				8FCF1C0C1A6F5F6C0060B9F6 /* PianoAnnotations.h */,
 				8FCF1C0D1A6F5F6C0060B9F6 /* PianoAnnotations.m */,
+				8F46D5421A71E8C5000BDF44 /* httpModule */,
+				8FCF1B951A6F58410060B9F6 /* CLImageEditor */,
+				8FCF1B6B1A6F534D0060B9F6 /* Supporting Files */,
 			);
 			path = PianoPushPlay;
 			sourceTree = "<group>";
@@ -558,6 +571,7 @@
 				8FCF1BF61A6F58410060B9F6 /* CLSpotEffect.m in Sources */,
 				8FCF1C081A6F58410060B9F6 /* UIView+Frame.m in Sources */,
 				8FCF1C091A6F58410060B9F6 /* _CLImageEditorViewController.m in Sources */,
+				8F46D5411A71E8BC000BDF44 /* HttpModule.m in Sources */,
 				8FCF1BF71A6F58410060B9F6 /* CLEffectBase.m in Sources */,
 				8FCF1C071A6F58410060B9F6 /* UIImage+Utility.m in Sources */,
 				8FCF1BF81A6F58410060B9F6 /* CLEffectTool.m in Sources */,
@@ -780,6 +794,7 @@
 				8FCF1B8D1A6F534E0060B9F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FCF1B8E1A6F534E0060B9F6 /* Build configuration list for PBXNativeTarget "PianoPushPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -788,6 +803,7 @@
 				8FCF1B901A6F534E0060B9F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
