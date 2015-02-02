@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailsViewController.h"
 
 @interface ViewController (){
     NSMutableArray *imageArray;
@@ -135,6 +136,20 @@
         i = 5;
     }
     self.pictureView.image = [imageArray objectAtIndex:i];
+    
+   
+    PianoAnnotations *pianoAnnotation = view.annotation;
+    [self performSegueWithIdentifier:@"detailSeg" sender:pianoAnnotation];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"detailSeg"])
+    {
+        PianoAnnotations *detAnnot = sender;
+        DetailsViewController *vc = [segue destinationViewController];
+        vc.image = detAnnot.pianoImage;
+    }
 }
 
 -(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O4f-pd-Ewh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Find Pianos View Controller-->
         <scene sceneID="gMF-lO-zyd">
             <objects>
-                <viewController id="O4f-pd-Ewh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="findPianos" id="O4f-pd-Ewh" customClass="FindPianosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wkB-On-a6d"/>
                         <viewControllerLayoutGuide type="bottom" id="Ypx-tN-ReV"/>
@@ -15,15 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="vKd-xm-teu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYK-Dd-5Ax">
+                                <rect key="frame" x="112" y="273" width="190" height="189"/>
+                                <state key="normal" image="pianoButton.jpg">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findPianosButtonPressed:" destination="O4f-pd-Ewh" eventType="touchUpInside" id="416-R1-8gg"/>
+                                    <segue destination="fMt-vY-iQ8" kind="presentation" id="MuV-3U-vZZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piano Push Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob1-ec-PaY">
+                                <rect key="frame" x="16" y="126" width="382" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="IK3-9B-aHv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="top" secondItem="wkB-On-a6d" secondAttribute="bottom" constant="106" id="1SB-Uo-lwW"/>
+                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="leading" secondItem="vKd-xm-teu" secondAttribute="leadingMargin" id="CcA-qY-vaK"/>
+                            <constraint firstItem="EYK-Dd-5Ax" firstAttribute="centerX" secondItem="Ob1-ec-PaY" secondAttribute="centerX" id="TZg-PI-dyl"/>
+                            <constraint firstItem="EYK-Dd-5Ax" firstAttribute="top" secondItem="Ob1-ec-PaY" secondAttribute="bottom" constant="73" id="h6N-iL-lyf"/>
+                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="trailing" secondItem="vKd-xm-teu" secondAttribute="trailingMargin" id="x34-Nn-WRc"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-jE-8RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="304"/>
+            <point key="canvasLocation" x="-413" y="274"/>
         </scene>
-        <!--View Controller-->
+        <!--Piano Push Play-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -38,65 +68,155 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piano Push" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBE-vg-xro">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.67843137249999996" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="Yvg-Sp-Ql2"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aFU-Ud-A0E">
-                                <rect key="frame" x="0.0" y="47" width="414" height="371"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="371" id="5gx-XB-Jk2"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="47" width="414" height="689"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IGq-rh-ZaP">
-                                <rect key="frame" x="0.0" y="417" width="414" height="275"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="275" id="bjL-M3-cod"/>
-                                </constraints>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w03-t9-jrl">
-                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                                <items>
-                                    <barButtonItem systemItem="compose" id="74S-CZ-G5k"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="z0v-T9-Lu5"/>
-                                    <barButtonItem systemItem="camera" id="8gi-Eg-5yf">
-                                        <connections>
-                                            <action selector="takePicture:" destination="vXZ-lx-hvc" id="l7H-Bf-xNw"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="27" id="22S-CN-76U"/>
-                            <constraint firstItem="IGq-rh-ZaP" firstAttribute="leading" secondItem="aFU-Ud-A0E" secondAttribute="leading" id="EJR-8p-cxI"/>
-                            <constraint firstItem="w03-t9-jrl" firstAttribute="leading" secondItem="IGq-rh-ZaP" secondAttribute="leading" id="J9w-2d-5xi"/>
-                            <constraint firstItem="KBE-vg-xro" firstAttribute="trailing" secondItem="aFU-Ud-A0E" secondAttribute="trailing" id="MR9-RE-NY3"/>
-                            <constraint firstAttribute="trailing" secondItem="aFU-Ud-A0E" secondAttribute="trailing" id="SGB-KU-t9p"/>
-                            <constraint firstItem="IGq-rh-ZaP" firstAttribute="trailing" secondItem="w03-t9-jrl" secondAttribute="trailing" id="YgM-gY-voZ"/>
-                            <constraint firstItem="w03-t9-jrl" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Zlq-b3-aVJ"/>
-                            <constraint firstItem="IGq-rh-ZaP" firstAttribute="trailing" secondItem="aFU-Ud-A0E" secondAttribute="trailing" id="pfW-rH-awL"/>
-                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rVv-IM-Suc"/>
-                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="leading" secondItem="KBE-vg-xro" secondAttribute="leading" id="rtq-ne-AZX"/>
-                            <constraint firstItem="KBE-vg-xro" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="u1e-li-Wsf"/>
-                            <constraint firstItem="w03-t9-jrl" firstAttribute="top" secondItem="IGq-rh-ZaP" secondAttribute="bottom" id="zhL-OB-atB"/>
+                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="leading" secondItem="KBE-vg-xro" secondAttribute="leading" id="8P8-6w-GOi"/>
+                            <constraint firstItem="jyV-Pf-zRb" firstAttribute="top" secondItem="KBE-vg-xro" secondAttribute="bottom" constant="15" id="Ep4-CN-tGa"/>
+                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="47" id="Ja8-27-gFc"/>
+                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="SWv-4B-Fba"/>
+                            <constraint firstItem="KBE-vg-xro" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="X2v-09-Qy4"/>
+                            <constraint firstAttribute="bottom" secondItem="aFU-Ud-A0E" secondAttribute="bottom" id="ZiJ-NF-U1C"/>
+                            <constraint firstAttribute="trailing" secondItem="aFU-Ud-A0E" secondAttribute="trailing" id="sG1-oQ-6B2"/>
+                            <constraint firstItem="aFU-Ud-A0E" firstAttribute="trailing" secondItem="KBE-vg-xro" secondAttribute="trailing" id="slG-Wd-cpv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Piano Push Play" id="r5i-b0-gWe"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="cameraButton" destination="8gi-Eg-5yf" id="GP6-mq-ePf"/>
-                        <outlet property="composeButton" destination="74S-CZ-G5k" id="bde-tl-IQ9"/>
                         <outlet property="pianoMap" destination="aFU-Ud-A0E" id="Has-Fn-VlB"/>
-                        <outlet property="pictureView" destination="IGq-rh-ZaP" id="Quf-3S-yTk"/>
+                        <segue destination="ZK4-FU-jsf" kind="show" identifier="detailSeg" id="MQi-E8-u24"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="304"/>
+            <point key="canvasLocation" x="1849" y="274"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="fMP-j6-pND">
+            <objects>
+                <viewController id="ZK4-FU-jsf" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7dl-ex-Zab"/>
+                        <viewControllerLayoutGuide type="bottom" id="dBq-AY-m1K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FWs-ac-9nQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YPD-nL-FQj">
+                                <rect key="frame" x="0.0" y="8" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YPD-nL-FQj" firstAttribute="top" secondItem="FWs-ac-9nQ" secondAttribute="topMargin" constant="8" id="JLO-am-L5a"/>
+                            <constraint firstItem="YPD-nL-FQj" firstAttribute="leading" secondItem="FWs-ac-9nQ" secondAttribute="leading" id="r3Z-Q4-rao"/>
+                            <constraint firstAttribute="trailing" secondItem="YPD-nL-FQj" secondAttribute="trailing" id="twc-T5-fcx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="YPD-nL-FQj" secondAttribute="bottom" constant="-8" id="zde-p0-yVL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="pianoImageView" destination="YPD-nL-FQj" id="iru-NA-Svn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0H4-GU-cYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="255"/>
+        </scene>
+        <!--Pianos-->
+        <scene sceneID="O9E-sw-mqK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Bt-Xh-eNQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pianos" image="1422863741_piano.png" id="3IF-Dt-22f"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jZE-Ve-mTH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="amh-xv-Its"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5N-KE-Gu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="304"/>
+        </scene>
+        <!--Checkin-->
+        <scene sceneID="Zfn-rU-6Bv">
+            <objects>
+                <viewController id="uBl-mM-Zul" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OQg-Oq-3c0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y61-Gh-0Hj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TK3-iq-qtf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Checkin" image="1422863792_square-check-16.png" id="qtb-bd-RRo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzq-lE-oHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="1117"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="QKD-k8-COn">
+            <objects>
+                <viewController id="M5M-dh-7E1" customClass="CameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="88I-Cv-62x"/>
+                        <viewControllerLayoutGuide type="bottom" id="o7M-mH-43j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2vX-Ym-L1r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Camera" image="1422863769_device_camera_capture_photo_-20.png" id="BDR-g2-Njb"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Plv-5g-nO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="1055"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2ML-UZ-TCp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fMt-vY-iQ8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Z2C-sd-zYv">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Bt-Xh-eNQ" kind="relationship" relationship="viewControllers" id="PP2-LH-AfX"/>
+                        <segue destination="M5M-dh-7E1" kind="relationship" relationship="viewControllers" id="KS4-ZY-4mj"/>
+                        <segue destination="uBl-mM-Zul" kind="relationship" relationship="viewControllers" id="kZP-LE-9xb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blo-O6-5wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="304"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1422863741_piano.png" width="32" height="32"/>
+        <image name="1422863769_device_camera_capture_photo_-20.png" width="20" height="14"/>
+        <image name="1422863792_square-check-16.png" width="16" height="16"/>
+        <image name="pianoButton.jpg" width="190" height="189"/>
+    </resources>
 </document>
