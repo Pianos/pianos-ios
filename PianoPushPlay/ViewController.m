@@ -69,47 +69,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)takePicture:(id)sender {
-    
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-        
-        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        picker.delegate = self;
-        picker.allowsEditing = YES;
-        
-        [self presentViewController:picker animated:YES completion:^{
-            
-        }];
-    } else {
-        UIAlertController *noCamera = [UIAlertController alertControllerWithTitle:@"Camera Error!" message:@"No camera available" preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction *confirm = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            
-        }];
-        
-        [noCamera addAction:confirm];
-        [self presentViewController:noCamera animated:YES completion:nil];
-        
-    }
-    
-}
-
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    
-    UIImage *chosenImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-    
-    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:chosenImage];
-    editor.delegate = self;
-    
-    [picker pushViewController:editor animated:YES];
-    
-}
-
--(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    
-    [picker dismissViewControllerAnimated:YES completion:nil];
-}
 
 -(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(UIImage *) image{
     
