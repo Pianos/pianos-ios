@@ -20,13 +20,6 @@
     
     self.request = [[HttpModule alloc] init];
     
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    FindPianosViewController *findPianos = [storyboard instantiateViewControllerWithIdentifier:@"findPianos"];
-//    [self.window makeKeyAndVisible];
-//    [self.window.rootViewController presentViewController:findPianos animated:NO completion:^{
-//    NSLog(@"Find Pianos Screen Loaded");
-//    }];
-    
     return YES;
 }
 

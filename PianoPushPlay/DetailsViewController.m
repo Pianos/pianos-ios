@@ -19,6 +19,32 @@
     // Do any additional setup after loading the view.
     NSLog(@"Detail View Controller Loaded with image: %@", self.image);
     self.pianoImageView.image = self.image;
+    NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+    singleTap.numberOfTapsRequired = 1;
+    [self.view addGestureRecognizer:singleTap];
+}
+- (IBAction)dismissBio:(id)sender {
+    
+    [UIView animateWithDuration:.5 animations:^{
+        self.bioView.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.bioView.hidden = true;
+    }];
+    
+    
+}
+
+-(void)showBio{
+    
+    [UIView animateWithDuration:1 animations:^{
+        self.bioView.hidden = FALSE;
+
+    } completion:^(BOOL finished) {
+        self.bioView.alpha = 0.8;
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

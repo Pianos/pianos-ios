@@ -11,4 +11,7 @@
 
 @interface CameraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate>
 
+@property UIImage *selfie;
+@property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
+
 @end
