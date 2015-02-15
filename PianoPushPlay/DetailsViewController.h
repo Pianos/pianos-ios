@@ -11,5 +11,6 @@
 @interface DetailsViewController : UIViewController
 @property UIImage *image;
 @property (weak, nonatomic) IBOutlet UIImageView *pianoImageView;
+@property (weak, nonatomic) IBOutlet UIView *bioView;
 
 @end

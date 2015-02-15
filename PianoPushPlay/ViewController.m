@@ -11,6 +11,7 @@
 
 @interface ViewController (){
     NSMutableArray *imageArray;
+    UITabBarController *tabBarController;
 }
 
 @end
@@ -19,6 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+      tabBarController = (UITabBarController *) self.tabBarController;;
+      tabBarController.tabBar.backgroundColor = [UIColor blackColor];
+      tabBarController.tabBar.tintColor = [UIColor blackColor];
+    
+//    [[self navigationController] navigationBar].backgroundColor = [UIColor blackColor];
+//    [[self navigationController] navigationBar].tintColor = [UIColor blackColor];
+//    [[self navigationController] navigationBar].alpha = 1.0;
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.composeButton.enabled = FALSE;
     
@@ -72,8 +82,8 @@
 //    self.pictureView.image = [imageArray objectAtIndex:i];
     
    
-    PianoAnnotations *pianoAnnotation = view.annotation;
-    [self performSegueWithIdentifier:@"detailSeg" sender:pianoAnnotation];
+//    PianoAnnotations *pianoAnnotation = view.annotation;
+//    [self performSegueWithIdentifier:@"detailSeg" sender:pianoAnnotation];
     
 }
 
@@ -83,6 +93,7 @@
         PianoAnnotations *detAnnot = sender;
         DetailsViewController *vc = [segue destinationViewController];
         vc.image = detAnnot.pianoImage;
+        vc.hidesBottomBarWhenPushed = YES;
     }
 }
 
@@ -93,6 +104,8 @@
 -(void)pianoDataReceived: (NSNotification *) notification {
     
     NSDictionary *json = [notification object];
+    
+    NSLog(@"%@", json);
     
     //Place annotations for each piano on map after receiving the data from server
     for (id key in json){
@@ -107,6 +120,38 @@
     }
     
     
+    
+}
+
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    
+    static NSString *identifier = @"MyLocation";
+    
+    if ([annotation isKindOfClass:[PianoAnnotations class]]) {
+        
+        MKAnnotationView *aView = (MKAnnotationView *) [self.pianoMap dequeueReusableAnnotationViewWithIdentifier:identifier];
+        
+        if (aView == nil) {
+            aView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            
+            aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            aView.canShowCallout = YES;
+            aView.annotation = annotation;
+        } else {
+            aView.annotation = annotation;
+        }
+        
+        return aView;
+        
+    } else {
+        return nil;
+    }
+}
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    
+    PianoAnnotations *pianoAnnotation = view.annotation;
+    [self performSegueWithIdentifier:@"detailSeg" sender:pianoAnnotation];
     
 }
 
