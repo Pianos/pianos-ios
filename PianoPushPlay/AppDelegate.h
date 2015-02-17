@@ -18,6 +18,5 @@
 @property (strong, nonatomic) HttpModule *request;
 @property (nonatomic) FYXVisitManager *visitManager;
 
-
 @end
 
