@@ -31,13 +31,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JiG-AH-W1w">
                                 <rect key="frame" x="0.0" y="95" width="414" height="161"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="161" id="9fB-36-DFD"/>
+                                    <constraint firstAttribute="height" constant="161" id="YLt-EU-AnB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piano Push Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob1-ec-PaY">
                                 <rect key="frame" x="16" y="529" width="382" height="74"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="MLY-Yj-zNC"/>
+                                    <constraint firstAttribute="height" constant="74" id="Rfr-UG-1WT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -48,14 +48,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="JiG-AH-W1w" secondAttribute="trailing" id="0e2-UN-HS7"/>
-                            <constraint firstItem="EYK-Dd-5Ax" firstAttribute="centerX" secondItem="Ob1-ec-PaY" secondAttribute="centerX" id="9cw-jf-lRz"/>
-                            <constraint firstItem="JiG-AH-W1w" firstAttribute="leading" secondItem="vKd-xm-teu" secondAttribute="leading" id="FmW-86-Ee7"/>
-                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="leading" secondItem="vKd-xm-teu" secondAttribute="leadingMargin" id="K4W-3J-m09"/>
-                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="top" secondItem="EYK-Dd-5Ax" secondAttribute="bottom" constant="67" id="Mtz-bK-FMo"/>
-                            <constraint firstItem="JiG-AH-W1w" firstAttribute="top" secondItem="wkB-On-a6d" secondAttribute="bottom" constant="75" id="Oya-kE-y5I"/>
-                            <constraint firstItem="EYK-Dd-5Ax" firstAttribute="top" secondItem="JiG-AH-W1w" secondAttribute="bottom" constant="17" id="m3r-GX-t8F"/>
-                            <constraint firstItem="JiG-AH-W1w" firstAttribute="centerX" secondItem="EYK-Dd-5Ax" secondAttribute="centerX" id="ozK-hM-nbn"/>
+                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="top" secondItem="EYK-Dd-5Ax" secondAttribute="bottom" constant="67" id="4xj-Y0-bhy"/>
+                            <constraint firstItem="EYK-Dd-5Ax" firstAttribute="top" secondItem="JiG-AH-W1w" secondAttribute="bottom" constant="17" id="962-jW-vGP"/>
+                            <constraint firstItem="EYK-Dd-5Ax" firstAttribute="centerX" secondItem="Ob1-ec-PaY" secondAttribute="centerX" id="AT7-3H-6Gf"/>
+                            <constraint firstItem="JiG-AH-W1w" firstAttribute="leading" secondItem="vKd-xm-teu" secondAttribute="leading" id="Bc6-vg-0rY"/>
+                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="leading" secondItem="vKd-xm-teu" secondAttribute="leadingMargin" id="IyH-0M-zpI"/>
+                            <constraint firstAttribute="trailing" secondItem="JiG-AH-W1w" secondAttribute="trailing" id="dFw-zx-MkW"/>
+                            <constraint firstItem="JiG-AH-W1w" firstAttribute="centerX" secondItem="EYK-Dd-5Ax" secondAttribute="centerX" id="sXT-dI-nSC"/>
+                            <constraint firstItem="JiG-AH-W1w" firstAttribute="top" secondItem="wkB-On-a6d" secondAttribute="bottom" constant="75" id="vUE-TW-KyS"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -73,16 +73,22 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aFU-Ud-A0E">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
                             </mapView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="efE-ud-kgq">
+                                <rect key="frame" x="197" y="302" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aFU-Ud-A0E" secondAttribute="trailing" id="3EZ-WP-aTo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="efE-ud-kgq" secondAttribute="bottom" constant="301" id="OGe-QM-uTu"/>
+                            <constraint firstItem="efE-ud-kgq" firstAttribute="centerX" secondItem="aFU-Ud-A0E" secondAttribute="centerX" id="Swl-IN-3nC"/>
                             <constraint firstItem="aFU-Ud-A0E" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="eEk-In-RCw"/>
                             <constraint firstItem="aFU-Ud-A0E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="iKY-VP-HGL"/>
                             <constraint firstItem="aFU-Ud-A0E" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="zlw-cF-qjE"/>
@@ -92,6 +98,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="pianoMap" destination="aFU-Ud-A0E" id="Has-Fn-VlB"/>
+                        <outlet property="spinner" destination="efE-ud-kgq" id="r6V-zZ-L1K"/>
                         <segue destination="ZK4-FU-jsf" kind="show" identifier="detailSeg" id="MQi-E8-u24"/>
                     </connections>
                 </viewController>
@@ -121,7 +128,7 @@
                                         <rect key="frame" x="0.0" y="60" width="382" height="243"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmk-IK-e46">
@@ -137,15 +144,22 @@
                                             <action selector="dismissBio:" destination="ZK4-FU-jsf" eventType="touchUpInside" id="fl9-If-MEP"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVi-QV-P3C">
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVi-QV-P3C">
                                         <rect key="frame" x="8" y="8" width="326" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="0Ap-oZ-zEQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="22" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -178,6 +192,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="bioLabel" destination="oVi-QV-P3C" id="UkN-Yk-Bsn"/>
+                        <outlet property="bioTextView" destination="Qek-tx-1V6" id="7jy-et-AHP"/>
                         <outlet property="bioView" destination="0Fo-vL-GVT" id="9KE-Ro-tsL"/>
                         <outlet property="pianoImageView" destination="YPD-nL-FQj" id="iru-NA-Svn"/>
                     </connections>
