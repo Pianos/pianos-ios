@@ -20,6 +20,8 @@
     NSLog(@"Detail View Controller Loaded with image: %@", self.image);
     self.pianoImageView.image = self.image;
     NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
+    self.bioLabel.text = self.pianoTitle;
+    self.bioTextView.text = self.bio;
     
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
     singleTap.numberOfTapsRequired = 1;
@@ -38,6 +40,7 @@
 
 -(void)showBio{
     
+    self.bioView.alpha = 0;
     [UIView animateWithDuration:1 animations:^{
         self.bioView.hidden = FALSE;
 
