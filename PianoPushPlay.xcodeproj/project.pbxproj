@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3870AB051A92663500FF02B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB041A92663500FF02B2 /* Security.framework */; };
+		3870AB071A92664700FF02B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB061A92664700FF02B2 /* SystemConfiguration.framework */; };
+		3870AB091A92665700FF02B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB081A92665700FF02B2 /* UIKit.framework */; };
+		3870AB0B1A92666000FF02B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB0A1A92666000FF02B2 /* libz.dylib */; };
+		3870AB0D1A92666900FF02B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB0C1A92666900FF02B2 /* libsqlite3.dylib */; };
+		3870AB0F1A92667100FF02B2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB0E1A92667100FF02B2 /* CoreTelephony.framework */; };
+		3870AB111A92668000FF02B2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB101A92668000FF02B2 /* MessageUI.framework */; };
+		3870AB131A92668900FF02B2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB121A92668900FF02B2 /* AudioToolbox.framework */; };
+		3870AB151A9267D400FF02B2 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3870AB141A9267D400FF02B2 /* AirshipConfig.plist */; };
+		3870AB191A926A8100FF02B2 /* AirshipKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3870AB181A926A8100FF02B2 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3870AB1B1A92855000FF02B2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB1A1A92855000FF02B2 /* CoreBluetooth.framework */; };
+		3870AB1D1A92856A00FF02B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB1C1A92856A00FF02B2 /* CoreData.framework */; };
+		3870AB231A9286E600FF02B2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB221A9286E600FF02B2 /* Common.framework */; };
+		3870AB261A9286F800FF02B2 /* ContextCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB251A9286F800FF02B2 /* ContextCore.framework */; };
+		3870AB2B1A92870600FF02B2 /* ContextLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB281A92870600FF02B2 /* ContextLocation.framework */; };
+		3870AB2C1A92870600FF02B2 /* DataModels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3870AB2A1A92870600FF02B2 /* DataModels.bundle */; };
+		3870AB2E1A92871400FF02B2 /* FYX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB2D1A92871400FF02B2 /* FYX.framework */; };
+		3870AB311A92872800FF02B2 /* NetworkServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB301A92872800FF02B2 /* NetworkServices.framework */; };
+		3870AB331A92885700FF02B2 /* UserContext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3870AB321A92885700FF02B2 /* UserContext.plist */; };
+		38D7E4B31A9265E100218A6C /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B21A9265E100218A6C /* AirshipKit.framework */; };
+		38D7E4B51A9265EF00218A6C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B41A9265EF00218A6C /* CFNetwork.framework */; };
+		38D7E4B71A9265FD00218A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */; };
+		38D7E4B91A92660500218A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B81A92660500218A6C /* Foundation.framework */; };
+		38D7E4BB1A92661200218A6C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4BA1A92661200218A6C /* MobileCoreServices.framework */; };
 		8F451FCD1A7ECA0600134F51 /* FindPianosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F451FCC1A7ECA0600134F51 /* FindPianosViewController.m */; };
 		8F451FD01A7ED91A00134F51 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F451FCF1A7ED91A00134F51 /* DetailsViewController.m */; };
 		8F45200A1A7F10DC00134F51 /* 1422863792_square-check-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4520091A7F10DC00134F51 /* 1422863792_square-check-16.png */; };
@@ -81,7 +105,44 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3870AB171A926A4F00FF02B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3870AB191A926A8100FF02B2 /* AirshipKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3870AB041A92663500FF02B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3870AB061A92664700FF02B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3870AB081A92665700FF02B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3870AB0A1A92666000FF02B2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3870AB0C1A92666900FF02B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3870AB0E1A92667100FF02B2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3870AB101A92668000FF02B2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3870AB121A92668900FF02B2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3870AB141A9267D400FF02B2 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		3870AB181A926A8100FF02B2 /* AirshipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipKit.framework; path = "libUAirship-latest(4)/Airship/AirshipKit.framework"; sourceTree = "<group>"; };
+		3870AB1A1A92855000FF02B2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3870AB1C1A92856A00FF02B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3870AB221A9286E600FF02B2 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Common.framework; sourceTree = "<group>"; };
+		3870AB251A9286F800FF02B2 /* ContextCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextCore.framework; sourceTree = "<group>"; };
+		3870AB281A92870600FF02B2 /* ContextLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextLocation.framework; sourceTree = "<group>"; };
+		3870AB2A1A92870600FF02B2 /* DataModels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DataModels.bundle; sourceTree = "<group>"; };
+		3870AB2D1A92871400FF02B2 /* FYX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FYX.framework; path = gimbalsdk_1.35_ios/Frameworks/FYX.framework; sourceTree = "<group>"; };
+		3870AB301A92872800FF02B2 /* NetworkServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkServices.framework; sourceTree = "<group>"; };
+		3870AB321A92885700FF02B2 /* UserContext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserContext.plist; sourceTree = "<group>"; };
+		38D7E4B21A9265E100218A6C /* AirshipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipKit.framework; path = "libUAirship-latest(4)/Airship/AirshipKit.framework"; sourceTree = "<group>"; };
+		38D7E4B41A9265EF00218A6C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38D7E4B81A92660500218A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38D7E4BA1A92661200218A6C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8F451FCB1A7ECA0600134F51 /* FindPianosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPianosViewController.h; sourceTree = "<group>"; };
 		8F451FCC1A7ECA0600134F51 /* FindPianosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPianosViewController.m; sourceTree = "<group>"; };
 		8F451FCE1A7ED91A00134F51 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
@@ -197,6 +258,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3870AB261A9286F800FF02B2 /* ContextCore.framework in Frameworks */,
+				3870AB1D1A92856A00FF02B2 /* CoreData.framework in Frameworks */,
+				3870AB1B1A92855000FF02B2 /* CoreBluetooth.framework in Frameworks */,
+				38D7E4B31A9265E100218A6C /* AirshipKit.framework in Frameworks */,
+				3870AB131A92668900FF02B2 /* AudioToolbox.framework in Frameworks */,
+				3870AB111A92668000FF02B2 /* MessageUI.framework in Frameworks */,
+				3870AB0F1A92667100FF02B2 /* CoreTelephony.framework in Frameworks */,
+				3870AB0D1A92666900FF02B2 /* libsqlite3.dylib in Frameworks */,
+				3870AB0B1A92666000FF02B2 /* libz.dylib in Frameworks */,
+				3870AB091A92665700FF02B2 /* UIKit.framework in Frameworks */,
+				3870AB231A9286E600FF02B2 /* Common.framework in Frameworks */,
+				3870AB071A92664700FF02B2 /* SystemConfiguration.framework in Frameworks */,
+				3870AB051A92663500FF02B2 /* Security.framework in Frameworks */,
+				3870AB311A92872800FF02B2 /* NetworkServices.framework in Frameworks */,
+				38D7E4BB1A92661200218A6C /* MobileCoreServices.framework in Frameworks */,
+				38D7E4B91A92660500218A6C /* Foundation.framework in Frameworks */,
+				3870AB2B1A92870600FF02B2 /* ContextLocation.framework in Frameworks */,
+				38D7E4B71A9265FD00218A6C /* CoreGraphics.framework in Frameworks */,
+				38D7E4B51A9265EF00218A6C /* CFNetwork.framework in Frameworks */,
+				3870AB2E1A92871400FF02B2 /* FYX.framework in Frameworks */,
 				8FCF1C0B1A6F5CF90060B9F6 /* CoreLocation.framework in Frameworks */,
 				8FCF1B941A6F56BE0060B9F6 /* MapKit.framework in Frameworks */,
 			);
@@ -212,6 +293,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3870AB211A9286E600FF02B2 /* Common.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB221A9286E600FF02B2 /* Common.framework */,
+			);
+			name = Common.embeddedframework;
+			path = gimbalsdk_1.35_ios/Frameworks/Common.embeddedframework;
+			sourceTree = "<group>";
+		};
+		3870AB241A9286F800FF02B2 /* ContextCore.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB251A9286F800FF02B2 /* ContextCore.framework */,
+			);
+			name = ContextCore.embeddedframework;
+			path = gimbalsdk_1.35_ios/Frameworks/ContextCore.embeddedframework;
+			sourceTree = "<group>";
+		};
+		3870AB271A92870600FF02B2 /* ContextLocation.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB281A92870600FF02B2 /* ContextLocation.framework */,
+				3870AB291A92870600FF02B2 /* Resources */,
+			);
+			name = ContextLocation.embeddedframework;
+			path = gimbalsdk_1.35_ios/Frameworks/ContextLocation.embeddedframework;
+			sourceTree = "<group>";
+		};
+		3870AB291A92870600FF02B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB2A1A92870600FF02B2 /* DataModels.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3870AB2F1A92872800FF02B2 /* NetworkServices.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB301A92872800FF02B2 /* NetworkServices.framework */,
+			);
+			name = NetworkServices.embeddedframework;
+			path = gimbalsdk_1.35_ios/Frameworks/NetworkServices.embeddedframework;
+			sourceTree = "<group>";
+		};
+		8F09DD891A96E09500BBA1CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB2F1A92872800FF02B2 /* NetworkServices.embeddedframework */,
+				3870AB2D1A92871400FF02B2 /* FYX.framework */,
+				3870AB271A92870600FF02B2 /* ContextLocation.embeddedframework */,
+				3870AB241A9286F800FF02B2 /* ContextCore.embeddedframework */,
+				3870AB211A9286E600FF02B2 /* Common.embeddedframework */,
+				3870AB1C1A92856A00FF02B2 /* CoreData.framework */,
+				3870AB1A1A92855000FF02B2 /* CoreBluetooth.framework */,
+				3870AB181A926A8100FF02B2 /* AirshipKit.framework */,
+				3870AB121A92668900FF02B2 /* AudioToolbox.framework */,
+				3870AB101A92668000FF02B2 /* MessageUI.framework */,
+				3870AB0E1A92667100FF02B2 /* CoreTelephony.framework */,
+				3870AB0C1A92666900FF02B2 /* libsqlite3.dylib */,
+				3870AB0A1A92666000FF02B2 /* libz.dylib */,
+				3870AB081A92665700FF02B2 /* UIKit.framework */,
+				3870AB061A92664700FF02B2 /* SystemConfiguration.framework */,
+				3870AB041A92663500FF02B2 /* Security.framework */,
+				38D7E4BA1A92661200218A6C /* MobileCoreServices.framework */,
+				38D7E4B81A92660500218A6C /* Foundation.framework */,
+				38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */,
+				38D7E4B41A9265EF00218A6C /* CFNetwork.framework */,
+				38D7E4B21A9265E100218A6C /* AirshipKit.framework */,
+				8FCF1C0A1A6F5CF90060B9F6 /* CoreLocation.framework */,
+				8FCF1B931A6F56BE0060B9F6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F45200F1A7F120900134F51 /* VIew Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,8 +395,8 @@
 		8FCF1B5F1A6F534D0060B9F6 = {
 			isa = PBXGroup;
 			children = (
-				8FCF1C0A1A6F5CF90060B9F6 /* CoreLocation.framework */,
-				8FCF1B931A6F56BE0060B9F6 /* MapKit.framework */,
+				3870AB321A92885700FF02B2 /* UserContext.plist */,
+				8F09DD891A96E09500BBA1CC /* Frameworks */,
 				8FCF1B6A1A6F534D0060B9F6 /* PianoPushPlay */,
 				8FCF1B841A6F534E0060B9F6 /* PianoPushPlayTests */,
 				8FCF1B691A6F534D0060B9F6 /* Products */,
@@ -271,6 +427,7 @@
 				8F46D5421A71E8C5000BDF44 /* httpModule */,
 				8FCF1B951A6F58410060B9F6 /* CLImageEditor */,
 				8FCF1B6B1A6F534D0060B9F6 /* Supporting Files */,
+				3870AB141A9267D400FF02B2 /* AirshipConfig.plist */,
 			);
 			path = PianoPushPlay;
 			sourceTree = "<group>";
@@ -512,6 +669,7 @@
 				8FCF1B641A6F534D0060B9F6 /* Sources */,
 				8FCF1B651A6F534D0060B9F6 /* Frameworks */,
 				8FCF1B661A6F534D0060B9F6 /* Resources */,
+				3870AB171A926A4F00FF02B2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -585,12 +743,15 @@
 				8FCF1C1C1A6F71B20060B9F6 /* piano4.jpg in Resources */,
 				8FCF1B771A6F534E0060B9F6 /* Main.storyboard in Resources */,
 				8FCF1C191A6F71B20060B9F6 /* piano7.jpg in Resources */,
+				3870AB151A9267D400FF02B2 /* AirshipConfig.plist in Resources */,
 				8F4520141A7F165700134F51 /* pianoButton.jpg in Resources */,
 				8FCF1B7C1A6F534E0060B9F6 /* LaunchScreen.xib in Resources */,
 				8FF044821A8BF21400D4913B /* pianoButton.png in Resources */,
 				8FA3324E1A86FA4A009F0289 /* 1422863741_piano.png in Resources */,
 				8F45200A1A7F10DC00134F51 /* 1422863792_square-check-16.png in Resources */,
+				3870AB331A92885700FF02B2 /* UserContext.plist in Resources */,
 				8FCF1BE81A6F58410060B9F6 /* CLImageEditor.bundle in Resources */,
+				3870AB2C1A92870600FF02B2 /* DataModels.bundle in Resources */,
 				8F45200C1A7F10E900134F51 /* 1422863769_device_camera_capture_photo_-20.png in Resources */,
 				8FCF1C1D1A6F71B20060B9F6 /* piano3.jpg in Resources */,
 				8F9948C81A95BFC000BF8AA6 /* music.png in Resources */,
@@ -779,9 +940,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/Common.embeddedframework",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/NetworkServices.embeddedframework",
+				);
 				INFOPLIST_FILE = PianoPushPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c8db4d4-f1fe-48db-80c3-21287b2dc454";
 			};
 			name = Debug;
 		};
@@ -789,9 +961,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/Common.embeddedframework",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/ContextCore.embeddedframework",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/ContextLocation.embeddedframework",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks",
+					"$(PROJECT_DIR)/gimbalsdk_1.35_ios/Frameworks/NetworkServices.embeddedframework",
+				);
 				INFOPLIST_FILE = PianoPushPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c8db4d4-f1fe-48db-80c3-21287b2dc454";
 			};
 			name = Release;
 		};
@@ -802,13 +986,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = PianoPushPlayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoPushPlay.app/PianoPushPlay";
 			};
@@ -821,9 +1006,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
 				);
 				INFOPLIST_FILE = PianoPushPlayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoPushPlay.app/PianoPushPlay";
 			};

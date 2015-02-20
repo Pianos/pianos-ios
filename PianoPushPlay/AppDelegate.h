@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "HttpModule.h"
 #import "FindPianosViewController.h"
+#import <FYX/FYX.h>
+#import <FYX/FYXVisitManager.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, FYXServiceDelegate, FYXVisitDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) HttpModule *request;
+@property (nonatomic) FYXVisitManager *visitManager;
 
 @end
 
