@@ -35,7 +35,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piano Push Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob1-ec-PaY">
-                                <rect key="frame" x="16" y="529" width="382" height="74"/>
+                                <rect key="frame" x="16" y="488" width="382" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="Rfr-UG-1WT"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="top" secondItem="EYK-Dd-5Ax" secondAttribute="bottom" constant="67" id="4xj-Y0-bhy"/>
+                            <constraint firstItem="Ob1-ec-PaY" firstAttribute="bottom" secondItem="EYK-Dd-5Ax" secondAttribute="bottom" constant="100" id="4xj-Y0-bhy"/>
                             <constraint firstItem="EYK-Dd-5Ax" firstAttribute="top" secondItem="JiG-AH-W1w" secondAttribute="bottom" constant="17" id="962-jW-vGP"/>
                             <constraint firstItem="EYK-Dd-5Ax" firstAttribute="centerX" secondItem="Ob1-ec-PaY" secondAttribute="centerX" id="AT7-3H-6Gf"/>
                             <constraint firstItem="JiG-AH-W1w" firstAttribute="leading" secondItem="vKd-xm-teu" secondAttribute="leading" id="Bc6-vg-0rY"/>
