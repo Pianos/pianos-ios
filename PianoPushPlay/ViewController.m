@@ -10,7 +10,6 @@
 #import "DetailsViewController.h"
 
 @interface ViewController (){
-    NSMutableArray *imageArray;
     UITabBarController *tabBarController;
 }
 
@@ -32,18 +31,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.composeButton.enabled = FALSE;
     
-    imageArray = [[NSMutableArray alloc] init];
-    
-    CLLocationCoordinate2D portland = CLLocationCoordinate2DMake(45.5241, -122.676201);
-    
-    MKCoordinateSpan span = MKCoordinateSpanMake(.05, .05);
-    
-    MKCoordinateRegion region = MKCoordinateRegionMake(portland, span);
-    
-    self.pianoMap.delegate = self;
-    
-    [self.pianoMap setRegion:region animated:YES];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pianoDataReceived:) name:@"httpDataReceived"  object:nil];
 }
 
@@ -56,7 +43,6 @@
 -(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(UIImage *) image bio:(NSString *)bio{
     
     PianoAnnotations *annotation = [[PianoAnnotations alloc] initWithTitle:title andCoordinate:coordinate andImage:image andBio:bio];
-    [imageArray addObject:annotation.pianoImage];
     [self.pianoMap addAnnotation:annotation];
     
 }
@@ -79,9 +65,12 @@
 
 -(void)pianoDataReceived: (NSNotification *) notification {
     [self.spinner stopAnimating];
+    
     NSDictionary *json = [notification object];
     
     NSLog(@"%@", json);
+    NSMutableArray *lats = [[NSMutableArray alloc] init];
+    NSMutableArray *longs = [[NSMutableArray alloc] init];
     
     //Place annotations for each piano on map after receiving the data from server
     for (id key in json){
@@ -94,10 +83,52 @@
         CLLocationCoordinate2D pianoCord = CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue);
         UIImage *image = [UIImage imageNamed:imageName];
         [self showAnnotation:pianoCord title:title image:image bio:bio];
+        [longs addObject:lon];
+        [lats addObject:lat];
+    }
+    CLLocationCoordinate2D portland = CLLocationCoordinate2DMake([self center:lats], [self center:longs]);
+    //CLLocationCoordinate2D portland = CLLocationCoordinate2DMake([self average:lats], [self average:longs]);
+    //CLLocationCoordinate2D portland = CLLocationCoordinate2DMake(45.5241, -122.676201);
+    MKCoordinateSpan span = MKCoordinateSpanMake(.05, .05);
+    MKCoordinateRegion region = MKCoordinateRegionMake(portland, span);
+    self.pianoMap.delegate = self;
+    [self.pianoMap setRegion:region animated:YES];
+    
+    
+}
+
+-(double)average:(NSMutableArray *)coords{
+   
+    float average;
+    float sum = 0;
+    for (int i =0; i< coords.count; i++) {
+        NSNumber *tempNum = coords[i];
+        sum += tempNum.doubleValue;
     }
     
+    average = sum/coords.count;
+    NSLog(@"%f", average);
+    return average;
+}
+
+-(double)center:(NSMutableArray *)coords{
+    NSNumber *firstNum = coords[0];
+    float average;
+    float min = firstNum.doubleValue;
+    float max = min;
+    for (int i =1; i< coords.count; i++) {
+        NSNumber *tempNum = coords[i];
+        if (tempNum.doubleValue < min) {
+            min = tempNum.doubleValue;
+        }
+        if (tempNum.doubleValue > max) {
+            max = tempNum.doubleValue;
+        }
+    }
     
-    
+    average = (max+min)/2;
+    NSLog(@"%f", average);
+    return average;
 }
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{

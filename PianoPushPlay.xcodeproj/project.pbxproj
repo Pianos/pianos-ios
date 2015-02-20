@@ -338,6 +338,36 @@
 			path = gimbalsdk_1.35_ios/Frameworks/NetworkServices.embeddedframework;
 			sourceTree = "<group>";
 		};
+		8F09DD891A96E09500BBA1CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3870AB2F1A92872800FF02B2 /* NetworkServices.embeddedframework */,
+				3870AB2D1A92871400FF02B2 /* FYX.framework */,
+				3870AB271A92870600FF02B2 /* ContextLocation.embeddedframework */,
+				3870AB241A9286F800FF02B2 /* ContextCore.embeddedframework */,
+				3870AB211A9286E600FF02B2 /* Common.embeddedframework */,
+				3870AB1C1A92856A00FF02B2 /* CoreData.framework */,
+				3870AB1A1A92855000FF02B2 /* CoreBluetooth.framework */,
+				3870AB181A926A8100FF02B2 /* AirshipKit.framework */,
+				3870AB121A92668900FF02B2 /* AudioToolbox.framework */,
+				3870AB101A92668000FF02B2 /* MessageUI.framework */,
+				3870AB0E1A92667100FF02B2 /* CoreTelephony.framework */,
+				3870AB0C1A92666900FF02B2 /* libsqlite3.dylib */,
+				3870AB0A1A92666000FF02B2 /* libz.dylib */,
+				3870AB081A92665700FF02B2 /* UIKit.framework */,
+				3870AB061A92664700FF02B2 /* SystemConfiguration.framework */,
+				3870AB041A92663500FF02B2 /* Security.framework */,
+				38D7E4BA1A92661200218A6C /* MobileCoreServices.framework */,
+				38D7E4B81A92660500218A6C /* Foundation.framework */,
+				38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */,
+				38D7E4B41A9265EF00218A6C /* CFNetwork.framework */,
+				38D7E4B21A9265E100218A6C /* AirshipKit.framework */,
+				8FCF1C0A1A6F5CF90060B9F6 /* CoreLocation.framework */,
+				8FCF1B931A6F56BE0060B9F6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F45200F1A7F120900134F51 /* VIew Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,29 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				3870AB321A92885700FF02B2 /* UserContext.plist */,
-				3870AB2F1A92872800FF02B2 /* NetworkServices.embeddedframework */,
-				3870AB2D1A92871400FF02B2 /* FYX.framework */,
-				3870AB271A92870600FF02B2 /* ContextLocation.embeddedframework */,
-				3870AB241A9286F800FF02B2 /* ContextCore.embeddedframework */,
-				3870AB211A9286E600FF02B2 /* Common.embeddedframework */,
-				3870AB1C1A92856A00FF02B2 /* CoreData.framework */,
-				3870AB1A1A92855000FF02B2 /* CoreBluetooth.framework */,
-				3870AB181A926A8100FF02B2 /* AirshipKit.framework */,
-				3870AB121A92668900FF02B2 /* AudioToolbox.framework */,
-				3870AB101A92668000FF02B2 /* MessageUI.framework */,
-				3870AB0E1A92667100FF02B2 /* CoreTelephony.framework */,
-				3870AB0C1A92666900FF02B2 /* libsqlite3.dylib */,
-				3870AB0A1A92666000FF02B2 /* libz.dylib */,
-				3870AB081A92665700FF02B2 /* UIKit.framework */,
-				3870AB061A92664700FF02B2 /* SystemConfiguration.framework */,
-				3870AB041A92663500FF02B2 /* Security.framework */,
-				38D7E4BA1A92661200218A6C /* MobileCoreServices.framework */,
-				38D7E4B81A92660500218A6C /* Foundation.framework */,
-				38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */,
-				38D7E4B41A9265EF00218A6C /* CFNetwork.framework */,
-				38D7E4B21A9265E100218A6C /* AirshipKit.framework */,
-				8FCF1C0A1A6F5CF90060B9F6 /* CoreLocation.framework */,
-				8FCF1B931A6F56BE0060B9F6 /* MapKit.framework */,
+				8F09DD891A96E09500BBA1CC /* Frameworks */,
 				8FCF1B6A1A6F534D0060B9F6 /* PianoPushPlay */,
 				8FCF1B841A6F534E0060B9F6 /* PianoPushPlayTests */,
 				8FCF1B691A6F534D0060B9F6 /* Products */,
@@ -932,6 +940,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
@@ -952,6 +961,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
