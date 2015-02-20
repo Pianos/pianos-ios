@@ -21,13 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.spinner.hidesWhenStopped = YES;
+    [self.view addSubview:self.spinner];
+    [self.spinner startAnimating];
+    
       tabBarController = (UITabBarController *) self.tabBarController;;
       tabBarController.tabBar.backgroundColor = [UIColor blackColor];
       tabBarController.tabBar.tintColor = [UIColor blackColor];
-    
-//    [[self navigationController] navigationBar].backgroundColor = [UIColor blackColor];
-//    [[self navigationController] navigationBar].tintColor = [UIColor blackColor];
-//    [[self navigationController] navigationBar].alpha = 1.0;
     
     // Do any additional setup after loading the view, typically from a nib.
     self.composeButton.enabled = FALSE;
@@ -53,37 +53,11 @@
 }
 
 
--(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(UIImage *) image{
+-(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(UIImage *) image bio:(NSString *)bio{
     
-    PianoAnnotations *annotation = [[PianoAnnotations alloc] initWithTitle:title andCoordinate:coordinate andImage:image];
+    PianoAnnotations *annotation = [[PianoAnnotations alloc] initWithTitle:title andCoordinate:coordinate andImage:image andBio:bio];
     [imageArray addObject:annotation.pianoImage];
     [self.pianoMap addAnnotation:annotation];
-    
-}
-
--(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
-
-    
-//    int i;
-//    NSLog(@"%@", [[mapView.annotations objectAtIndex:0] pianoImage]);
-//    if ([view.annotation.title  isEqual: @"Stark Piano"]) {
-//        i=0;
-//    } else if ([view.annotation.title  isEqual: @"Salmon Springs Piano"]){
-//        i =1;
-//    } else if ([view.annotation.title  isEqual: @"SW 5th Piano"]){
-//        i = 2;
-//    } else if ([view.annotation.title  isEqual: @"SW Madison Piano"]){
-//        i = 3;
-//    } else if([view.annotation.title  isEqual: @"Pioneer Square Piano"]){
-//        i = 4;
-//    } else {
-//        i = 5;
-//    }
-//    self.pictureView.image = [imageArray objectAtIndex:i];
-    
-   
-//    PianoAnnotations *pianoAnnotation = view.annotation;
-//    [self performSegueWithIdentifier:@"detailSeg" sender:pianoAnnotation];
     
 }
 
@@ -93,6 +67,8 @@
         PianoAnnotations *detAnnot = sender;
         DetailsViewController *vc = [segue destinationViewController];
         vc.image = detAnnot.pianoImage;
+        vc.pianoTitle = detAnnot.title;
+        vc.bio = detAnnot.bio;
         vc.hidesBottomBarWhenPushed = YES;
     }
 }
@@ -102,7 +78,7 @@
 }
 
 -(void)pianoDataReceived: (NSNotification *) notification {
-    
+    [self.spinner stopAnimating];
     NSDictionary *json = [notification object];
     
     NSLog(@"%@", json);
@@ -114,9 +90,10 @@
         NSString *imageName = [object objectForKey:@"image"];
         NSNumber *lat = [object objectForKey:@"lat"];
         NSNumber *lon = [object objectForKey:@"lon"];
+        NSString *bio = [object objectForKey:@"bio"];
         CLLocationCoordinate2D pianoCord = CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue);
         UIImage *image = [UIImage imageNamed:imageName];
-        [self showAnnotation:pianoCord title:title image:image];
+        [self showAnnotation:pianoCord title:title image:image bio:bio];
     }
     
     
@@ -137,6 +114,7 @@
             aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             aView.canShowCallout = YES;
             aView.annotation = annotation;
+            aView.image = [UIImage imageNamed:@"music.png"];
         } else {
             aView.annotation = annotation;
         }
@@ -151,6 +129,7 @@
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
     
     PianoAnnotations *pianoAnnotation = view.annotation;
+    NSLog(@"%@", pianoAnnotation.title);
     [self performSegueWithIdentifier:@"detailSeg" sender:pianoAnnotation];
     
 }

@@ -38,6 +38,7 @@
 		8F4520121A7F122A00134F51 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4520111A7F122A00134F51 /* CameraViewController.m */; };
 		8F4520141A7F165700134F51 /* pianoButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F4520131A7F165700134F51 /* pianoButton.jpg */; };
 		8F46D5411A71E8BC000BDF44 /* HttpModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F46D5401A71E8BC000BDF44 /* HttpModule.m */; };
+		8F9948C81A95BFC000BF8AA6 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9948C71A95BFC000BF8AA6 /* music.png */; };
 		8FA3324E1A86FA4A009F0289 /* 1422863741_piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA3324D1A86FA4A009F0289 /* 1422863741_piano.png */; };
 		8FCF1B6E1A6F534E0060B9F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B6D1A6F534E0060B9F6 /* main.m */; };
 		8FCF1B711A6F534E0060B9F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B701A6F534E0060B9F6 /* AppDelegate.m */; };
@@ -153,6 +154,7 @@
 		8F4520131A7F165700134F51 /* pianoButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pianoButton.jpg; sourceTree = "<group>"; };
 		8F46D53F1A71E8BC000BDF44 /* HttpModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpModule.h; sourceTree = "<group>"; };
 		8F46D5401A71E8BC000BDF44 /* HttpModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpModule.m; sourceTree = "<group>"; };
+		8F9948C71A95BFC000BF8AA6 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		8FA3324D1A86FA4A009F0289 /* 1422863741_piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1422863741_piano.png; sourceTree = "<group>"; };
 		8FCF1B681A6F534D0060B9F6 /* PianoPushPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPushPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCF1B6C1A6F534D0060B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -621,6 +623,7 @@
 		8FCF1C111A6F6A990060B9F6 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8F9948C71A95BFC000BF8AA6 /* music.png */,
 				8FEE8B4B1A9141BB0064B398 /* notes.jpg */,
 				8FF044811A8BF21400D4913B /* pianoButton.png */,
 				8F4520131A7F165700134F51 /* pianoButton.jpg */,
@@ -733,6 +736,7 @@
 				3870AB2C1A92870600FF02B2 /* DataModels.bundle in Resources */,
 				8F45200C1A7F10E900134F51 /* 1422863769_device_camera_capture_photo_-20.png in Resources */,
 				8FCF1C1D1A6F71B20060B9F6 /* piano3.jpg in Resources */,
+				8F9948C81A95BFC000BF8AA6 /* music.png in Resources */,
 				8FCF1B791A6F534E0060B9F6 /* Images.xcassets in Resources */,
 				8FCF1B921A6F54340060B9F6 /* piano.jpg in Resources */,
 				8FCF1C1A1A6F71B20060B9F6 /* piano6.jpg in Resources */,
