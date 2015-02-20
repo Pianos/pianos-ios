@@ -16,6 +16,7 @@
 #import <FYX/FYXTransmitter.h>
 
 
+
 @interface AppDelegate ()
 
 @end
@@ -55,6 +56,8 @@
     // Set the icon badge to zero on startup (optional)
     [[UAPush shared] resetBadge];
     
+    
+    
     // Set the notification types required for the app (optional). This value defaults
     // to badge, alert and sound, so it's only necessary to set it if you want
     // to add or remove types.
@@ -69,6 +72,8 @@
     // time to enable push to increase the likelihood that the user will accept
     // notifications.
     [UAPush shared].userPushNotificationsEnabled = YES;
+    
+   // [[NSUserDefaults standardUserDefaults] setInteger:10 forKey:@"fyx_post_to_server_interval_preference"];
     
     //***********End UA********************************************
     
@@ -87,6 +92,41 @@
     
     return YES;
 }
+
+/*- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    // URL is myapp://discount-scheme/id304
+    if ([url.scheme isEqualToString:@"piano.push"]) {
+        if ([url.relativePath isEqualToString:@"/piano1"]) {
+            // Handle deep link in app. Do something inside your app.
+
+        }
+    }
+    
+    return YES;
+}
+ */
+
+
+/*- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    NSMutableArray *schemes = [NSMutableArray array];
+    
+    // Look at our plist
+    NSArray *bundleURLTypes = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"];
+    [bundleURLTypes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [schemes addObjectsFromArray:[bundleURLTypes[idx] objectForKey:@"CFBundleURLSchemes"]];
+    }];
+    
+    if (![schemes containsObject:[url scheme]]) {
+        return NO;
+    }
+    
+    [self deepLink:[url pathComponents]];
+    
+    return YES;
+ }
+*/
 
 - (void)serviceStarted
 {

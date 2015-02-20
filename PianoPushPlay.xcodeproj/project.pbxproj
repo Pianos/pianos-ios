@@ -165,7 +165,6 @@
 		8FCF1B781A6F534E0060B9F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8FCF1B7B1A6F534E0060B9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8FCF1B811A6F534E0060B9F6 /* PianoPushPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoPushPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FCF1B861A6F534E0060B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FCF1B871A6F534E0060B9F6 /* PianoPushPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoPushPlayTests.m; sourceTree = "<group>"; };
 		8FCF1B911A6F54340060B9F6 /* piano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piano.jpg; sourceTree = "<group>"; };
 		8FCF1B931A6F56BE0060B9F6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -435,17 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				8FCF1B871A6F534E0060B9F6 /* PianoPushPlayTests.m */,
-				8FCF1B851A6F534E0060B9F6 /* Supporting Files */,
 			);
 			path = PianoPushPlayTests;
-			sourceTree = "<group>";
-		};
-		8FCF1B851A6F534E0060B9F6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FCF1B861A6F534E0060B9F6 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8FCF1B951A6F58410060B9F6 /* CLImageEditor */ = {
