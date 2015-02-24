@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O4f-pd-Ewh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O4f-pd-Ewh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -227,10 +227,10 @@
             </objects>
             <point key="canvasLocation" x="1040" y="304"/>
         </scene>
-        <!--Checkin-->
+        <!--Check In View Controller-->
         <scene sceneID="Zfn-rU-6Bv">
             <objects>
-                <viewController id="uBl-mM-Zul" sceneMemberID="viewController">
+                <viewController id="uBl-mM-Zul" customClass="CheckInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OQg-Oq-3c0"/>
                         <viewControllerLayoutGuide type="bottom" id="Y61-Gh-0Hj"/>
@@ -238,14 +238,57 @@
                     <view key="view" contentMode="scaleToFill" id="TK3-iq-qtf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-QH-omp">
+                                <rect key="frame" x="78" y="159" width="164" height="171"/>
+                                <state key="normal" backgroundImage="qrcode.27781686.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanAction:" destination="uBl-mM-Zul" eventType="touchUpInside" id="ejh-wp-o0c"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Checkin" image="1422863792_square-check-16.png" id="qtb-bd-RRo"/>
+                    <navigationItem key="navigationItem" id="ZOk-Yb-tBS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="oef-Uy-mY0" kind="show" identifier="qrsegway" id="evz-Cl-SpN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzq-lE-oHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="1117"/>
+            <point key="canvasLocation" x="843" y="1226"/>
+        </scene>
+        <!--showqr-->
+        <scene sceneID="pgC-P4-WMP">
+            <objects>
+                <viewController title="showqr" id="oef-Uy-mY0" customClass="showqrViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oH7-3T-SL3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vpd-Hs-fb7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D5Z-RU-0PA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09q-az-C5Y">
+                                <rect key="frame" x="0.0" y="11" width="320" height="543"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="ia1-mj-1lu"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="showqrwebview" destination="09q-az-C5Y" id="nOr-ol-3Ip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXj-Eq-rFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="1226"/>
         </scene>
         <!--Camera-->
         <scene sceneID="QKD-k8-COn">
@@ -279,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Plv-5g-nO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="1055"/>
+            <point key="canvasLocation" x="1625" y="1055"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ML-UZ-TCp">
@@ -295,12 +338,32 @@
                     <connections>
                         <segue destination="8Bt-Xh-eNQ" kind="relationship" relationship="viewControllers" id="PP2-LH-AfX"/>
                         <segue destination="M5M-dh-7E1" kind="relationship" relationship="viewControllers" id="KS4-ZY-4mj"/>
-                        <segue destination="uBl-mM-Zul" kind="relationship" relationship="viewControllers" id="kZP-LE-9xb"/>
+                        <segue destination="O2u-Qa-zbL" kind="relationship" relationship="viewControllers" id="kZP-LE-9xb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blo-O6-5wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="321" y="304"/>
+        </scene>
+        <!--Checkin-->
+        <scene sceneID="Pf2-i0-04d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="O2u-Qa-zbL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Checkin" image="1422863792_square-check-16.png" id="qtb-bd-RRo"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dlf-BX-mNn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uBl-mM-Zul" kind="relationship" relationship="rootViewController" id="m2c-Ek-T5Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mr2-gO-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="1226"/>
         </scene>
     </scenes>
     <resources>
@@ -309,5 +372,6 @@
         <image name="1422863792_square-check-16.png" width="16" height="16"/>
         <image name="notes.jpg" width="799" height="582"/>
         <image name="pianoButton.png" width="190" height="189"/>
+        <image name="qrcode.27781686.jpg" width="200" height="200"/>
     </resources>
 </document>
