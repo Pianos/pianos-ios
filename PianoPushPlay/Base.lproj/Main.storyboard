@@ -35,6 +35,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="fMt-vY-iQ8" kind="presentation" id="Vpc-4O-gYx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-jE-8RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
