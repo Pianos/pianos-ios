@@ -33,7 +33,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)findPianosButtonPressed:(id)sender {
+
+- (IBAction)findPianos:(id)sender {
     
     //make request to website to get piano data and then dismiss view controller
     AppDelegate *myAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -41,7 +42,6 @@
     [myAppDelegate.request httpRequest:@"https://shielded-harbor-4568.herokuapp.com/pianos" requestMethod:nil reqData:nil];
     
     [self dismissViewControllerAnimated:TRUE completion:nil];
-
 }
 
 /*
