@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O4f-pd-Ewh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A18-PV-ddz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hC8-PJ-c9H">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="A18-PV-ddz" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pqA-eB-1zL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O4f-pd-Ewh" kind="relationship" relationship="rootViewController" id="9uI-Lq-qf1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xop-vT-nfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1079" y="266"/>
+        </scene>
         <!--Find Pianos View Controller-->
         <scene sceneID="gMF-lO-zyd">
             <objects>
@@ -58,6 +75,7 @@
                             <constraint firstItem="JiG-AH-W1w" firstAttribute="top" secondItem="wkB-On-a6d" secondAttribute="bottom" constant="75" id="vUE-TW-KyS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JA1-Pn-PUk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-jE-8RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -109,7 +127,7 @@
         <!--Details View Controller-->
         <scene sceneID="fMP-j6-pND">
             <objects>
-                <viewController id="ZK4-FU-jsf" customClass="DetailsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="checkIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZK4-FU-jsf" customClass="DetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7dl-ex-Zab"/>
                         <viewControllerLayoutGuide type="bottom" id="dBq-AY-m1K"/>
@@ -275,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzq-lE-oHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="1226"/>
+            <point key="canvasLocation" x="274" y="1114"/>
         </scene>
         <!--Camera-->
         <scene sceneID="QKD-k8-COn">
@@ -349,7 +367,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mr2-gO-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="1226"/>
+            <point key="canvasLocation" x="-129" y="1122"/>
         </scene>
     </scenes>
     <resources>

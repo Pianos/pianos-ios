@@ -14,6 +14,7 @@
 #import <FYX/FYXVisitManager.h>
 #import <FYX/FYXVisitManager.h>
 #import <FYX/FYXTransmitter.h>
+#import "DetailsViewController.h"
 
 
 @interface AppDelegate ()
@@ -24,6 +25,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+   
+    
+    
     // Override point for customization after application launch.
     
     self.request = [[HttpModule alloc] init];
@@ -69,6 +74,8 @@
     // time to enable push to increase the likelihood that the user will accept
     // notifications.
     [UAPush shared].userPushNotificationsEnabled = YES;
+  
+
     
     //***********End UA********************************************
     
@@ -87,6 +94,88 @@
     
     return YES;
 }
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    
+    
+    NSMutableArray *schemes = [NSMutableArray array];
+    
+    // Look at our plist
+    NSArray *bundleURLTypes = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"];
+    [bundleURLTypes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [schemes addObjectsFromArray:[bundleURLTypes[idx] objectForKey:@"CFBundleURLSchemes"]];
+    }];
+    
+    if (![schemes containsObject:[url scheme]]) {
+        
+        NSLog(@"This failed!");
+        NSLog(@"Schemes: %@", schemes);
+        NSLog(@"Url:%@", url);
+        return NO;
+    }
+    
+ 
+    NSLog(@"Schemes: %@", schemes);
+    NSLog(@"Url:%@", url);
+    
+    NSLog(@"Url Path components:%@", [url pathComponents]);
+    NSLog(@"Url Last Path components:%@", [url lastPathComponent]);
+    NSLog(@"Url host:%@", [url host]);
+
+    [self deepLink:[url host] piano:[url lastPathComponent]];
+
+  
+    
+      return YES;
+   
+    
+}
+
+- (void)deepLink:(NSString *)path piano:(NSString *)lastPath {
+    
+    NSLog(@"I am getting into path");
+    
+    
+    
+    // Store valid storyboard IDs in an array to avoid exceptions at
+    // runtime
+   // NSArray *linkableStoryboardIDs = @[@"checkIn"];
+    
+    NSLog(@"path: %@", path);
+    
+    
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    
+    [navController popToRootViewControllerAnimated:NO];
+    
+ //   UIStoryboard *storyboard = self.window.rootViewController.storyboard;
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+                        
+    
+    NSMutableArray *viewControllers = [navController.viewControllers mutableCopy];
+   // if ([path isEqualToString: @"checkIn"]) {
+        
+    
+        //    [viewControllers addObject:[storyboard instantiateViewControllerWithIdentifier:path]];
+        
+        DetailsViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"checkIn"];
+        vc.pianoName = lastPath;
+        [navController pushViewController:vc animated:YES];
+
+   // }
+    
+    NSLog(@"vc = %@", viewControllers);
+    //navController.viewControllers = viewControllers;
+    
+
+
+}
+
+
+
+
+
 
 - (void)serviceStarted
 {

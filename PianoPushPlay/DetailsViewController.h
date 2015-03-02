@@ -17,5 +17,6 @@
 @property (weak, nonatomic) NSString *bio;
 @property (weak, nonatomic) NSString *pianoTitle;
 @property (weak, nonatomic) IBOutlet UITextView *bioTextView;
+@property (nonatomic, retain) NSString *pianoName;
 
 @end

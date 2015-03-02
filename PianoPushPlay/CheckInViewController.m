@@ -9,6 +9,8 @@
 #import "CheckInViewController.h"
 #import "QRCodeReaderViewController.h"
 #import "showqrViewController.h"
+#import "ViewController.h"
+
 
 
 @interface CheckInViewController ()
@@ -20,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,13 +46,42 @@
             
             NSLog(@"%@", resultAsString);
             
+            //The string is going to be stored somewhere...
+                        
+                UIAlertController *uac = [UIAlertController alertControllerWithTitle:@"Alert" message:@"This is the actual message" preferredStyle:UIAlertControllerStyleActionSheet];
             
-            NSString *fullURL = resultAsString;
-            NSURL *url = [NSURL URLWithString:fullURL];
-            NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"Checked in" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+                NSLog(@"Alertview dismissed");
+            }];
+            
+            [uac addAction:action];
+            
+            
+            
+        [[self.tabBarController.tabBar.items objectAtIndex:1] setTitle:NSLocalizedString(@"Checked-In", @"comment")];
+            
+           
+            [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:FALSE];
+            
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Checking in!"
+                                                                message:@"You have now checked in with this piano."
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"Ok"
+                                                      otherButtonTitles:nil];
+            
+            [alertView show];
+            
+           
+
+            
+            
+        //
+         //   NSString *fullURL = resultAsString;
+        //    NSURL *url = [NSURL URLWithString:fullURL];
+         //   NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
            // [_qrWebView loadRequest:requestObj];
             
-            [self performSegueWithIdentifier:@"qrsegway" sender:requestObj];
+          //  [self performSegueWithIdentifier:@"qrsegway" sender:requestObj];
             
             //[self performSelector:@selector(loadWebView:) withObject:requestObj afterDelay:.1];
             

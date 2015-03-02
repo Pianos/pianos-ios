@@ -28,6 +28,7 @@
       tabBarController.tabBar.backgroundColor = [UIColor blackColor];
       tabBarController.tabBar.tintColor = [UIColor blackColor];
     
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.composeButton.enabled = FALSE;
     

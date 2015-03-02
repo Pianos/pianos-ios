@@ -2,19 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Urban Airship location service</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Urban Airship location service</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Urban Airship location service when app is in use</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>bluetooth-central</string>
-		<string>location</string>
-		<string>remote-notifications</string>
-		<string>bluetooth-peripheral</string>
-	</array>
+	<key></key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -34,18 +23,37 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
 			<key>CFBundleURLName</key>
-			<string>piano.push</string>
+			<string>pianos.push</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>piano.push</string>
+				<string>pianos</string>
+				<string>pianos.push</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Urban Airship location service</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Urban Airship location service</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Urban Airship location service when app is in use</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+		<string>location</string>
+		<string>remote-notification</string>
+		<string>remote-notifications</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
