@@ -198,11 +198,19 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qE-OZ-PBc">
                                 <rect key="frame" x="0.0" y="579" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem title="Share" id="vny-Ay-BGJ"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LTG-tD-Jfg"/>
-                                    <barButtonItem image="1422863769_device_camera_capture_photo_-20.png" id="tSr-wS-DCw"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5xw-ad-SJB"/>
+                                    <barButtonItem title="Share" id="tSr-wS-DCw">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="cameraButton:" destination="ZK4-FU-jsf" id="b3i-7A-Jc5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="s3l-sC-yay"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7IT-iC-Xhw"/>
-                                    <barButtonItem title="Check In" id="vI6-Z1-jRh"/>
+                                    <barButtonItem title="Check In" id="vI6-Z1-jRh">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zea-zW-xo5"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -295,40 +303,6 @@
             </objects>
             <point key="canvasLocation" x="274" y="1114"/>
         </scene>
-        <!--Camera-->
-        <scene sceneID="QKD-k8-COn">
-            <objects>
-                <viewController id="M5M-dh-7E1" customClass="CameraViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="88I-Cv-62x"/>
-                        <viewControllerLayoutGuide type="bottom" id="o7M-mH-43j"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2vX-Ym-L1r">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u3z-i9-OWz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="u3z-i9-OWz" firstAttribute="top" secondItem="2vX-Ym-L1r" secondAttribute="top" id="43e-SN-apZ"/>
-                            <constraint firstItem="u3z-i9-OWz" firstAttribute="bottom" secondItem="o7M-mH-43j" secondAttribute="top" id="Ka1-4W-6Vc"/>
-                            <constraint firstAttribute="trailing" secondItem="u3z-i9-OWz" secondAttribute="trailing" id="MHZ-Y6-R7i"/>
-                            <constraint firstItem="u3z-i9-OWz" firstAttribute="leading" secondItem="2vX-Ym-L1r" secondAttribute="leading" id="tmC-II-vaM"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="1422863769_device_camera_capture_photo_-20.png" id="BDR-g2-Njb"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="selfieImageView" destination="u3z-i9-OWz" id="07h-DT-D3n"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Plv-5g-nO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1625" y="1055"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ML-UZ-TCp">
             <objects>
@@ -372,7 +346,6 @@
     </scenes>
     <resources>
         <image name="1422863741_piano.png" width="16" height="16"/>
-        <image name="1422863769_device_camera_capture_photo_-20.png" width="20" height="14"/>
         <image name="1422863792_square-check-16.png" width="16" height="16"/>
         <image name="notes.jpg" width="799" height="582"/>
         <image name="pianoButton.png" width="190" height="189"/>

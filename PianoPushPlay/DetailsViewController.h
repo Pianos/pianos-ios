@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLImageEditor.h"
 
-@interface DetailsViewController : UIViewController
+@interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate>
 @property NSString *annotationTitle;
 @property UIImage *image;
 @property (weak, nonatomic) IBOutlet UIImageView *pianoImageView;
@@ -18,5 +19,8 @@
 @property (weak, nonatomic) NSString *pianoTitle;
 @property (weak, nonatomic) IBOutlet UITextView *bioTextView;
 @property (nonatomic, retain) NSString *pianoName;
+
+@property UIImage *selfie;
+@property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
 
 @end

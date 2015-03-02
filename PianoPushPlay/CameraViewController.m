@@ -102,7 +102,6 @@
         
         [noCamera addAction:confirm];
         [self presentViewController:noCamera animated:NO completion:nil];
-        
     }
 }
 
@@ -147,6 +146,9 @@
 }
 
 -(void)imageEditor:(CLImageEditor *)editor didFinishEdittingWithImage:(UIImage *)image{
+    
+    //This will turn into an alert asking if user wants to share the image.  if yes, then it will trigger the activity view controller
+    
     NSLog(@"Image editing complet");
     self.selfie = image;
     self.selfieImageView.image = image;
