@@ -20,12 +20,12 @@
     // Do any additional setup after loading the view.
     
     
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"ppp_mainscreen_no_button.jpg"] drawInRect:self.view.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+//    UIGraphicsBeginImageContext(self.view.frame.size);
+//    [[UIImage imageNamed:@"ppp_mainscreen_no_button.jpg"] drawInRect:self.view.bounds];
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
 }
 
