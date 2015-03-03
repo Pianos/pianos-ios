@@ -18,13 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+//    UIGraphicsBeginImageContext(self.view.frame.size);
+//    [[UIImage imageNamed:@"ppp_mainscreen_no_button.jpg"] drawInRect:self.view.bounds];
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)findPianosButtonPressed:(id)sender {
+
+- (IBAction)findPianos:(id)sender {
     
     //make request to website to get piano data and then dismiss view controller
     AppDelegate *myAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
