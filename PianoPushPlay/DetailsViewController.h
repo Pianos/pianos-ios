@@ -23,4 +23,8 @@
 @property UIImage *selfie;
 @property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *checkinbutton;
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
 @end

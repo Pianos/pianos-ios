@@ -10,6 +10,7 @@
 #import "QRCodeReaderViewController.h"
 #import "showqrViewController.h"
 #import "ViewController.h"
+#import "DetailsViewController.h"
 
 
 
@@ -62,6 +63,30 @@
             
            
             [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:FALSE];
+            
+        //    [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:FALSE];
+       
+            
+           //  [[[[DetailsViewController.UIBarButtonItem ]items]objectAtIndex:0]setEnabled:NO];
+            
+          // DetailsViewController.BarButtonItem.Enabled = true;
+            
+         //   DetailsViewController.UIBarItem.Enabled = FALSE;
+            
+           // DetailsViewController.UIBarButtonItem.UIBarItem1.Enabled = FALSE;
+            DetailsViewController *ci = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 2];
+            
+            NSLog(@"count: %@",self.navigationController.viewControllers);
+            
+            
+            ci.checkinbutton.enabled = FALSE;
+            
+            
+     
+            
+        
+            
+            //UIBarButtonItem.Refresh();
             
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Checking in!"
                                                                 message:@"You have now checked in with this piano."

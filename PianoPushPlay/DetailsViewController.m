@@ -7,7 +7,7 @@
 //
 
 #import "DetailsViewController.h"
-//#import "AppDelegate.h"
+#import "AppDelegate.h"
 
 @interface DetailsViewController ()
 
@@ -17,48 +17,105 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if ([self.pianoName isEqualToString:@"Piano2"])
-    {
-        
-   //     NSLog(@"I got into the Piano2 logic!");
-  //    AppDelegate *myAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-        
- //     [myAppDelegate.request httpRequest:@"https://shielded-harbor-4568.herokuapp.com/pianos" requestMethod:nil reqData:nil];
-        
-   //    PianoAnnotations *detAnnot = ;
-  //      DetailsViewController *vc = [segue destinationViewController];
-   //     self.image = artPiano.pianoImage;
-  //      vc.pianoTitle = detAnnot.title;
-  //      vc.bio = detAnnot.bio;
-  //      vc.hidesBottomBarWhenPushed = YES;
-        
-        
-        self.image = [UIImage imageNamed: @"piano2.jpg"];
-        self.pianoTitle = @"Stark Piano";
-        self.bio = @"The first piano to find a home! Not really a public piano, but you can play it when you are at the wonderful ADX facility. 417 SE 11th Ave. Go on in and give it a try! Open during ADX hours";
-        self.hidesBottomBarWhenPushed = YES;
-               
-    }
-    
  
+    //if there is not an image loaded from selecting one in the pianos page then
+    //this must be a push!
     
-    // Do any additional setup after loading the view.
-    NSLog(@"Detail View Controller Loaded with image: %@", self.image);
-    
-    NSLog(@"Piano Name: %@", self.pianoName);
-    self.pianoImageView.image = self.image;
-    NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
-    self.bioLabel.text = self.pianoTitle;
-    self.bioTextView.text = self.bio;
-    self.bioTextView.editable = false;
-    self.bioTextView.selectable = false;
+    if (!self.image) {
+        
+        //this is a push
+        
+        //load up a spinner so we have time to grab the correct piano information
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        spinner.center = CGPointMake(160, 240);
+        spinner.tag = 12;
+        [self.view addSubview:spinner];
+        [spinner startAnimating];
+        
+        
+        //go get the correct piano information
+        AppDelegate *myAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        [myAppDelegate.request httpRequest:@"https://shielded-harbor-4568.herokuapp.com/pianos" requestMethod:nil reqData:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pianoDataReceived:) name:@"httpDataReceived"  object:nil];
+        double delayInSeconds = 3.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+
+        NSLog(@"Piano Name: %@", self.pianoName);
+        self.pianoImageView.image = self.image;
+        self.bioLabel.text = self.pianoTitle;
+        self.bioTextView.text = self.bio;
+        self.bioTextView.editable = false;
+        self.bioTextView.selectable = false;
+            
+            
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+        singleTap.numberOfTapsRequired = 1;
+        [self.view addGestureRecognizer:singleTap];
+        
+        //everything is loaded so we can stop the spinner
+        [spinner stopAnimating];
+        [spinner removeFromSuperview];
+            
+            
+        });
+        
+    }else{
+        //This is a normal piano selection
+
+        self.pianoImageView.image = self.image;
+        self.bioLabel.text = self.pianoTitle;
+        self.bioTextView.text = self.bio;
+        self.bioTextView.editable = false;
+        self.bioTextView.selectable = false;
 
     
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
-    singleTap.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:singleTap];
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+            singleTap.numberOfTapsRequired = 1;
+        [self.view addGestureRecognizer:singleTap];
+    }
 }
+
+
+
+
+
+-(void)pianoDataReceived: (NSNotification *) notification {
+    
+    
+    [self.spinner removeFromSuperview];
+     [self.spinner stopAnimating];
+  
+    
+    NSDictionary *json = [notification object];
+    
+ //   NSLog(@"%@", json);
+    NSLog(@"Piano Name: %@", self.pianoName);
+
+    
+    //Place annotations for each piano on map after receiving the data from server
+    for (id key in json){
+        
+     //   NSLog(@"key: %@", key);
+        if ([key isEqualToString:self.pianoName]) {
+        
+        NSDictionary *object = [json objectForKey:key];
+ 
+        NSString *imageName = [object objectForKey:@"image"];
+        self.image = [UIImage imageNamed:imageName];
+        self.pianoTitle = [object objectForKey:@"title"];
+        self.bio = [object objectForKey:@"bio"];
+        self.hidesBottomBarWhenPushed = YES;
+        NSLog(@"I have the Piano data now %@", object);
+            
+        }
+    }
+
+    
+}
+
+
 
 - (IBAction)cameraButton:(id)sender {
 
