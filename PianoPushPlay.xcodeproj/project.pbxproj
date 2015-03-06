@@ -46,6 +46,7 @@
 		8F46D5411A71E8BC000BDF44 /* HttpModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F46D5401A71E8BC000BDF44 /* HttpModule.m */; };
 		8F9948C81A95BFC000BF8AA6 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9948C71A95BFC000BF8AA6 /* music.png */; };
 		8FA3324E1A86FA4A009F0289 /* 1422863741_piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA3324D1A86FA4A009F0289 /* 1422863741_piano.png */; };
+		8FBBE5E61AA56BD400561A98 /* ppp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8FBBE5E51AA56BD400561A98 /* ppp.mp3 */; };
 		8FCF1B6E1A6F534E0060B9F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B6D1A6F534E0060B9F6 /* main.m */; };
 		8FCF1B711A6F534E0060B9F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B701A6F534E0060B9F6 /* AppDelegate.m */; };
 		8FCF1B741A6F534E0060B9F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF1B731A6F534E0060B9F6 /* ViewController.m */; };
@@ -177,6 +178,7 @@
 		8F46D5401A71E8BC000BDF44 /* HttpModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpModule.m; sourceTree = "<group>"; };
 		8F9948C71A95BFC000BF8AA6 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		8FA3324D1A86FA4A009F0289 /* 1422863741_piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1422863741_piano.png; sourceTree = "<group>"; };
+		8FBBE5E51AA56BD400561A98 /* ppp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ppp.mp3; sourceTree = "<group>"; };
 		8FCF1B681A6F534D0060B9F6 /* PianoPushPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoPushPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCF1B6C1A6F534D0060B9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FCF1B6D1A6F534E0060B9F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -436,6 +438,14 @@
 			name = httpModule;
 			sourceTree = "<group>";
 		};
+		8FBBE5E71AA56BDC00561A98 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				8FBBE5E51AA56BD400561A98 /* ppp.mp3 */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
 		8FCF1B5F1A6F534D0060B9F6 = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +469,7 @@
 		8FCF1B6A1A6F534D0060B9F6 /* PianoPushPlay */ = {
 			isa = PBXGroup;
 			children = (
+				8FBBE5E71AA56BDC00561A98 /* sound */,
 				8FCF1C111A6F6A990060B9F6 /* images */,
 				8FCF1B6F1A6F534E0060B9F6 /* AppDelegate.h */,
 				8FCF1B701A6F534E0060B9F6 /* AppDelegate.m */,
@@ -815,6 +826,7 @@
 				8FDB12811AA023B60019C3E0 /* ppp_mainscreen_no_button.jpg in Resources */,
 				8FCF1C1A1A6F71B20060B9F6 /* piano6.jpg in Resources */,
 				8FEE8B4C1A9141BB0064B398 /* notes.jpg in Resources */,
+				8FBBE5E61AA56BD400561A98 /* ppp.mp3 in Resources */,
 				8FCF1C1B1A6F71B20060B9F6 /* piano5.jpg in Resources */,
 				8FCF1C131A6F6EBF0060B9F6 /* piano2.jpg in Resources */,
 			);
