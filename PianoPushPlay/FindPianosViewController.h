@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface FindPianosViewController : UIViewController
 
+@property (assign) SystemSoundID pianoSound;
 
 @end

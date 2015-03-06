@@ -24,12 +24,14 @@
     [self.view addSubview:self.spinner];
     [self.spinner startAnimating];
     
-      tabBarController = (UITabBarController *) self.tabBarController;;
-      tabBarController.tabBar.backgroundColor = [UIColor blackColor];
-      tabBarController.tabBar.tintColor = [UIColor blackColor];
+    tabBarController = (UITabBarController *) self.tabBarController;;
+    tabBarController.tabBar.backgroundColor = [UIColor blackColor];
+    tabBarController.tabBar.tintColor = [UIColor blackColor];
     
     // Do any additional setup after loading the view, typically from a nib.
     self.composeButton.enabled = FALSE;
+    
+    self.pianoMap.showsUserLocation = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pianoDataReceived:) name:@"httpDataReceived"  object:nil];
 }
@@ -40,7 +42,7 @@
 }
 
 
--(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(UIImage *) image bio:(NSString *)bio{
+-(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(NSString *) image bio:(NSString *)bio{
     
     PianoAnnotations *annotation = [[PianoAnnotations alloc] initWithTitle:title andCoordinate:coordinate andImage:image andBio:bio];
     [self.pianoMap addAnnotation:annotation];
@@ -81,14 +83,12 @@
         NSNumber *lon = [object objectForKey:@"lon"];
         NSString *bio = [object objectForKey:@"bio"];
         CLLocationCoordinate2D pianoCord = CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue);
-        UIImage *image = [UIImage imageNamed:imageName];
-        [self showAnnotation:pianoCord title:title image:image bio:bio];
+        //UIImage *image = [UIImage imageNamed:imageName];
+        [self showAnnotation:pianoCord title:title image:imageName bio:bio];
         [longs addObject:lon];
         [lats addObject:lat];
     }
     CLLocationCoordinate2D portland = CLLocationCoordinate2DMake([self center:lats], [self center:longs]);
-    //CLLocationCoordinate2D portland = CLLocationCoordinate2DMake([self average:lats], [self average:longs]);
-    //CLLocationCoordinate2D portland = CLLocationCoordinate2DMake(45.5241, -122.676201);
     MKCoordinateSpan span = MKCoordinateSpanMake(.05, .05);
     MKCoordinateRegion region = MKCoordinateRegionMake(portland, span);
     self.pianoMap.delegate = self;

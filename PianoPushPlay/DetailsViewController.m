@@ -8,6 +8,7 @@
 
 #import "DetailsViewController.h"
 
+
 @interface DetailsViewController ()
 
 @end
@@ -18,7 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"Detail View Controller Loaded with image: %@", self.image);
-    self.pianoImageView.image = self.image;
+    
+    //self.pianoImageView.image = self.image;
     NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
     self.bioLabel.text = self.pianoTitle;
     self.bioTextView.text = self.bio;
@@ -185,6 +187,18 @@
     //Share photo if user clicks yes on the Alert Controller
     [self sharePhoto];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *imgURL = self.image;
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgURL]];
+        
+        //set your image on main thread.
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.pianoImageView setImage:[UIImage imageWithData:data]];
+        });
+    });
 }
 
 

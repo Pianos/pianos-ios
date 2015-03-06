@@ -11,7 +11,7 @@
 
 @implementation PianoAnnotations
 
--(id)initWithTitle:(NSString *)annotationTitle andCoordinate:(CLLocationCoordinate2D)annotationCoordinate andImage:(UIImage *) image andBio: (NSString *)bio{
+-(id)initWithTitle:(NSString *)annotationTitle andCoordinate:(CLLocationCoordinate2D)annotationCoordinate andImage:(NSString *) image andBio: (NSString *)bio{
     self = [super init];
     if(self){
         
