@@ -25,15 +25,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    self.locationManager = [[LocationManager alloc] init];
     self.request = [[HttpModule alloc] init];
-    
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    FindPianosViewController *findPianos = [storyboard instantiateViewControllerWithIdentifier:@"findPianos"];
-//    [self.window makeKeyAndVisible];
-//    [self.window.rootViewController presentViewController:findPianos animated:NO completion:^{
-//    NSLog(@"Find Pianos Screen Loaded");
-//    }];
     
     //****************Adding Necessary UA Stuff *******************
     [UAirship setLogLevel:UALogLevelTrace];

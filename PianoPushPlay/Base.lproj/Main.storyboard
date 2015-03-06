@@ -121,20 +121,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmk-IK-e46">
-                                        <rect key="frame" x="332" y="8" width="42" height="44"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="Wx2-g1-dPe"/>
-                                            <constraint firstAttribute="width" constant="42" id="tC3-gQ-MPV"/>
-                                        </constraints>
-                                        <state key="normal" title="X">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dismissBio:" destination="ZK4-FU-jsf" eventType="touchUpInside" id="fl9-If-MEP"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVi-QV-P3C">
                                         <rect key="frame" x="8" y="8" width="326" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,6 +140,18 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmk-IK-e46">
+                                        <rect key="frame" x="332" y="8" width="42" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Wx2-g1-dPe"/>
+                                            <constraint firstAttribute="width" constant="42" id="tC3-gQ-MPV"/>
+                                        </constraints>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="dismissBio:" destination="ZK4-FU-jsf" eventType="touchUpInside" id="fl9-If-MEP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -222,7 +220,7 @@
         <scene sceneID="O9E-sw-mqK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Bt-Xh-eNQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pianos" image="1422863741_piano.png" id="3IF-Dt-22f"/>
+                    <tabBarItem key="tabBarItem" title="Pianos" image="piano_icon.png" id="3IF-Dt-22f"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jZE-Ve-mTH">
@@ -322,8 +320,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1422863741_piano.png" width="16" height="16"/>
         <image name="1422863792_square-check-16.png" width="16" height="16"/>
+        <image name="piano_icon.png" width="16" height="16"/>
         <image name="ppp_button.png" width="189" height="190"/>
         <image name="ppp_mainscreen_no_button.jpg" width="828" height="1282"/>
         <image name="qrcode.27781686.jpg" width="200" height="200"/>

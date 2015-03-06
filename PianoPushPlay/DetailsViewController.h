@@ -11,7 +11,7 @@
 
 @interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate>
 @property NSString *annotationTitle;
-@property UIImage *image;
+@property NSString *image;
 @property (weak, nonatomic) IBOutlet UIImageView *pianoImageView;
 @property (weak, nonatomic) IBOutlet UIView *bioView;
 @property (weak, nonatomic) IBOutlet UILabel *bioLabel;
