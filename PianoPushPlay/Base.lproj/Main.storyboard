@@ -108,8 +108,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YPD-nL-FQj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="631"/>
                             </imageView>
-                            <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-vL-GVT">
-                                <rect key="frame" x="16" y="204" width="382" height="214"/>
+                            <view alpha="0.84999999999999987" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-vL-GVT">
+                                <rect key="frame" x="16" y="178.5" width="382" height="265"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-tx-1V6">
                                         <rect key="frame" x="0.0" y="60" width="382" height="243"/>
@@ -157,6 +157,7 @@
                                 <constraints>
                                     <constraint firstItem="Qek-tx-1V6" firstAttribute="leading" secondItem="0Fo-vL-GVT" secondAttribute="leading" id="AOg-QO-c9g"/>
                                     <constraint firstItem="Fmk-IK-e46" firstAttribute="top" secondItem="0Fo-vL-GVT" secondAttribute="top" constant="8" id="GGf-69-fjd"/>
+                                    <constraint firstAttribute="height" constant="265" id="J9J-31-sBp"/>
                                     <constraint firstAttribute="trailing" secondItem="Fmk-IK-e46" secondAttribute="trailing" constant="8" id="LGz-D5-ulK"/>
                                     <constraint firstItem="Qek-tx-1V6" firstAttribute="top" secondItem="0Fo-vL-GVT" secondAttribute="top" constant="60" id="MkY-6V-2VC"/>
                                     <constraint firstAttribute="height" constant="214" id="XA7-9y-Trq"/>
@@ -164,6 +165,11 @@
                                     <constraint firstAttribute="trailing" secondItem="Qek-tx-1V6" secondAttribute="trailing" id="rq5-A4-v28"/>
                                     <constraint firstItem="oVi-QV-P3C" firstAttribute="leading" secondItem="0Fo-vL-GVT" secondAttribute="leading" constant="8" id="zD2-XK-hqi"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XA7-9y-Trq"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qE-OZ-PBc">
                                 <rect key="frame" x="0.0" y="579" width="414" height="44"/>
