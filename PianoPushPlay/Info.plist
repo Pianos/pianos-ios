@@ -33,8 +33,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Urban Airship location service</string>
 	<key>NSLocationUsageDescription</key>
 	<string>Urban Airship location service</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -42,9 +40,8 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>bluetooth-central</string>
-		<string>location</string>
-		<string>remote-notifications</string>
 		<string>bluetooth-peripheral</string>
+		<string>remote-notifications</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
