@@ -67,8 +67,11 @@
            
                 
         NSLog(@"count: %@",self.navigationController.viewControllers);
+                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
             
-            DetailsViewController *ci = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 2];
+                DetailsViewController *ci = [storyboard instantiateViewControllerWithIdentifier:@"checkIn"];
+                
+         //   DetailsViewController *ci = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 1];
             
           
             

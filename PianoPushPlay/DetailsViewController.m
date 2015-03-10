@@ -49,6 +49,8 @@
             
             self.bioTextView.editable = false;
             self.bioTextView.selectable = false;
+          //  [self viewWillAppear:true];
+            
             
             
             UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
@@ -56,8 +58,8 @@
             [self.view addGestureRecognizer:singleTap];
             
             //everything is loaded so we can stop the spinner
-            //    [spinner stopAnimating];
-            //    [spinner removeFromSuperview];
+               [self.spinner stopAnimating];
+                //[self.spinner removeFromSuperview];
             
             
         });
@@ -125,10 +127,20 @@
             self.bio = [object objectForKey:@"bio"];
             self.hidesBottomBarWhenPushed = YES;
             NSLog(@"I have the Piano data now %@", object);
+            self.image = [object objectForKey:@"image"];
             
         }
+        
     }
-    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *imgURL = self.image;
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgURL]];
+        
+        //set your image on main thread.
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.pianoImageView setImage:[UIImage imageWithData:data]];
+        });
+    });
     
 }
 

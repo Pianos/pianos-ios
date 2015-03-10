@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ppp_mainscreen_no_button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K25-9v-887">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ppp_mainscreen_no_button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K25-9v-887">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5df-0i-gnv">
@@ -226,7 +226,7 @@
                         <outlet property="bioLabel" destination="oVi-QV-P3C" id="UkN-Yk-Bsn"/>
                         <outlet property="bioTextView" destination="Qek-tx-1V6" id="7jy-et-AHP"/>
                         <outlet property="bioView" destination="0Fo-vL-GVT" id="9KE-Ro-tsL"/>
-                        <outlet property="checkinbutton" destination="vI6-Z1-jRh" id="yGP-72-hYH"/>
+                        <outlet property="checkinbutton" destination="vI6-Z1-jRh" id="lvO-eP-M32"/>
                         <outlet property="pianoImageView" destination="YPD-nL-FQj" id="iru-NA-Svn"/>
                     </connections>
                 </viewController>
@@ -268,10 +268,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Y61-Gh-0Hj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TK3-iq-qtf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-QH-omp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-QH-omp">
                                 <rect key="frame" x="78" y="159" width="164" height="171"/>
                                 <state key="normal" backgroundImage="qrcode.27781686.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,6 +345,6 @@
         <image name="qrcode.27781686.jpg" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cwR-fQ-dfc"/>
+        <segue reference="m2c-Ek-T5Q"/>
     </inferredMetricsTieBreakers>
 </document>

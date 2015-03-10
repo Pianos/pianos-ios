@@ -28,4 +28,5 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *checkinbutton;
 
+
 @end
