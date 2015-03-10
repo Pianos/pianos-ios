@@ -7,7 +7,7 @@
 //
 
 #import "DetailsViewController.h"
-
+#import "AppDelegate.h"
 
 @interface DetailsViewController ()
 
@@ -16,27 +16,141 @@
 @implementation DetailsViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSLog(@"Detail View Controller Loaded with image: %@", self.image);
     
-    //self.pianoImageView.image = self.image;
-    NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
-    self.bioLabel.text = self.pianoTitle;
-    self.bioTextView.text = self.bio;
-    self.bioTextView.editable = false;
-    self.bioTextView.selectable = false;
-
+    if (self.pianoName) {
+        
+        //this is a push
+        
+        //load up a spinner so we have time to grab the correct piano information
+        self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        
+        self.spinner.center = CGPointMake(160, 240);
+        self.spinner.tag = 12;
+        [self.view addSubview:self.spinner];
+        [self.spinner startAnimating];
+        
+        
+        //go get the correct piano information
+        AppDelegate *myAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        [myAppDelegate.request httpRequest:@"https://ppp-backend.herokuapp.com/pianos" requestMethod:nil reqData:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pianoDataReceived:) name:@"httpDataReceived"  object:nil];
+        double delayInSeconds = 2.0;
+        
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            
+            NSLog(@"Piano Name: %@", self.pianoName);
+            //      self.pianoImageView.image = self.image;
+            self.bioLabel.text = self.pianoTitle;
+            self.bioTextView.text = self.bio;
+            NSLog(@"bio: %@", self.bio);
+            
+            self.bioTextView.editable = false;
+            self.bioTextView.selectable = false;
+            //  [self viewWillAppear:true];
+            
+            
+            
+            UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+            singleTap.numberOfTapsRequired = 1;
+            [self.view addGestureRecognizer:singleTap];
+            
+            //everything is loaded so we can stop the spinner
+            [self.spinner stopAnimating];
+            //[self.spinner removeFromSuperview];
+            
+            
+        });
+        
+    }else{
+        //This is a normal piano selection
+        
+        //     self.pianoImageView.image = self.image;
+        self.bioLabel.text = self.pianoTitle;
+        self.bioTextView.text = self.bio;
+        NSLog(@"regular bio: %@", self.bioTextView.text);
+        //   self.bioTextView.editable = false;
+        //   self.bioTextView.selectable = false;
+        
+        
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+        singleTap.numberOfTapsRequired = 1;
+        [self.view addGestureRecognizer:singleTap];
+    }
     
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
-    singleTap.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:singleTap];
+    
+    
+    
+    /////////////////////////////////////////
+    /*
+     [super viewDidLoad];
+     // Do any additional setup after loading the view.
+     NSLog(@"Detail View Controller Loaded with image: %@", self.image);
+     
+     //self.pianoImageView.image = self.image;
+     NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
+     self.bioLabel.text = self.pianoTitle;
+     self.bioTextView.text = self.bio;
+     self.bioTextView.editable = false;
+     self.bioTextView.selectable = false;
+     
+     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+     singleTap.numberOfTapsRequired = 1;
+     [self.view addGestureRecognizer:singleTap];
+     */
 }
 
+-(void)pianoDataReceived: (NSNotification *) notification {
+    
+    
+    
+    NSDictionary *json = [notification object];
+    
+    //   NSLog(@"%@", json);
+    NSLog(@"Piano Name: %@", self.pianoName);
+    
+    
+    //Place annotations for each piano on map after receiving the data from server
+    for (id key in json){
+        
+        //   NSLog(@"key: %@", key);
+        if ([key isEqualToString:self.pianoName]) {
+            
+            NSDictionary *object = [json objectForKey:key];
+            
+            //         NSString *imageName = [object objectForKey:@"image"];
+            //         self.image = [UIImage imageNamed:imageName];
+            self.pianoTitle = [object objectForKey:@"title"];
+            self.bio = [object objectForKey:@"bio"];
+            self.hidesBottomBarWhenPushed = YES;
+            NSLog(@"I have the Piano data now %@", object);
+            self.image = [object objectForKey:@"image"];
+            
+        }
+        
+    }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *imgURL = self.image;
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgURL]];
+        
+        //set your image on main thread.
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.pianoImageView setImage:[UIImage imageWithData:data]];
+        });
+    });
+    
+}
+
+
+
+
+
 - (IBAction)cameraButton:(id)sender {
-
+    
     [self showCamera];
-
+    
 }
 
 - (IBAction)dismissBio:(id)sender {
@@ -55,7 +169,7 @@
     self.bioView.alpha = 0;
     [UIView animateWithDuration:1 animations:^{
         self.bioView.hidden = FALSE;
-
+        
     } completion:^(BOOL finished) {
         self.bioView.alpha = 0.8;
     }];
@@ -163,7 +277,7 @@
         
         
     } else {
-    
+        
         UIAlertController *uac = [UIAlertController alertControllerWithTitle:@"Sharing" message:@"Would you like to share your photo?" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
@@ -203,13 +317,12 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

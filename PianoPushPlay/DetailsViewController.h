@@ -20,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UITextView *bioTextView;
 
 @property UIImage *selfie;
+
+@property (nonatomic, retain) NSString *pianoName;
+@property (strong, nonatomic)  UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *checkinbutton;
 
 @end

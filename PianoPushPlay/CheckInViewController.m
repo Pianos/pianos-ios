@@ -9,7 +9,8 @@
 #import "CheckInViewController.h"
 #import "QRCodeReaderViewController.h"
 #import "showqrViewController.h"
-
+#import "ViewController.h"
+#import "DetailsViewController.h"
 
 @interface CheckInViewController ()
 
@@ -41,17 +42,60 @@
         [self dismissViewControllerAnimated:YES completion:^{
             
             
-            NSLog(@"%@", resultAsString);
             
+            if (resultAsString) {
+                
+                
+                NSLog(@"%@", resultAsString);
+                
+                //The string is going to be stored somewhere...
+                
+                UIAlertController *uac = [UIAlertController alertControllerWithTitle:@"Alert" message:@"This is the actual message" preferredStyle:UIAlertControllerStyleActionSheet];
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:@"Checked in" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+                    NSLog(@"Alertview dismissed");
+                }];
+                
+                [uac addAction:action];
+                
+                
+                
+                [[self.tabBarController.tabBar.items objectAtIndex:1] setTitle:NSLocalizedString(@"Checked-In", @"comment")];
+                
+                
+                [[[[self.tabBarController tabBar]items]objectAtIndex:1]setEnabled:FALSE];
+                
+                
+                NSLog(@"count: %@",self.navigationController.viewControllers);
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+                
+                DetailsViewController *ci = [storyboard instantiateViewControllerWithIdentifier:@"checkIn"];
+                
+                //   DetailsViewController *ci = [self.navigationController.viewControllers objectAtIndex:self.navigationController.viewControllers.count - 1];
+                
+                
+                
+                
+                ci.checkinbutton.enabled = FALSE;
+                
+                
+                
+                
+                
+                
+                //UIBarButtonItem.Refresh();
+                
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Checking in!"
+                                                                    message:@"You have now checked in with this piano."
+                                                                   delegate:nil
+                                                          cancelButtonTitle:@"Ok"
+                                                          otherButtonTitles:nil];
+                
+                [alertView show];
+                
+                
+            }
             
-            NSString *fullURL = resultAsString;
-            NSURL *url = [NSURL URLWithString:fullURL];
-            NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-           // [_qrWebView loadRequest:requestObj];
-            
-            [self performSegueWithIdentifier:@"qrsegway" sender:requestObj];
-            
-            //[self performSelector:@selector(loadWebView:) withObject:requestObj afterDelay:.1];
             
             
         }];
@@ -59,12 +103,19 @@
     }];
     [self presentViewController:reader animated:YES completion:NULL];
     
+    
+}
 
+
+
+- (void)readerDidCancel:(QRCodeReaderViewController *)reader
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 -(void) loadWebView:(NSURLRequest *)request {
-     [self performSegueWithIdentifier:@"qrsegway" sender:request];
-
+    [self performSegueWithIdentifier:@"qrsegway" sender:request];
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -88,7 +139,7 @@
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
 {
     
-      NSLog(@"Did get in here");
+    NSLog(@"Did get in here");
     [self dismissViewControllerAnimated:YES completion:^{
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"QRCodeReader" message:result delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];

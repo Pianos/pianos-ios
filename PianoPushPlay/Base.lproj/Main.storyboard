@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O4f-pd-Ewh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y6R-Mi-a13">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="78E-HT-nsm">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="y6R-Mi-a13" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t4R-XU-LvF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O4f-pd-Ewh" kind="relationship" relationship="rootViewController" id="fy9-aE-6Qj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfo-h1-GMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1236" y="255"/>
+        </scene>
         <!--Find Pianos View Controller-->
         <scene sceneID="gMF-lO-zyd">
             <objects>
@@ -17,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ppp_mainscreen_no_button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K25-9v-887">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ppp_mainscreen_no_button.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K25-9v-887">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5df-0i-gnv">
@@ -45,6 +62,7 @@
                             <constraint firstAttribute="centerY" secondItem="5df-0i-gnv" secondAttribute="centerY" id="y5o-5c-TS2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cMd-ld-adx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-jE-8RM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,7 +114,7 @@
         <!--Details View Controller-->
         <scene sceneID="fMP-j6-pND">
             <objects>
-                <viewController id="ZK4-FU-jsf" customClass="DetailsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="checkIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZK4-FU-jsf" customClass="DetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7dl-ex-Zab"/>
                         <viewControllerLayoutGuide type="bottom" id="dBq-AY-m1K"/>
@@ -185,6 +203,9 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7IT-iC-Xhw"/>
                                     <barButtonItem title="Check In" id="vI6-Z1-jRh">
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="uBl-mM-Zul" kind="show" id="wFw-5T-CKD"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="zea-zW-xo5"/>
                                 </items>
@@ -215,6 +236,7 @@
                         <outlet property="bioLabel" destination="oVi-QV-P3C" id="UkN-Yk-Bsn"/>
                         <outlet property="bioTextView" destination="Qek-tx-1V6" id="7jy-et-AHP"/>
                         <outlet property="bioView" destination="0Fo-vL-GVT" id="9KE-Ro-tsL"/>
+                        <outlet property="checkinbutton" destination="vI6-Z1-jRh" id="Ca6-R4-z4H"/>
                         <outlet property="pianoImageView" destination="YPD-nL-FQj" id="iru-NA-Svn"/>
                     </connections>
                 </viewController>
@@ -256,7 +278,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Y61-Gh-0Hj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TK3-iq-qtf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-QH-omp">
@@ -271,10 +293,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0dn-QH-omp" firstAttribute="centerX" secondItem="TK3-iq-qtf" secondAttribute="centerX" id="C07-z9-g00"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="0dn-QH-omp" secondAttribute="bottom" constant="189" id="JRt-ZA-KyV"/>
-                            <constraint firstItem="0dn-QH-omp" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="62" id="cJQ-EV-vya"/>
-                            <constraint firstItem="0dn-QH-omp" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="139" id="pOQ-dc-xBr"/>
+                            <constraint firstItem="0dn-QH-omp" firstAttribute="centerX" secondItem="TK3-iq-qtf" secondAttribute="centerX" id="QtR-Gl-QDw"/>
+                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="0dn-QH-omp" secondAttribute="bottom" constant="125" id="XND-xX-vgs"/>
+                            <constraint firstItem="0dn-QH-omp" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="159" id="uOv-Gs-m8M"/>
+                            <constraint firstItem="0dn-QH-omp" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="62" id="zP5-VT-iCw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZOk-Yb-tBS"/>
@@ -282,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzq-lE-oHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="1226"/>
+            <point key="canvasLocation" x="2448" y="1084"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ML-UZ-TCp">
@@ -332,4 +354,7 @@
         <image name="ppp_mainscreen_no_button.jpg" width="828" height="1282"/>
         <image name="qrcode.27781686.jpg" width="200" height="200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wFw-5T-CKD"/>
+    </inferredMetricsTieBreakers>
 </document>
