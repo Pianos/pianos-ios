@@ -21,5 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *pictureView;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
 @end
 

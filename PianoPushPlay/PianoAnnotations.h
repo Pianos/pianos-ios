@@ -13,7 +13,8 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
-@property (nonatomic, strong) UIImage *pianoImage;
+@property (nonatomic, strong) NSString *pianoImage;
+@property (nonatomic, strong) NSString *bio;
 
--(id)initWithTitle:(NSString *) annotationTitle andCoordinate: (CLLocationCoordinate2D)annotationCoordinate andImage:(UIImage *)image;
+-(id)initWithTitle:(NSString *) annotationTitle andCoordinate: (CLLocationCoordinate2D)annotationCoordinate andImage:(NSString *)image andBio:(NSString *)bio;
 @end
