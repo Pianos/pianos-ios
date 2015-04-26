@@ -284,7 +284,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-bI-6qg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Created by James Stiehl and Misty DeGuillio " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Created by James Stiehl and Misty DeGiulio " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
                                 <rect key="frame" x="0.0" y="190" width="320" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
