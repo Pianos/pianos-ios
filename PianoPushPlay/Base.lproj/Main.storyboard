@@ -277,26 +277,54 @@
                         <viewControllerLayoutGuide type="top" id="OQg-Oq-3c0"/>
                         <viewControllerLayoutGuide type="bottom" id="Y61-Gh-0Hj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TK3-iq-qtf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="TK3-iq-qtf">
+                        <rect key="frame" x="0.0" y="64" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-QH-omp">
-                                <rect key="frame" x="78" y="159" width="164" height="171"/>
-                                <state key="normal" backgroundImage="qrcode.27781686.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="scanAction:" destination="uBl-mM-Zul" eventType="touchUpInside" id="ejh-wp-o0c"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-bI-6qg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Created by James Stiehl and Mistey DeGuillio " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
+                                <rect key="frame" x="0.0" y="190" width="320" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="b7B-Rk-ufW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Photos by Benji Vuong" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwf-VX-f9Q">
+                                <rect key="frame" x="0.0" y="233" width="320" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="eZ8-HM-LWp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="With special thanks to Erick Bennet and Portland Code School" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m81-Oh-87E">
+                                <rect key="frame" x="0.0" y="275" width="320" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0dn-QH-omp" firstAttribute="centerX" secondItem="TK3-iq-qtf" secondAttribute="centerX" id="QtR-Gl-QDw"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="0dn-QH-omp" secondAttribute="bottom" constant="125" id="XND-xX-vgs"/>
-                            <constraint firstItem="0dn-QH-omp" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="159" id="uOv-Gs-m8M"/>
-                            <constraint firstItem="0dn-QH-omp" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="62" id="zP5-VT-iCw"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="top" secondItem="TK3-iq-qtf" secondAttribute="top" id="2EN-V8-ANe"/>
+                            <constraint firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="2S1-DE-636"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="trailing" secondItem="Wwf-VX-f9Q" secondAttribute="trailing" id="7lX-AR-bsM"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leading" id="9HH-5d-zkA"/>
+                            <constraint firstItem="m81-Oh-87E" firstAttribute="top" secondItem="Wwf-VX-f9Q" secondAttribute="bottom" constant="6" id="IAm-1e-qFE"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="Jfx-QA-77T"/>
+                            <constraint firstItem="m81-Oh-87E" firstAttribute="trailing" secondItem="Wwf-VX-f9Q" secondAttribute="trailing" id="YJ5-Y4-JJd"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="7" id="bvf-Jg-7Ld"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="170" id="d4K-En-CV0"/>
+                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="m81-Oh-87E" secondAttribute="bottom" constant="187" id="eDJ-Lv-h0F"/>
+                            <constraint firstItem="m81-Oh-87E" firstAttribute="leading" secondItem="HVy-bI-6qg" secondAttribute="leading" id="fJL-VG-VUw"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="leading" secondItem="Wwf-VX-f9Q" secondAttribute="leading" id="fz0-cs-Qk4"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="bottom" secondItem="Y61-Gh-0Hj" secondAttribute="top" id="kck-gS-L2J"/>
+                            <constraint firstItem="m81-Oh-87E" firstAttribute="leading" secondItem="Wwf-VX-f9Q" secondAttribute="leading" id="kfN-G2-mpv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZOk-Yb-tBS"/>
@@ -326,11 +354,11 @@
             </objects>
             <point key="canvasLocation" x="321" y="304"/>
         </scene>
-        <!--Checkin-->
+        <!--About-->
         <scene sceneID="Pf2-i0-04d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="O2u-Qa-zbL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Checkin" image="1422863792_square-check-16.png" id="qtb-bd-RRo"/>
+                    <tabBarItem key="tabBarItem" title="About" image="1422863792_square-check-16.png" id="qtb-bd-RRo"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dlf-BX-mNn">
@@ -349,12 +377,12 @@
     </scenes>
     <resources>
         <image name="1422863792_square-check-16.png" width="16" height="16"/>
+        <image name="about-background.jpg" width="828" height="1282"/>
         <image name="piano_icon.png" width="16" height="16"/>
         <image name="ppp_button.png" width="189" height="190"/>
         <image name="ppp_mainscreen_no_button.jpg" width="828" height="1282"/>
-        <image name="qrcode.27781686.jpg" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wFw-5T-CKD"/>
+        <segue reference="m2c-Ek-T5Q"/>
     </inferredMetricsTieBreakers>
 </document>

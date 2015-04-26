@@ -45,6 +45,7 @@
 		8F4520121A7F122A00134F51 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4520111A7F122A00134F51 /* CameraViewController.m */; };
 		8F46D5411A71E8BC000BDF44 /* HttpModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F46D5401A71E8BC000BDF44 /* HttpModule.m */; };
 		8F9948C81A95BFC000BF8AA6 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9948C71A95BFC000BF8AA6 /* music.png */; };
+		8F9972D61AED97ED0087E14C /* about-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F9972D51AED97ED0087E14C /* about-background.jpg */; };
 		8FA238961AA94589008EFC6C /* pppshort.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8FA238951AA94589008EFC6C /* pppshort.wav */; };
 		8FA238991AA94FE5008EFC6C /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA238981AA94FE5008EFC6C /* LocationManager.m */; };
 		8FA2389B1AA95676008EFC6C /* piano_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2389A1AA95676008EFC6C /* piano_icon.png */; };
@@ -169,6 +170,7 @@
 		8F46D53F1A71E8BC000BDF44 /* HttpModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpModule.h; sourceTree = "<group>"; };
 		8F46D5401A71E8BC000BDF44 /* HttpModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpModule.m; sourceTree = "<group>"; };
 		8F9948C71A95BFC000BF8AA6 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		8F9972D51AED97ED0087E14C /* about-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "about-background.jpg"; sourceTree = "<group>"; };
 		8FA238951AA94589008EFC6C /* pppshort.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pppshort.wav; sourceTree = "<group>"; };
 		8FA238971AA94FE5008EFC6C /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		8FA238981AA94FE5008EFC6C /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
@@ -684,6 +686,7 @@
 		8FCF1C111A6F6A990060B9F6 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8F9972D51AED97ED0087E14C /* about-background.jpg */,
 				8FA2389A1AA95676008EFC6C /* piano_icon.png */,
 				3870AB511A9A6C0F00FF02B2 /* qrcode.27781686.jpg */,
 				8F9948C71A95BFC000BF8AA6 /* music.png */,
@@ -788,6 +791,7 @@
 				8FA238961AA94589008EFC6C /* pppshort.wav in Resources */,
 				3870AB521A9A6C0F00FF02B2 /* qrcode.27781686.jpg in Resources */,
 				8F45200A1A7F10DC00134F51 /* 1422863792_square-check-16.png in Resources */,
+				8F9972D61AED97ED0087E14C /* about-background.jpg in Resources */,
 				3870AB331A92885700FF02B2 /* UserContext.plist in Resources */,
 				8FCF1BE81A6F58410060B9F6 /* CLImageEditor.bundle in Resources */,
 				3870AB2C1A92870600FF02B2 /* DataModels.bundle in Resources */,
