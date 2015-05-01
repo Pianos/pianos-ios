@@ -8,6 +8,8 @@
 
 #import "DetailsViewController.h"
 #import "AppDelegate.h"
+#import "WebViewController.h"
+
 
 @interface DetailsViewController ()
 
@@ -45,8 +47,9 @@
             //      self.pianoImageView.image = self.image;
             self.bioLabel.text = self.pianoTitle;
             self.bioTextView.text = self.bio;
+            self.pianoUrl = self.pianoUrl;
             NSLog(@"bio: %@", self.bio);
-            
+            NSLog(@"url: %@", self.pianoUrl);
             self.bioTextView.editable = false;
             self.bioTextView.selectable = false;
             //  [self viewWillAppear:true];
@@ -70,7 +73,10 @@
         //     self.pianoImageView.image = self.image;
         self.bioLabel.text = self.pianoTitle;
         self.bioTextView.text = self.bio;
+        self.pianoUrl = self.pianoUrl;
         NSLog(@"regular bio: %@", self.bioTextView.text);
+        NSLog(@"Url: %@", self.pianoUrl);
+        
         //   self.bioTextView.editable = false;
         //   self.bioTextView.selectable = false;
         
@@ -80,27 +86,40 @@
         [self.view addGestureRecognizer:singleTap];
     }
     
-    
-    
-    
-    /////////////////////////////////////////
-    /*
-     [super viewDidLoad];
-     // Do any additional setup after loading the view.
-     NSLog(@"Detail View Controller Loaded with image: %@", self.image);
-     
-     //self.pianoImageView.image = self.image;
-     NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
-     self.bioLabel.text = self.pianoTitle;
-     self.bioTextView.text = self.bio;
-     self.bioTextView.editable = false;
-     self.bioTextView.selectable = false;
-     
-     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
-     singleTap.numberOfTapsRequired = 1;
-     [self.view addGestureRecognizer:singleTap];
-     */
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"webSeg"])
+    {
+        //         PianoAnnotations *detAnnot = sender;
+        WebViewController *vc = [segue destinationViewController];
+        
+        vc.pianourl = self.pianoUrl;
+        NSLog(@"Urlseg: %@", self.pianoUrl);
+    }
+}
+
+
+
+
+/////////////////////////////////////////
+/*
+ [super viewDidLoad];
+ // Do any additional setup after loading the view.
+ NSLog(@"Detail View Controller Loaded with image: %@", self.image);
+ 
+ //self.pianoImageView.image = self.image;
+ NSLog(@"Height = %f, Width = %f", self.pianoImageView.frame.size.height, self.pianoImageView.frame.size.width);
+ self.bioLabel.text = self.pianoTitle;
+ self.bioTextView.text = self.bio;
+ self.bioTextView.editable = false;
+ self.bioTextView.selectable = false;
+ 
+ UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showBio)];
+ singleTap.numberOfTapsRequired = 1;
+ [self.view addGestureRecognizer:singleTap];
+ */
+
 
 -(void)pianoDataReceived: (NSNotification *) notification {
     

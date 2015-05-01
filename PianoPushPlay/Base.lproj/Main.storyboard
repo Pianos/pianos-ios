@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y6R-Mi-a13">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y6R-Mi-a13">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -127,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="631"/>
                             </imageView>
                             <view alpha="0.84999999999999987" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-vL-GVT">
-                                <rect key="frame" x="16" y="178.5" width="382" height="265"/>
+                                <rect key="frame" x="16" y="179" width="382" height="265"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-tx-1V6">
                                         <rect key="frame" x="0.0" y="60" width="382" height="243"/>
@@ -201,10 +201,10 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="s3l-sC-yay"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7IT-iC-Xhw"/>
-                                    <barButtonItem title="Check In" id="vI6-Z1-jRh">
+                                    <barButtonItem title="Learn More" id="vI6-Z1-jRh">
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="uBl-mM-Zul" kind="show" id="wFw-5T-CKD"/>
+                                            <segue destination="o9w-N6-uxb" kind="show" identifier="webSeg" id="dUT-DX-CfC"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="zea-zW-xo5"/>
@@ -243,6 +243,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0H4-GU-cYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2414" y="255"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="wRj-Iz-zcB">
+            <objects>
+                <viewController id="o9w-N6-uxb" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oo3-l8-aWj"/>
+                        <viewControllerLayoutGuide type="bottom" id="8AB-EL-Ibw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0kX-6V-0gY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0p-YS-7Uk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="736" id="uA0-bR-tDn"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F0p-YS-7Uk" firstAttribute="top" secondItem="oo3-l8-aWj" secondAttribute="bottom" id="Jzl-vr-Aqz"/>
+                            <constraint firstItem="F0p-YS-7Uk" firstAttribute="leading" secondItem="0kX-6V-0gY" secondAttribute="leading" id="ZMG-fr-kn5"/>
+                            <constraint firstAttribute="trailing" secondItem="F0p-YS-7Uk" secondAttribute="trailing" id="v0b-GB-7h8"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="viewWeb" destination="F0p-YS-7Uk" id="V90-SQ-S9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-rr-jd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="255"/>
         </scene>
         <!--Pianos-->
         <scene sceneID="O9E-sw-mqK">
@@ -284,47 +320,63 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-bI-6qg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Created by James Stiehl and Misty DeGiulio " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
-                                <rect key="frame" x="0.0" y="190" width="320" height="36"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Photos by Benji Vuong." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-Zs-zmQ">
+                                <rect key="frame" x="0.0" y="307" width="320" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="b7B-Rk-ufW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Photos by Benji Vuong" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwf-VX-f9Q">
-                                <rect key="frame" x="0.0" y="233" width="320" height="36"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" editable="NO" text="Thanks to Megan McGeorge of Piano! Push Play! and Al Zimmerman of Pragmatic Design Studio. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwf-VX-f9Q">
+                                <rect key="frame" x="15" y="234" width="290" height="74"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="eZ8-HM-LWp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="With special thanks to Erick Bennet and Portland Code School" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m81-Oh-87E">
-                                <rect key="frame" x="0.0" y="275" width="320" height="57"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="For more information, visit http://www.pianopushplay.com " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-TX-9Cp">
+                                <rect key="frame" x="0.0" y="356" width="320" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" scrollEnabled="NO" editable="NO" text="This app was created for Piano! Push Play! to help people find and experience public pianos in Portland, Oregon, USA. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAh-M9-Z9B">
+                                <rect key="frame" x="20" y="72" width="280" height="90"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
+                                <rect key="frame" x="22" y="143" width="276" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">It was written by James Stiehl and Misty DeGiulio as part of their coursework at Portland Code School under the guidance of Erick Bennett.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="top" secondItem="TK3-iq-qtf" secondAttribute="top" id="2EN-V8-ANe"/>
-                            <constraint firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="2S1-DE-636"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="trailing" secondItem="Wwf-VX-f9Q" secondAttribute="trailing" id="7lX-AR-bsM"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leading" id="9HH-5d-zkA"/>
-                            <constraint firstItem="m81-Oh-87E" firstAttribute="top" secondItem="Wwf-VX-f9Q" secondAttribute="bottom" constant="6" id="IAm-1e-qFE"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="Jfx-QA-77T"/>
-                            <constraint firstItem="m81-Oh-87E" firstAttribute="trailing" secondItem="Wwf-VX-f9Q" secondAttribute="trailing" id="YJ5-Y4-JJd"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="7" id="bvf-Jg-7Ld"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="170" id="d4K-En-CV0"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="m81-Oh-87E" secondAttribute="bottom" constant="187" id="eDJ-Lv-h0F"/>
-                            <constraint firstItem="m81-Oh-87E" firstAttribute="leading" secondItem="HVy-bI-6qg" secondAttribute="leading" id="fJL-VG-VUw"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="leading" secondItem="Wwf-VX-f9Q" secondAttribute="leading" id="fz0-cs-Qk4"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="bottom" secondItem="Y61-Gh-0Hj" secondAttribute="top" id="kck-gS-L2J"/>
-                            <constraint firstItem="m81-Oh-87E" firstAttribute="leading" secondItem="Wwf-VX-f9Q" secondAttribute="leading" id="kfN-G2-mpv"/>
+                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="4" id="0Gg-G5-GJy"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="123" id="1Cc-6N-KcR"/>
+                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="8Xa-TX-9Cp" secondAttribute="bottom" constant="99" id="BcD-nJ-57i"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="top" secondItem="Wwf-VX-f9Q" secondAttribute="bottom" constant="48" id="Eqs-MF-Vrb"/>
+                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="FcQ-R9-8Jy"/>
+                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="R6i-Zs-zmQ" secondAttribute="bottom" constant="147" id="Gjs-yl-2YG"/>
+                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="81" id="Ip1-FJ-9ah"/>
+                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="centerX" secondItem="EFh-uZ-6ct" secondAttribute="centerX" id="KMV-tX-n9D"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leading" id="LmC-i1-DGU"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="8" symbolic="YES" id="Mv0-r8-vfP"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="Nvz-EF-cSw"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="top" secondItem="TK3-iq-qtf" secondAttribute="top" id="Rww-ec-PBj"/>
+                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="52" id="SQf-ma-OzB"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="ZiK-au-slU"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="6" id="j2L-Tx-zhc"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="jZq-f9-HM0"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="trailing" secondItem="R6i-Zs-zmQ" secondAttribute="trailing" id="lDs-ls-U0c"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="FAh-M9-Z9B" secondAttribute="bottom" constant="72" id="lTw-xw-QEn"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="-1" id="loG-T9-mGl"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="bottom" secondItem="Y61-Gh-0Hj" secondAttribute="top" id="mLe-Yx-ECP"/>
+                            <constraint firstItem="HVy-bI-6qg" firstAttribute="trailing" secondItem="8Xa-TX-9Cp" secondAttribute="trailing" id="pi6-N6-oAm"/>
+                            <constraint firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="tgQ-R3-lo8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZOk-Yb-tBS"/>
@@ -332,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzq-lE-oHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448" y="1084"/>
+            <point key="canvasLocation" x="2448" y="1079"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ML-UZ-TCp">
@@ -382,7 +434,4 @@
         <image name="ppp_button.png" width="189" height="190"/>
         <image name="ppp_mainscreen_no_button.jpg" width="828" height="1282"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="m2c-Ek-T5Q"/>
-    </inferredMetricsTieBreakers>
 </document>

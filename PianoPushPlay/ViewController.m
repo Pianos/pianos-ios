@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     self.spinner.hidesWhenStopped = YES;
     [self.view addSubview:self.spinner];
     [self.spinner startAnimating];
@@ -42,9 +42,9 @@
 }
 
 
--(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(NSString *) image bio:(NSString *)bio{
+-(void)showAnnotation:(CLLocationCoordinate2D) coordinate title:(NSString *)title image:(NSString *) image bio:(NSString *)bio url:(NSString *)url{
     
-    PianoAnnotations *annotation = [[PianoAnnotations alloc] initWithTitle:title andCoordinate:coordinate andImage:image andBio:bio];
+    PianoAnnotations *annotation = [[PianoAnnotations alloc] initWithTitle:title andCoordinate:coordinate andImage:image andBio:bio andUrl:url];
     [self.pianoMap addAnnotation:annotation];
     
 }
@@ -57,6 +57,7 @@
         vc.image = detAnnot.pianoImage;
         vc.pianoTitle = detAnnot.title;
         vc.bio = detAnnot.bio;
+        vc.pianoUrl = detAnnot.pianoUrl;
         vc.hidesBottomBarWhenPushed = YES;
     }
 }
@@ -82,9 +83,10 @@
         NSNumber *lat = [object objectForKey:@"lat"];
         NSNumber *lon = [object objectForKey:@"lon"];
         NSString *bio = [object objectForKey:@"bio"];
+        NSString *pianourl = [object objectForKey:@"url"];
         CLLocationCoordinate2D pianoCord = CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue);
         //UIImage *image = [UIImage imageNamed:imageName];
-        [self showAnnotation:pianoCord title:title image:imageName bio:bio];
+        [self showAnnotation:pianoCord title:title image:imageName bio:bio url:pianourl];
         [longs addObject:lon];
         [lats addObject:lat];
     }
@@ -98,7 +100,7 @@
 }
 
 -(double)average:(NSMutableArray *)coords{
-   
+    
     float average;
     float sum = 0;
     for (int i =0; i< coords.count; i++) {

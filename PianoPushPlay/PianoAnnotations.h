@@ -15,6 +15,7 @@
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, strong) NSString *pianoImage;
 @property (nonatomic, strong) NSString *bio;
+@property (nonatomic, strong) NSString *pianoUrl;
 
--(id)initWithTitle:(NSString *) annotationTitle andCoordinate: (CLLocationCoordinate2D)annotationCoordinate andImage:(NSString *)image andBio:(NSString *)bio;
+-(id)initWithTitle:(NSString *) annotationTitle andCoordinate: (CLLocationCoordinate2D)annotationCoordinate andImage:(NSString *)image andBio:(NSString *)bio andUrl:(NSString *)pianoUrl;
 @end

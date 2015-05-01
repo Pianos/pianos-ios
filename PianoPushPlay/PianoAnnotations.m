@@ -11,7 +11,7 @@
 
 @implementation PianoAnnotations
 
--(id)initWithTitle:(NSString *)annotationTitle andCoordinate:(CLLocationCoordinate2D)annotationCoordinate andImage:(NSString *) image andBio: (NSString *)bio{
+-(id)initWithTitle:(NSString *)annotationTitle andCoordinate:(CLLocationCoordinate2D)annotationCoordinate andImage:(NSString *) image andBio: (NSString *)bio andUrl: (NSString *)pianoUrl{
     self = [super init];
     if(self){
         
@@ -19,7 +19,7 @@
         _coordinate = annotationCoordinate; //instance variable
         _pianoImage = image;
         _bio = bio;
-        
+        _pianoUrl = pianoUrl;
     }
     
     return self;

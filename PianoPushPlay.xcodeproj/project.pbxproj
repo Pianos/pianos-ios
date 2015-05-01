@@ -33,6 +33,7 @@
 		3870AB501A9A486E00FF02B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB4F1A9A486E00FF02B2 /* AVFoundation.framework */; };
 		3870AB521A9A6C0F00FF02B2 /* qrcode.27781686.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3870AB511A9A6C0F00FF02B2 /* qrcode.27781686.jpg */; };
 		3870AB551A9A71E000FF02B2 /* showqrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3870AB541A9A71E000FF02B2 /* showqrViewController.m */; };
+		38AD81B91AF14D8F004D36AE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AD81B81AF14D8F004D36AE /* WebViewController.m */; };
 		38D7E4B31A9265E100218A6C /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B21A9265E100218A6C /* AirshipKit.framework */; };
 		38D7E4B51A9265EF00218A6C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B41A9265EF00218A6C /* CFNetwork.framework */; };
 		38D7E4B71A9265FD00218A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */; };
@@ -154,6 +155,8 @@
 		3870AB511A9A6C0F00FF02B2 /* qrcode.27781686.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qrcode.27781686.jpg; sourceTree = "<group>"; };
 		3870AB531A9A71E000FF02B2 /* showqrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showqrViewController.h; sourceTree = "<group>"; };
 		3870AB541A9A71E000FF02B2 /* showqrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showqrViewController.m; sourceTree = "<group>"; };
+		38AD81B71AF14D8F004D36AE /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		38AD81B81AF14D8F004D36AE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		38D7E4B21A9265E100218A6C /* AirshipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipKit.framework; path = "libUAirship-latest(4)/Airship/AirshipKit.framework"; sourceTree = "<group>"; };
 		38D7E4B41A9265EF00218A6C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		38D7E4B61A9265FD00218A6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -400,6 +403,8 @@
 		8F45200F1A7F120900134F51 /* VIew Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				38AD81B71AF14D8F004D36AE /* WebViewController.h */,
+				38AD81B81AF14D8F004D36AE /* WebViewController.m */,
 				8FCF1B721A6F534E0060B9F6 /* ViewController.h */,
 				8FCF1B731A6F534E0060B9F6 /* ViewController.m */,
 				8F451FCE1A7ED91A00134F51 /* DetailsViewController.h */,
@@ -749,6 +754,7 @@
 				TargetAttributes = {
 					8FCF1B671A6F534D0060B9F6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 68PRR72XRK;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -862,6 +868,7 @@
 				8FCF1BFD1A6F58410060B9F6 /* CLToneCurveTool.m in Sources */,
 				8FCF1BF91A6F58410060B9F6 /* CLFilterBase.m in Sources */,
 				3870AB4A1A9A40A400FF02B2 /* QRCodeReaderView.m in Sources */,
+				38AD81B91AF14D8F004D36AE /* WebViewController.m in Sources */,
 				8FCF1BE91A6F58410060B9F6 /* CLImageEditor.m in Sources */,
 				8FCF1C011A6F58410060B9F6 /* CLImageToolInfo+Private.m in Sources */,
 				8FCF1C061A6F58410060B9F6 /* UIDevice+SystemVersion.m in Sources */,
@@ -987,7 +994,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
@@ -1001,7 +1009,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c8db4d4-f1fe-48db-80c3-21287b2dc454";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1009,8 +1017,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
@@ -1024,7 +1032,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c8db4d4-f1fe-48db-80c3-21287b2dc454";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
