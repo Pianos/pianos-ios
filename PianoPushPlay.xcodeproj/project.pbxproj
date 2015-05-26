@@ -745,10 +745,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "James Stiehl";
+				ORGANIZATIONNAME = "Pragmatic Design Studio";
 				TargetAttributes = {
 					8FCF1B671A6F534D0060B9F6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = EAH3EZQS3V;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -987,7 +988,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
@@ -1001,7 +1003,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c8db4d4-f1fe-48db-80c3-21287b2dc454";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1009,8 +1011,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Misty DeGiulio (4793PHZ83Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libUAirship-latest(4)/Airship",
@@ -1024,7 +1026,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c8db4d4-f1fe-48db-80c3-21287b2dc454";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
