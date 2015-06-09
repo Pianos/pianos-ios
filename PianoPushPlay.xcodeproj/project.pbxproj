@@ -750,11 +750,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "James Stiehl";
+				ORGANIZATIONNAME = "Pragmatic Design Studio";
 				TargetAttributes = {
 					8FCF1B671A6F534D0060B9F6 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 68PRR72XRK;
+						DevelopmentTeam = EAH3EZQS3V;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;

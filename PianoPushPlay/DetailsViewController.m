@@ -35,6 +35,7 @@
         //go get the correct piano information
         AppDelegate *myAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         
+        // TODO - should this be api.pianopushplay.com ?
         [myAppDelegate.request httpRequest:@"https://ppp-backend.herokuapp.com/pianos" requestMethod:nil reqData:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pianoDataReceived:) name:@"httpDataReceived"  object:nil];
         double delayInSeconds = 2.0;
