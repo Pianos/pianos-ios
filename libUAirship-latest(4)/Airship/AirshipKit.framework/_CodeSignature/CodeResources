@@ -10,271 +10,303 @@
 		</data>
 		<key>Headers/AirshipLib.h</key>
 		<data>
-		1+e+l7u1dU7G8930pIXEqpS/IUo=
+		jiDoxcvilcG9YJpGX/7Jc+Fg8a4=
 		</data>
 		<key>Headers/NSJSONSerialization+UAAdditions.h</key>
 		<data>
-		6Zp2OD3uA9nDXk9tIN6i92UnE9s=
+		9y1I+r9dHeeZadIHFiUA/l925Eg=
 		</data>
 		<key>Headers/NSString+UAURLEncoding.h</key>
 		<data>
-		O36GPZRl06dOshzyLiPTjM6ZIJE=
+		hj7UcEu942fITG30N21HI4rRI5Q=
 		</data>
 		<key>Headers/UAAction+Operators.h</key>
 		<data>
-		UBS4xD2daltfwZPtibbk+qbOmmM=
+		Fa+/FB6Xsl8jO9Z8tIT4bEp8EKU=
 		</data>
 		<key>Headers/UAAction.h</key>
 		<data>
-		WtWMX4XLrVxgeRIr9mth68Zc7+Y=
+		ilflQdq/k2HYOJqC32CxxZstI24=
 		</data>
 		<key>Headers/UAActionArguments.h</key>
 		<data>
-		Utx682aO+5Zb8yu/WvAJhVY7T60=
+		FIBNzh3M/sgXomd8tPgZ5uJpxms=
 		</data>
 		<key>Headers/UAActionJSDelegate.h</key>
 		<data>
-		WmyOa2mknpePgy650dJiEWhPhFs=
+		aW1lC9omisZ8k2sUXBn2Jtl4aEI=
 		</data>
 		<key>Headers/UAActionRegistry.h</key>
 		<data>
-		E7qwV2rY3ZjCGOWhtUy1Kojk9lE=
+		D8+8ksrlH2hyrh5XovQTC1NDUxQ=
 		</data>
 		<key>Headers/UAActionRegistryEntry.h</key>
 		<data>
-		MFavD8+kwKmCXDlZLJLTOjxnQD4=
+		CB/6WCLUTn8r9jsfrtRRnhtoDgs=
 		</data>
 		<key>Headers/UAActionResult.h</key>
 		<data>
-		9OzO3ThHIENyCT316FF96wrHxO0=
+		iu/uzafWLPTOQpjlFHc+oD80rs4=
 		</data>
 		<key>Headers/UAActionRunner.h</key>
 		<data>
-		hxrCv1vb+Z7OQcIr8FLiVGeGxWw=
+		oNUX7VLGlaP9lAzxP9/U6Kbh/0s=
 		</data>
 		<key>Headers/UAActivityViewController.h</key>
 		<data>
-		n9HCjpfF6TJ5v0cCXq5YzFBfcq8=
+		TWAJ8b/Rs8W/o1RPe6PobPo4x3I=
 		</data>
 		<key>Headers/UAAddCustomEventAction.h</key>
 		<data>
-		plKM7H7i0pleZn7u3H9fF+ulfLo=
+		Sp4hEwBG6IJG1Rt7fWfS1dO6Grg=
 		</data>
 		<key>Headers/UAAddTagsAction.h</key>
 		<data>
-		A5bZN4K2sdj4kAUBfa+W/uQuzn8=
+		EbGnbtub/h0xHhOYOX0LVPN0vUM=
 		</data>
 		<key>Headers/UAAggregateActionResult.h</key>
 		<data>
-		iMGPWToEHN9LKEv6A6ohlLzdkZY=
+		oROz2mh+JPiyNQJchdD+fNAbuJE=
 		</data>
 		<key>Headers/UAAnalytics.h</key>
 		<data>
-		8eFnRj8+7auJ3tgxCmGcTBQQev4=
+		AjkbWaW1TPUL1lV8LBVOYfy38FA=
 		</data>
 		<key>Headers/UAAnalyticsDBManager.h</key>
 		<data>
-		frrjuZRQi5Q8A7QHqgIRoemuAMk=
+		LQAP0fzq35ogtY8oiyBvRIb9x9U=
 		</data>
 		<key>Headers/UAAppDelegate.h</key>
 		<data>
-		ekMyaElXSc1ZicGP3HhmYk8ZVI0=
+		sCrj123orOZXP1Xrchaq198x4iM=
 		</data>
 		<key>Headers/UAAppDelegateProxy.h</key>
 		<data>
-		dQ16HvrntgGpsQkwVGUdM9Ogud4=
+		VQAohC1Ni+HD+WaQSDY2pkw0iQk=
 		</data>
 		<key>Headers/UAApplicationMetrics.h</key>
 		<data>
-		HXtKm14PKObYv+vIR0LfpRtz7Z8=
+		N+1Ge5LiyjKvlN+rCkImF1nVn6Q=
 		</data>
 		<key>Headers/UABaseLocationProvider.h</key>
 		<data>
-		S7eN/nn4444ku3MBfy7cQs2nL28=
+		kECvTaD6FoNsXFOFKL+cT6T3NvY=
 		</data>
 		<key>Headers/UABespokeCloseView.h</key>
 		<data>
-		HjzmVCKM3xaYzZ88kzQPVzZnLlA=
+		crSvOjjpcxh7NXdHFKJrkePHtNM=
 		</data>
 		<key>Headers/UABeveledLoadingIndicator.h</key>
 		<data>
-		gT9FsXSKZ1ECPksVTz1wGxEgtBI=
+		fnGY7Hq+NIxqK2bN/epyuKJ5BjQ=
 		</data>
 		<key>Headers/UAChannelAPIClient.h</key>
 		<data>
-		ACZN3MXkdYdPAekRIvEAC6Y7B8g=
+		IlxRpl82YeTl4pe0rEdr7INbXXo=
 		</data>
 		<key>Headers/UAChannelRegistrar.h</key>
 		<data>
-		2AK38fnt+b5b5kfYUJcSkl9cVRs=
+		3XgOvNiIX4a2oWwjPlPZRE4BJ/w=
 		</data>
 		<key>Headers/UAChannelRegistrationPayload.h</key>
 		<data>
-		lSIl1wIT3+OQNgkZNAjIDy2Bv8E=
+		dOd5WI3DvfmM/m2x2AyJfEIePG4=
 		</data>
 		<key>Headers/UACloseWindowAction.h</key>
 		<data>
-		11uiXmNp9w4P461kr6FC5vv9BLE=
+		bZKnraonLY4579QtrP9YpfNdgxc=
 		</data>
 		<key>Headers/UAConfig.h</key>
 		<data>
-		ivSt6tm8IlQMvZOpN7sSXVeumJI=
+		urbaT5aGlSSgtw9Bqh+ma2XZXRw=
 		</data>
 		<key>Headers/UACustomEvent.h</key>
 		<data>
-		RUNrTtAh0v7s4eGr4rzmRl5M1lo=
+		xacxKxKBbjHiMAymbw7Q7WTyo14=
 		</data>
 		<key>Headers/UADelayOperation.h</key>
 		<data>
-		VQjaSwGTrH3/9sNxQpVM14sRLCc=
+		zbjWBRDXEA3XsJp8GR1JVPmm8ZQ=
 		</data>
 		<key>Headers/UADisposable.h</key>
 		<data>
-		ZwKQ65lHM+WaoXy0Mi0nKYEW3tg=
+		ddTvkwZ4DfcIdObOcdsqfA7EYb0=
 		</data>
 		<key>Headers/UAEvent.h</key>
 		<data>
-		Fc4Ea9eR7N0YVFE7V3rKDNBXWFM=
+		53rIUj46n7pzftObGJuum/lWBiE=
 		</data>
 		<key>Headers/UAEventAppBackground.h</key>
 		<data>
-		6K4GodIQrHeGmMipHFX4529EsFk=
+		lZOBGT9srMSU6HSHYSDEY10m/x4=
 		</data>
 		<key>Headers/UAEventAppExit.h</key>
 		<data>
-		uKU8PqSImbGdD1YzZO/C44jFIjo=
+		9RgD0L8iKUh/TY4p2m4TWqzICyE=
 		</data>
 		<key>Headers/UAEventAppForeground.h</key>
 		<data>
-		v7wUEm9G3PPA13KFoni/nmkktWY=
+		ztVA4Tx13/WwQ3BlElp1YKGxjCQ=
 		</data>
 		<key>Headers/UAEventAppInit.h</key>
 		<data>
-		NVLuAmJYvZe+MJRTHzWoqSRD9CE=
+		CIc0gSgVOvmDZMIN+2nEwsg3kgk=
 		</data>
 		<key>Headers/UAEventDeviceRegistration.h</key>
 		<data>
-		hPT9Ad8K8SU4YJH0ac2kn10Jtiw=
+		uz1mQt/fjLHXDfJUVtbV2duoSqo=
 		</data>
 		<key>Headers/UAEventPushReceived.h</key>
 		<data>
-		bQaisHsKgR7N7bAe23k5bBzrzo4=
+		+nYqngBIiKqvh0lz0RpINF+YoP0=
 		</data>
 		<key>Headers/UAGlobal.h</key>
 		<data>
-		BBqBAgO2xbTs7P03yrKn3XUq8xA=
+		wzt5APgEnZItIw5xC55RhkrWaTY=
 		</data>
 		<key>Headers/UAHTTPConnection.h</key>
 		<data>
-		IRQxgidl2PMcStXLPhce3PJAPPQ=
+		17xVZvjpdt9gXRfim86W/g6K534=
 		</data>
 		<key>Headers/UAHTTPConnectionOperation.h</key>
 		<data>
-		PsGHX9gh6T7WaHAqRyQ4DmQekT8=
+		w998z8kOSiZhMe9ZmUCGTbrZaQY=
 		</data>
 		<key>Headers/UAHTTPRequest.h</key>
 		<data>
-		fL7trjTYP/BtHGG5fGe5jUJc8iE=
+		Qa+AAnRajUxoItehoCzIwGPqS4E=
 		</data>
 		<key>Headers/UAHTTPRequestEngine.h</key>
 		<data>
-		eCAagw/G4b7qROShyw0P5AoSje0=
+		GtT9Os2Xb3pKN1pLKJ2QqNaOWPg=
+		</data>
+		<key>Headers/UAInAppMessage.h</key>
+		<data>
+		f6/GaXikmj+gHNA0JV4zjZFU6V0=
+		</data>
+		<key>Headers/UAInAppMessageController.h</key>
+		<data>
+		F8aBjDTKMOXuIxka6tOnmnVRUjU=
+		</data>
+		<key>Headers/UAInAppMessageControllerDelegate.h</key>
+		<data>
+		LyA4aZE3h9gJMhkpdzcOv+OgF4M=
+		</data>
+		<key>Headers/UAInAppMessageView.h</key>
+		<data>
+		EGzqsP1+ogh1x2nGS4ENi4tO8P0=
+		</data>
+		<key>Headers/UAInAppMessaging.h</key>
+		<data>
+		KWlClU+vxyApUuaamjkIZ22+j30=
 		</data>
 		<key>Headers/UAInbox.h</key>
 		<data>
-		sLZgUj1XngLBuJs6YNTuvKDG6fg=
+		jrVhNIXrL6XJjus609ZofLjLcVM=
 		</data>
 		<key>Headers/UAInboxAPIClient.h</key>
 		<data>
-		e/VflH2qVvl9ouCrjl76HGE7oP0=
+		e8utU1x5fBbX2jnEvihbF4FVt7c=
 		</data>
 		<key>Headers/UAInboxDBManager.h</key>
 		<data>
-		NYhl8JsGz1NgdsiflwYo//npZBs=
-		</data>
-		<key>Headers/UAInboxDefaultJSDelegate.h</key>
-		<data>
-		CLJaQPKm3OHODsZtpt7GLzCJpu4=
+		RAPBgouiRgCT/eqP/m2aotHvNuE=
 		</data>
 		<key>Headers/UAInboxMessage.h</key>
 		<data>
-		n/qgD4YnWEAKpYb9iknjA+4gojU=
+		hAcYM3fFPJQvGti2TJ9W0Fywxc0=
 		</data>
 		<key>Headers/UAInboxMessageData.h</key>
 		<data>
-		+eqQp19QjfUDohuN/uXpqwFslEA=
+		k2b0W+eoAloA8DUoyz8JIBCIJjM=
 		</data>
 		<key>Headers/UAInboxMessageList.h</key>
 		<data>
-		B6o23r6lB23vtXrVqDHqt9ietC4=
-		</data>
-		<key>Headers/UAInboxMessageListDelegate.h</key>
-		<data>
-		1bGiBGKASgPFOC1iFtGf6Cm/Jp0=
+		wnydokcrDg+Du9puM7qfYs97E3M=
 		</data>
 		<key>Headers/UAInboxPushHandler.h</key>
 		<data>
-		7m299cne3bDOjAOOjFQzX8kTDb0=
+		36Xty3ZylFEMDasS4Pkquj/PMpo=
 		</data>
 		<key>Headers/UAInboxUtils.h</key>
 		<data>
-		GzLmRUqzoN0Bsid52M2uFxgg5I4=
+		Zgk45M8qnSCsOv3GtwpUq6ZBr1A=
+		</data>
+		<key>Headers/UAIncomingInAppMessageAction.h</key>
+		<data>
+		zgfiDdnWrulvLjB41DKupXLH1yg=
 		</data>
 		<key>Headers/UAIncomingPushAction.h</key>
 		<data>
-		aJ/9QJ0OIepYGS1c3mnLw975GLk=
+		zL0fhyIAKLVhZERNhYBtWaD3Qqk=
 		</data>
 		<key>Headers/UAIncomingRichPushAction.h</key>
 		<data>
-		kUJKMrfFzyEUt7UECrqcjR5CdPQ=
+		9jIYi2KRH+GcSO/GDF9rkid7APo=
 		</data>
 		<key>Headers/UAInteractiveNotificationEvent.h</key>
 		<data>
-		pSgMrfdlYG1Eb+XuMFn22VbM/vo=
+		hnrRnb8LUyEOgH6wuhNhveprgMM=
 		</data>
 		<key>Headers/UAJSONValueTransformer.h</key>
 		<data>
-		3TNR8UnbWzMCM1M/lKYRlFQRwQ4=
+		x1S+3l8Ij8dRTJod5PcdUgUgkGI=
 		</data>
 		<key>Headers/UAJavaScriptDelegate.h</key>
 		<data>
-		LReuFlmibKmC8Aj82a88pF2ONoc=
+		Gp6d6tjyUmeybZsVjy0VzCdFhfo=
 		</data>
 		<key>Headers/UAKeychainUtils.h</key>
 		<data>
-		hedh3dW8FYuF+4Tl/lkJ5oNvBFw=
+		sGNDWngVpvqjHFTF3B+udb3moyo=
 		</data>
 		<key>Headers/UALandingPageAction.h</key>
 		<data>
-		yKEHkdeun+deUzuj5YgB18K80sQ=
+		dZ/zybzWjfvaYLq1QNvkLdpL0n8=
 		</data>
 		<key>Headers/UALandingPageOverlayController.h</key>
 		<data>
-		bugcep9Rq/2yi9flVFU1t2ZG1mQ=
+		Zr92SrHA2SfEK8oq/fHJiBcfobA=
 		</data>
 		<key>Headers/UALocationCommonValues.h</key>
 		<data>
-		y2XQWel9/ZvhxVhMbB026ipa3cc=
+		iT3kybPqGLXZuEV2CRgu2qYXJjA=
 		</data>
 		<key>Headers/UALocationEvent.h</key>
 		<data>
-		Z+CVk3Y8dNovNDbiWkpprYlyOQw=
+		C+ngWKMZgk9ErcuH357n4zLGXvQ=
 		</data>
 		<key>Headers/UALocationProviderDelegate.h</key>
 		<data>
-		nMpKLZDKeaa1EfL6TvmlHEOkF+c=
+		LoN1+6MavN7iuvTrxK7UvIcEdfM=
 		</data>
 		<key>Headers/UALocationProviderProtocol.h</key>
 		<data>
-		CzKxscbYZO5rRb/fUcyByj+6hbc=
+		NVI18R6SXg8YcODt3wVtyRHxRiY=
 		</data>
 		<key>Headers/UALocationService.h</key>
 		<data>
-		KyqHa0UmFE6ioez2HY3FCwuXmb4=
+		dSi6MF4Eq2EMUP2GLYU2iP1KYSM=
 		</data>
 		<key>Headers/UAModifyTagsAction.h</key>
 		<data>
-		g0LVR9z7A1sAqkw1UBQs3zQpLDQ=
+		VLdasclilZIr7mLwSSpXOf1gISM=
+		</data>
+		<key>Headers/UAMutableUserNotificationAction.h</key>
+		<data>
+		joPmdQNATjSbdGJsemm9FD4atRk=
+		</data>
+		<key>Headers/UAMutableUserNotificationCategory.h</key>
+		<data>
+		/++iAO9drHPvn4VDK3DU2XWBteY=
+		</data>
+		<key>Headers/UANamedUser.h</key>
+		<data>
+		od5Z1EAbSClUXWQcEuwrK9+sam4=
+		</data>
+		<key>Headers/UANamedUserAPIClient.h</key>
+		<data>
+		vTnUyxIfasIwbbf7acnObVuJ0Q4=
 		</data>
 		<key>Headers/UANativeBridge.h</key>
 		<data>
@@ -282,83 +314,83 @@
 		</data>
 		<key>Headers/UAOpenExternalURLAction.h</key>
 		<data>
-		nbTrAkgk3vSzWCq5N+NKC8wZrAs=
+		Lp/G4Q2lgRR4ZPhvP+RPi6Z6wu8=
 		</data>
 		<key>Headers/UAPreferenceDataStore.h</key>
 		<data>
-		j4vACGl8WWY7mvC8clIfO5tFKE4=
+		7FO9RdRnSdO4/R5j4Gir7oHyM/o=
 		</data>
 		<key>Headers/UAPush.h</key>
 		<data>
-		8/AGASQNqTYO5wCrkli6TJBnUJE=
+		F8/vFaZJC5pkFZPfBQfpabkxTVI=
 		</data>
 		<key>Headers/UARemoveTagsAction.h</key>
 		<data>
-		Fd2bm71S9vcn6PdE9kx5w7vN4Zk=
+		TzPDzciM/FOYz3q+Amkwq3o/UsE=
 		</data>
 		<key>Headers/UARichContentWindow.h</key>
 		<data>
-		WRlagmUm6ptkTuFx9tMNLMOf6uU=
+		KvjGRB34cbddu69MpzsNXTe8Mc4=
 		</data>
 		<key>Headers/UAShareAction.h</key>
 		<data>
-		EDX44HZq/SGLSQX8hwoM3gK009k=
+		5VgC2vYfXJydgxERRqJJHlTIe6s=
 		</data>
 		<key>Headers/UASignificantChangeProvider.h</key>
 		<data>
-		rHxAXY0O598dRUDKSd5m9aFE6z8=
+		KfA60vRI4RREtZIdsN64OEHbKnw=
 		</data>
 		<key>Headers/UAStandardLocationProvider.h</key>
 		<data>
-		HBaA8tgdDOsqb+ni6UOtvfI2Shs=
-		</data>
-		<key>Headers/UASyncAction.h</key>
-		<data>
-		rrpbUkFxU4ehuswEK0AUt8j1bm8=
+		aCNiEYn8F46LbNO9IPWHKV+Cxa4=
 		</data>
 		<key>Headers/UATagUtils.h</key>
 		<data>
-		GcHgsyaicaZY2VscFKINe+JOSko=
+		Vvrgua6r2filCLLQzDO8FMTqIlQ=
 		</data>
 		<key>Headers/UAURLProtocol.h</key>
 		<data>
-		O/avZQX86qQv9d1gyUVnWkl0IwE=
+		7uElF/vp8h3dULx0vYBqup+03Do=
 		</data>
 		<key>Headers/UAUser.h</key>
 		<data>
-		wcusrwAZu21n3sFnRy+CJmV7vU0=
+		rB1k82Zu3diKlEPICASSLbNaoBw=
 		</data>
 		<key>Headers/UAUserAPIClient.h</key>
 		<data>
-		J9UNJ/1enP+RQXkLlgyDsl2u0eY=
+		8ZCzy/NBv/I356DtTjdw5RIOlzE=
 		</data>
 		<key>Headers/UAUserData.h</key>
 		<data>
-		pabNVGD5IsrtkvT+MN4mjeTjCJU=
+		kSUN/uaAgCfOYZzyH/XLQfFDnWY=
+		</data>
+		<key>Headers/UAUserNotificationAction.h</key>
+		<data>
+		Egf/73Rcoo1nA6Kl8N88VUzwBB0=
 		</data>
 		<key>Headers/UAUserNotificationCategories.h</key>
 		<data>
-		9mH579fJu5GLuWGFBxc9GLqdnv8=
+		qtps+aXrvgiFArht3G1/Jjff+Go=
+		</data>
+		<key>Headers/UAUserNotificationCategory.h</key>
+		<data>
+		dIh2iQR2uk54/XP9B49S0uAMDqs=
 		</data>
 		<key>Headers/UAUtils.h</key>
 		<data>
-		o6KmHOUkzKD+R2S/LPGNVdT6BA4=
+		WF0x0sE6hcSlEJxMpVVWRDmiwzs=
 		</data>
 		<key>Headers/UAWebViewCallData.h</key>
 		<data>
-		SIgDBNfGPDK1UGKlfULpf/qkvZg=
+		H05uFF/MNBUR9OBBh1AWm922WHk=
 		</data>
 		<key>Headers/UAWebViewDelegate.h</key>
 		<data>
-		AFSC4cOLEzA5jDHyo8WKDVlGwAs=
-		</data>
-		<key>Headers/UAWebViewTools.h</key>
-		<data>
-		BQgxy2nzg8+QDu6BfoNaeyndEtc=
+		H1muZEbd4GGjlzrMQOJbVFEJ+6I=
 		</data>
 		<key>Headers/UAWhitelist.h</key>
 		<data>
-		017UOyKhpuYuR2SvTcHkI4rFXUY=
+		XzdEj+MA6DgFl+3S3joFlggVH5c=
 		</data>
 		<key>Headers/UA_Base64.h</key>
 		<data>
@@ -370,11 +402,11 @@
 		</data>
 		<key>Headers/UAirship.h</key>
 		<data>
-		LosUQ/LJgyNAQfZdEjsrlwd7lF8=
+		Rld0LBM+TactS02cwMGXLM4Eu5c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j73BgJre8ZlG3BBFYbmQXdI58DM=
+		Axuhj1fpNR/hUcu6M23RvPdfZLI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -382,107 +414,107 @@
 		</data>
 		<key>PrivateHeaders/UAAction+Internal.h</key>
 		<data>
-		t0H6k7gOohtlhCNqrn5DxCgkT28=
+		i1Ozgs8YrXK8dmHWV9iflE6bTzo=
 		</data>
 		<key>PrivateHeaders/UAActionArguments+Internal.h</key>
 		<data>
-		t4SJp97deFa97mb/XKBdNmjwFCw=
+		Kp+7veAKbM9NbOMpta53RcQoq34=
 		</data>
 		<key>PrivateHeaders/UAActionRegistry+Internal.h</key>
 		<data>
-		URTTKgUiEAQCBG8VJLFwVBtHD1o=
+		Z3un5l1xS5hzLIyUoDhEG2R10TA=
 		</data>
 		<key>PrivateHeaders/UAActionRegistryEntry+Internal.h</key>
 		<data>
-		d3glB0tFmY0E/GifuzlUf+f8c9Y=
+		b2rIMRO/bfL1SmSXi36CyTEzff4=
 		</data>
 		<key>PrivateHeaders/UAActionResult+Internal.h</key>
 		<data>
-		9gsYJJIbuGz3w6HYIf3C0mDAMU4=
+		oSggmETDItYAbvrU5E1yytD8M1E=
 		</data>
 		<key>PrivateHeaders/UAAnalytics+Internal.h</key>
 		<data>
-		hMVDgoA7bNwIUqyPA3J1T2vYaqg=
+		jfdQ4hgllOaM28GTFFweYsR+PIc=
 		</data>
 		<key>PrivateHeaders/UAApplicationMetrics+Internal.h</key>
 		<data>
-		Nq/8rJ3ncwuH/ptSj24ejIFMBO4=
+		Bjny8D+8Qsj64wzN1hRkNuylNCo=
 		</data>
 		<key>PrivateHeaders/UAChannelRegistrar+Internal.h</key>
 		<data>
-		5wFEciIiN4UK1be2B/kUGeMuDI4=
+		AiP6nBO0sZRYE+9MFlPsvzTW+zE=
 		</data>
 		<key>PrivateHeaders/UAChannelRegistrationPayload+Internal.h</key>
 		<data>
-		rELYiEefjpAcxGx1FO1LxVal3hI=
+		L+O1Xrq7enr+bNA47xtsPzxR7qo=
 		</data>
 		<key>PrivateHeaders/UAConfig+Internal.h</key>
 		<data>
-		4D4TVvVaF+FbKW6rzG4WfjjhARc=
+		hdmzKegaSzIbn/JP2toNOwkbAoc=
 		</data>
 		<key>PrivateHeaders/UACustomEvent+Internal.h</key>
 		<data>
-		esPB5UFGD5TR3PGhs6jmzlZKVCk=
+		MaHap0mAzopbzWnUfmvjkyM84Dw=
 		</data>
 		<key>PrivateHeaders/UAEvent+Internal.h</key>
 		<data>
-		yi4b4G/CQsFjtHFLG16M6a1F4rQ=
+		YVYUNcq5KsMqBPX48dCGrg79HXI=
 		</data>
 		<key>PrivateHeaders/UAHTTPConnection+Internal.h</key>
 		<data>
-		p8rb0+uDEiQHQYX4iCRfbdXNmc0=
+		xiRkDdJHm41BU9PKwm6ayNzrfvo=
 		</data>
 		<key>PrivateHeaders/UAHTTPRequest+Internal.h</key>
 		<data>
-		meo42Q/B4BZISyrocZGGdFacJMg=
+		5uu8iHcKO7llG/vNZj1JQvfDIKU=
 		</data>
 		<key>PrivateHeaders/UAInbox+Internal.h</key>
 		<data>
-		EFK/bpXl8hcTDhNT9SUSI+aAEAQ=
+		6M6R0p1xk1FGqNxyBbksqOGmj1U=
 		</data>
 		<key>PrivateHeaders/UAInboxDBManager+Internal.h</key>
 		<data>
-		xOy73GM7B3aZTJS9Y3KISd3hnfA=
+		CoYI44HxX6fwuy/DG81kOeQrRLo=
 		</data>
 		<key>PrivateHeaders/UAInboxMessage+Internal.h</key>
 		<data>
-		yRnKAlRHQCulekFViYloTVI9xGA=
+		TqUXo/beX68jSFqdQ/9KsXZ0Xpc=
 		</data>
 		<key>PrivateHeaders/UAInboxMessageList+Internal.h</key>
 		<data>
-		wMJ164nxwZme2U3Eti0uctQ7gN4=
+		6kSG6SL4tPqe9VXjCiAePLPoWG4=
 		</data>
 		<key>PrivateHeaders/UAInboxPushHandler+Internal.h</key>
 		<data>
-		bCIYD4MNbt2FYOv9w9DcLiQxqKU=
+		PvEiX1HNEoRJHFuO8DC9KSINR/0=
 		</data>
 		<key>PrivateHeaders/UALocationService+Internal.h</key>
 		<data>
-		ulJyzYgK9IRpYdIuAFrDjk7PhlA=
+		PsDVbBmA8wyMkEZLh6SSgwRXo6k=
 		</data>
 		<key>PrivateHeaders/UAPush+Internal.h</key>
 		<data>
-		kdOL5k6YwprarySSf54FdCy5LQ0=
+		f2RaGjRDfm6VU/pJhHK01D8mnEM=
 		</data>
 		<key>PrivateHeaders/UASQLite.h</key>
 		<data>
-		F6v2EExVLwVEzs/ZkdYJQxYGClw=
+		7ngupVSdTQDfZGFKqkOOtDhbByQ=
 		</data>
 		<key>PrivateHeaders/UAUser+Internal.h</key>
 		<data>
-		Yu35dLoDtTjZnT77uq1hgCwv5nI=
+		fVZtIVFPrYOH9fJsegi1oetEuyQ=
 		</data>
 		<key>PrivateHeaders/UAUserNotificationCategories+Internal.h</key>
 		<data>
-		FA1GGkxZ6lK4VABWT9vwxmEM6qU=
+		vmodO310Tta5ExKegJRvIyr56/k=
 		</data>
 		<key>PrivateHeaders/UAirship+Internal.h</key>
 		<data>
-		7afVJw02lJq+QFAKzm1HrvQjKo4=
+		we0Js3xZWX3Xs67cFMiQRDPv76g=
 		</data>
 		<key>PrivateHeaders/UIWebView+UAAdditions.h</key>
 		<data>
-		KSQlKyQg13RmsaiHW3L4c4pTroc=
+		q5ItooNu3kEt4pNtmEJnT6MSLrk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -493,271 +525,303 @@
 		</data>
 		<key>Headers/AirshipLib.h</key>
 		<data>
-		1+e+l7u1dU7G8930pIXEqpS/IUo=
+		jiDoxcvilcG9YJpGX/7Jc+Fg8a4=
 		</data>
 		<key>Headers/NSJSONSerialization+UAAdditions.h</key>
 		<data>
-		6Zp2OD3uA9nDXk9tIN6i92UnE9s=
+		9y1I+r9dHeeZadIHFiUA/l925Eg=
 		</data>
 		<key>Headers/NSString+UAURLEncoding.h</key>
 		<data>
-		O36GPZRl06dOshzyLiPTjM6ZIJE=
+		hj7UcEu942fITG30N21HI4rRI5Q=
 		</data>
 		<key>Headers/UAAction+Operators.h</key>
 		<data>
-		UBS4xD2daltfwZPtibbk+qbOmmM=
+		Fa+/FB6Xsl8jO9Z8tIT4bEp8EKU=
 		</data>
 		<key>Headers/UAAction.h</key>
 		<data>
-		WtWMX4XLrVxgeRIr9mth68Zc7+Y=
+		ilflQdq/k2HYOJqC32CxxZstI24=
 		</data>
 		<key>Headers/UAActionArguments.h</key>
 		<data>
-		Utx682aO+5Zb8yu/WvAJhVY7T60=
+		FIBNzh3M/sgXomd8tPgZ5uJpxms=
 		</data>
 		<key>Headers/UAActionJSDelegate.h</key>
 		<data>
-		WmyOa2mknpePgy650dJiEWhPhFs=
+		aW1lC9omisZ8k2sUXBn2Jtl4aEI=
 		</data>
 		<key>Headers/UAActionRegistry.h</key>
 		<data>
-		E7qwV2rY3ZjCGOWhtUy1Kojk9lE=
+		D8+8ksrlH2hyrh5XovQTC1NDUxQ=
 		</data>
 		<key>Headers/UAActionRegistryEntry.h</key>
 		<data>
-		MFavD8+kwKmCXDlZLJLTOjxnQD4=
+		CB/6WCLUTn8r9jsfrtRRnhtoDgs=
 		</data>
 		<key>Headers/UAActionResult.h</key>
 		<data>
-		9OzO3ThHIENyCT316FF96wrHxO0=
+		iu/uzafWLPTOQpjlFHc+oD80rs4=
 		</data>
 		<key>Headers/UAActionRunner.h</key>
 		<data>
-		hxrCv1vb+Z7OQcIr8FLiVGeGxWw=
+		oNUX7VLGlaP9lAzxP9/U6Kbh/0s=
 		</data>
 		<key>Headers/UAActivityViewController.h</key>
 		<data>
-		n9HCjpfF6TJ5v0cCXq5YzFBfcq8=
+		TWAJ8b/Rs8W/o1RPe6PobPo4x3I=
 		</data>
 		<key>Headers/UAAddCustomEventAction.h</key>
 		<data>
-		plKM7H7i0pleZn7u3H9fF+ulfLo=
+		Sp4hEwBG6IJG1Rt7fWfS1dO6Grg=
 		</data>
 		<key>Headers/UAAddTagsAction.h</key>
 		<data>
-		A5bZN4K2sdj4kAUBfa+W/uQuzn8=
+		EbGnbtub/h0xHhOYOX0LVPN0vUM=
 		</data>
 		<key>Headers/UAAggregateActionResult.h</key>
 		<data>
-		iMGPWToEHN9LKEv6A6ohlLzdkZY=
+		oROz2mh+JPiyNQJchdD+fNAbuJE=
 		</data>
 		<key>Headers/UAAnalytics.h</key>
 		<data>
-		8eFnRj8+7auJ3tgxCmGcTBQQev4=
+		AjkbWaW1TPUL1lV8LBVOYfy38FA=
 		</data>
 		<key>Headers/UAAnalyticsDBManager.h</key>
 		<data>
-		frrjuZRQi5Q8A7QHqgIRoemuAMk=
+		LQAP0fzq35ogtY8oiyBvRIb9x9U=
 		</data>
 		<key>Headers/UAAppDelegate.h</key>
 		<data>
-		ekMyaElXSc1ZicGP3HhmYk8ZVI0=
+		sCrj123orOZXP1Xrchaq198x4iM=
 		</data>
 		<key>Headers/UAAppDelegateProxy.h</key>
 		<data>
-		dQ16HvrntgGpsQkwVGUdM9Ogud4=
+		VQAohC1Ni+HD+WaQSDY2pkw0iQk=
 		</data>
 		<key>Headers/UAApplicationMetrics.h</key>
 		<data>
-		HXtKm14PKObYv+vIR0LfpRtz7Z8=
+		N+1Ge5LiyjKvlN+rCkImF1nVn6Q=
 		</data>
 		<key>Headers/UABaseLocationProvider.h</key>
 		<data>
-		S7eN/nn4444ku3MBfy7cQs2nL28=
+		kECvTaD6FoNsXFOFKL+cT6T3NvY=
 		</data>
 		<key>Headers/UABespokeCloseView.h</key>
 		<data>
-		HjzmVCKM3xaYzZ88kzQPVzZnLlA=
+		crSvOjjpcxh7NXdHFKJrkePHtNM=
 		</data>
 		<key>Headers/UABeveledLoadingIndicator.h</key>
 		<data>
-		gT9FsXSKZ1ECPksVTz1wGxEgtBI=
+		fnGY7Hq+NIxqK2bN/epyuKJ5BjQ=
 		</data>
 		<key>Headers/UAChannelAPIClient.h</key>
 		<data>
-		ACZN3MXkdYdPAekRIvEAC6Y7B8g=
+		IlxRpl82YeTl4pe0rEdr7INbXXo=
 		</data>
 		<key>Headers/UAChannelRegistrar.h</key>
 		<data>
-		2AK38fnt+b5b5kfYUJcSkl9cVRs=
+		3XgOvNiIX4a2oWwjPlPZRE4BJ/w=
 		</data>
 		<key>Headers/UAChannelRegistrationPayload.h</key>
 		<data>
-		lSIl1wIT3+OQNgkZNAjIDy2Bv8E=
+		dOd5WI3DvfmM/m2x2AyJfEIePG4=
 		</data>
 		<key>Headers/UACloseWindowAction.h</key>
 		<data>
-		11uiXmNp9w4P461kr6FC5vv9BLE=
+		bZKnraonLY4579QtrP9YpfNdgxc=
 		</data>
 		<key>Headers/UAConfig.h</key>
 		<data>
-		ivSt6tm8IlQMvZOpN7sSXVeumJI=
+		urbaT5aGlSSgtw9Bqh+ma2XZXRw=
 		</data>
 		<key>Headers/UACustomEvent.h</key>
 		<data>
-		RUNrTtAh0v7s4eGr4rzmRl5M1lo=
+		xacxKxKBbjHiMAymbw7Q7WTyo14=
 		</data>
 		<key>Headers/UADelayOperation.h</key>
 		<data>
-		VQjaSwGTrH3/9sNxQpVM14sRLCc=
+		zbjWBRDXEA3XsJp8GR1JVPmm8ZQ=
 		</data>
 		<key>Headers/UADisposable.h</key>
 		<data>
-		ZwKQ65lHM+WaoXy0Mi0nKYEW3tg=
+		ddTvkwZ4DfcIdObOcdsqfA7EYb0=
 		</data>
 		<key>Headers/UAEvent.h</key>
 		<data>
-		Fc4Ea9eR7N0YVFE7V3rKDNBXWFM=
+		53rIUj46n7pzftObGJuum/lWBiE=
 		</data>
 		<key>Headers/UAEventAppBackground.h</key>
 		<data>
-		6K4GodIQrHeGmMipHFX4529EsFk=
+		lZOBGT9srMSU6HSHYSDEY10m/x4=
 		</data>
 		<key>Headers/UAEventAppExit.h</key>
 		<data>
-		uKU8PqSImbGdD1YzZO/C44jFIjo=
+		9RgD0L8iKUh/TY4p2m4TWqzICyE=
 		</data>
 		<key>Headers/UAEventAppForeground.h</key>
 		<data>
-		v7wUEm9G3PPA13KFoni/nmkktWY=
+		ztVA4Tx13/WwQ3BlElp1YKGxjCQ=
 		</data>
 		<key>Headers/UAEventAppInit.h</key>
 		<data>
-		NVLuAmJYvZe+MJRTHzWoqSRD9CE=
+		CIc0gSgVOvmDZMIN+2nEwsg3kgk=
 		</data>
 		<key>Headers/UAEventDeviceRegistration.h</key>
 		<data>
-		hPT9Ad8K8SU4YJH0ac2kn10Jtiw=
+		uz1mQt/fjLHXDfJUVtbV2duoSqo=
 		</data>
 		<key>Headers/UAEventPushReceived.h</key>
 		<data>
-		bQaisHsKgR7N7bAe23k5bBzrzo4=
+		+nYqngBIiKqvh0lz0RpINF+YoP0=
 		</data>
 		<key>Headers/UAGlobal.h</key>
 		<data>
-		BBqBAgO2xbTs7P03yrKn3XUq8xA=
+		wzt5APgEnZItIw5xC55RhkrWaTY=
 		</data>
 		<key>Headers/UAHTTPConnection.h</key>
 		<data>
-		IRQxgidl2PMcStXLPhce3PJAPPQ=
+		17xVZvjpdt9gXRfim86W/g6K534=
 		</data>
 		<key>Headers/UAHTTPConnectionOperation.h</key>
 		<data>
-		PsGHX9gh6T7WaHAqRyQ4DmQekT8=
+		w998z8kOSiZhMe9ZmUCGTbrZaQY=
 		</data>
 		<key>Headers/UAHTTPRequest.h</key>
 		<data>
-		fL7trjTYP/BtHGG5fGe5jUJc8iE=
+		Qa+AAnRajUxoItehoCzIwGPqS4E=
 		</data>
 		<key>Headers/UAHTTPRequestEngine.h</key>
 		<data>
-		eCAagw/G4b7qROShyw0P5AoSje0=
+		GtT9Os2Xb3pKN1pLKJ2QqNaOWPg=
+		</data>
+		<key>Headers/UAInAppMessage.h</key>
+		<data>
+		f6/GaXikmj+gHNA0JV4zjZFU6V0=
+		</data>
+		<key>Headers/UAInAppMessageController.h</key>
+		<data>
+		F8aBjDTKMOXuIxka6tOnmnVRUjU=
+		</data>
+		<key>Headers/UAInAppMessageControllerDelegate.h</key>
+		<data>
+		LyA4aZE3h9gJMhkpdzcOv+OgF4M=
+		</data>
+		<key>Headers/UAInAppMessageView.h</key>
+		<data>
+		EGzqsP1+ogh1x2nGS4ENi4tO8P0=
+		</data>
+		<key>Headers/UAInAppMessaging.h</key>
+		<data>
+		KWlClU+vxyApUuaamjkIZ22+j30=
 		</data>
 		<key>Headers/UAInbox.h</key>
 		<data>
-		sLZgUj1XngLBuJs6YNTuvKDG6fg=
+		jrVhNIXrL6XJjus609ZofLjLcVM=
 		</data>
 		<key>Headers/UAInboxAPIClient.h</key>
 		<data>
-		e/VflH2qVvl9ouCrjl76HGE7oP0=
+		e8utU1x5fBbX2jnEvihbF4FVt7c=
 		</data>
 		<key>Headers/UAInboxDBManager.h</key>
 		<data>
-		NYhl8JsGz1NgdsiflwYo//npZBs=
-		</data>
-		<key>Headers/UAInboxDefaultJSDelegate.h</key>
-		<data>
-		CLJaQPKm3OHODsZtpt7GLzCJpu4=
+		RAPBgouiRgCT/eqP/m2aotHvNuE=
 		</data>
 		<key>Headers/UAInboxMessage.h</key>
 		<data>
-		n/qgD4YnWEAKpYb9iknjA+4gojU=
+		hAcYM3fFPJQvGti2TJ9W0Fywxc0=
 		</data>
 		<key>Headers/UAInboxMessageData.h</key>
 		<data>
-		+eqQp19QjfUDohuN/uXpqwFslEA=
+		k2b0W+eoAloA8DUoyz8JIBCIJjM=
 		</data>
 		<key>Headers/UAInboxMessageList.h</key>
 		<data>
-		B6o23r6lB23vtXrVqDHqt9ietC4=
-		</data>
-		<key>Headers/UAInboxMessageListDelegate.h</key>
-		<data>
-		1bGiBGKASgPFOC1iFtGf6Cm/Jp0=
+		wnydokcrDg+Du9puM7qfYs97E3M=
 		</data>
 		<key>Headers/UAInboxPushHandler.h</key>
 		<data>
-		7m299cne3bDOjAOOjFQzX8kTDb0=
+		36Xty3ZylFEMDasS4Pkquj/PMpo=
 		</data>
 		<key>Headers/UAInboxUtils.h</key>
 		<data>
-		GzLmRUqzoN0Bsid52M2uFxgg5I4=
+		Zgk45M8qnSCsOv3GtwpUq6ZBr1A=
+		</data>
+		<key>Headers/UAIncomingInAppMessageAction.h</key>
+		<data>
+		zgfiDdnWrulvLjB41DKupXLH1yg=
 		</data>
 		<key>Headers/UAIncomingPushAction.h</key>
 		<data>
-		aJ/9QJ0OIepYGS1c3mnLw975GLk=
+		zL0fhyIAKLVhZERNhYBtWaD3Qqk=
 		</data>
 		<key>Headers/UAIncomingRichPushAction.h</key>
 		<data>
-		kUJKMrfFzyEUt7UECrqcjR5CdPQ=
+		9jIYi2KRH+GcSO/GDF9rkid7APo=
 		</data>
 		<key>Headers/UAInteractiveNotificationEvent.h</key>
 		<data>
-		pSgMrfdlYG1Eb+XuMFn22VbM/vo=
+		hnrRnb8LUyEOgH6wuhNhveprgMM=
 		</data>
 		<key>Headers/UAJSONValueTransformer.h</key>
 		<data>
-		3TNR8UnbWzMCM1M/lKYRlFQRwQ4=
+		x1S+3l8Ij8dRTJod5PcdUgUgkGI=
 		</data>
 		<key>Headers/UAJavaScriptDelegate.h</key>
 		<data>
-		LReuFlmibKmC8Aj82a88pF2ONoc=
+		Gp6d6tjyUmeybZsVjy0VzCdFhfo=
 		</data>
 		<key>Headers/UAKeychainUtils.h</key>
 		<data>
-		hedh3dW8FYuF+4Tl/lkJ5oNvBFw=
+		sGNDWngVpvqjHFTF3B+udb3moyo=
 		</data>
 		<key>Headers/UALandingPageAction.h</key>
 		<data>
-		yKEHkdeun+deUzuj5YgB18K80sQ=
+		dZ/zybzWjfvaYLq1QNvkLdpL0n8=
 		</data>
 		<key>Headers/UALandingPageOverlayController.h</key>
 		<data>
-		bugcep9Rq/2yi9flVFU1t2ZG1mQ=
+		Zr92SrHA2SfEK8oq/fHJiBcfobA=
 		</data>
 		<key>Headers/UALocationCommonValues.h</key>
 		<data>
-		y2XQWel9/ZvhxVhMbB026ipa3cc=
+		iT3kybPqGLXZuEV2CRgu2qYXJjA=
 		</data>
 		<key>Headers/UALocationEvent.h</key>
 		<data>
-		Z+CVk3Y8dNovNDbiWkpprYlyOQw=
+		C+ngWKMZgk9ErcuH357n4zLGXvQ=
 		</data>
 		<key>Headers/UALocationProviderDelegate.h</key>
 		<data>
-		nMpKLZDKeaa1EfL6TvmlHEOkF+c=
+		LoN1+6MavN7iuvTrxK7UvIcEdfM=
 		</data>
 		<key>Headers/UALocationProviderProtocol.h</key>
 		<data>
-		CzKxscbYZO5rRb/fUcyByj+6hbc=
+		NVI18R6SXg8YcODt3wVtyRHxRiY=
 		</data>
 		<key>Headers/UALocationService.h</key>
 		<data>
-		KyqHa0UmFE6ioez2HY3FCwuXmb4=
+		dSi6MF4Eq2EMUP2GLYU2iP1KYSM=
 		</data>
 		<key>Headers/UAModifyTagsAction.h</key>
 		<data>
-		g0LVR9z7A1sAqkw1UBQs3zQpLDQ=
+		VLdasclilZIr7mLwSSpXOf1gISM=
+		</data>
+		<key>Headers/UAMutableUserNotificationAction.h</key>
+		<data>
+		joPmdQNATjSbdGJsemm9FD4atRk=
+		</data>
+		<key>Headers/UAMutableUserNotificationCategory.h</key>
+		<data>
+		/++iAO9drHPvn4VDK3DU2XWBteY=
+		</data>
+		<key>Headers/UANamedUser.h</key>
+		<data>
+		od5Z1EAbSClUXWQcEuwrK9+sam4=
+		</data>
+		<key>Headers/UANamedUserAPIClient.h</key>
+		<data>
+		vTnUyxIfasIwbbf7acnObVuJ0Q4=
 		</data>
 		<key>Headers/UANativeBridge.h</key>
 		<data>
@@ -765,83 +829,83 @@
 		</data>
 		<key>Headers/UAOpenExternalURLAction.h</key>
 		<data>
-		nbTrAkgk3vSzWCq5N+NKC8wZrAs=
+		Lp/G4Q2lgRR4ZPhvP+RPi6Z6wu8=
 		</data>
 		<key>Headers/UAPreferenceDataStore.h</key>
 		<data>
-		j4vACGl8WWY7mvC8clIfO5tFKE4=
+		7FO9RdRnSdO4/R5j4Gir7oHyM/o=
 		</data>
 		<key>Headers/UAPush.h</key>
 		<data>
-		8/AGASQNqTYO5wCrkli6TJBnUJE=
+		F8/vFaZJC5pkFZPfBQfpabkxTVI=
 		</data>
 		<key>Headers/UARemoveTagsAction.h</key>
 		<data>
-		Fd2bm71S9vcn6PdE9kx5w7vN4Zk=
+		TzPDzciM/FOYz3q+Amkwq3o/UsE=
 		</data>
 		<key>Headers/UARichContentWindow.h</key>
 		<data>
-		WRlagmUm6ptkTuFx9tMNLMOf6uU=
+		KvjGRB34cbddu69MpzsNXTe8Mc4=
 		</data>
 		<key>Headers/UAShareAction.h</key>
 		<data>
-		EDX44HZq/SGLSQX8hwoM3gK009k=
+		5VgC2vYfXJydgxERRqJJHlTIe6s=
 		</data>
 		<key>Headers/UASignificantChangeProvider.h</key>
 		<data>
-		rHxAXY0O598dRUDKSd5m9aFE6z8=
+		KfA60vRI4RREtZIdsN64OEHbKnw=
 		</data>
 		<key>Headers/UAStandardLocationProvider.h</key>
 		<data>
-		HBaA8tgdDOsqb+ni6UOtvfI2Shs=
-		</data>
-		<key>Headers/UASyncAction.h</key>
-		<data>
-		rrpbUkFxU4ehuswEK0AUt8j1bm8=
+		aCNiEYn8F46LbNO9IPWHKV+Cxa4=
 		</data>
 		<key>Headers/UATagUtils.h</key>
 		<data>
-		GcHgsyaicaZY2VscFKINe+JOSko=
+		Vvrgua6r2filCLLQzDO8FMTqIlQ=
 		</data>
 		<key>Headers/UAURLProtocol.h</key>
 		<data>
-		O/avZQX86qQv9d1gyUVnWkl0IwE=
+		7uElF/vp8h3dULx0vYBqup+03Do=
 		</data>
 		<key>Headers/UAUser.h</key>
 		<data>
-		wcusrwAZu21n3sFnRy+CJmV7vU0=
+		rB1k82Zu3diKlEPICASSLbNaoBw=
 		</data>
 		<key>Headers/UAUserAPIClient.h</key>
 		<data>
-		J9UNJ/1enP+RQXkLlgyDsl2u0eY=
+		8ZCzy/NBv/I356DtTjdw5RIOlzE=
 		</data>
 		<key>Headers/UAUserData.h</key>
 		<data>
-		pabNVGD5IsrtkvT+MN4mjeTjCJU=
+		kSUN/uaAgCfOYZzyH/XLQfFDnWY=
+		</data>
+		<key>Headers/UAUserNotificationAction.h</key>
+		<data>
+		Egf/73Rcoo1nA6Kl8N88VUzwBB0=
 		</data>
 		<key>Headers/UAUserNotificationCategories.h</key>
 		<data>
-		9mH579fJu5GLuWGFBxc9GLqdnv8=
+		qtps+aXrvgiFArht3G1/Jjff+Go=
+		</data>
+		<key>Headers/UAUserNotificationCategory.h</key>
+		<data>
+		dIh2iQR2uk54/XP9B49S0uAMDqs=
 		</data>
 		<key>Headers/UAUtils.h</key>
 		<data>
-		o6KmHOUkzKD+R2S/LPGNVdT6BA4=
+		WF0x0sE6hcSlEJxMpVVWRDmiwzs=
 		</data>
 		<key>Headers/UAWebViewCallData.h</key>
 		<data>
-		SIgDBNfGPDK1UGKlfULpf/qkvZg=
+		H05uFF/MNBUR9OBBh1AWm922WHk=
 		</data>
 		<key>Headers/UAWebViewDelegate.h</key>
 		<data>
-		AFSC4cOLEzA5jDHyo8WKDVlGwAs=
-		</data>
-		<key>Headers/UAWebViewTools.h</key>
-		<data>
-		BQgxy2nzg8+QDu6BfoNaeyndEtc=
+		H1muZEbd4GGjlzrMQOJbVFEJ+6I=
 		</data>
 		<key>Headers/UAWhitelist.h</key>
 		<data>
-		017UOyKhpuYuR2SvTcHkI4rFXUY=
+		XzdEj+MA6DgFl+3S3joFlggVH5c=
 		</data>
 		<key>Headers/UA_Base64.h</key>
 		<data>
@@ -853,7 +917,7 @@
 		</data>
 		<key>Headers/UAirship.h</key>
 		<data>
-		LosUQ/LJgyNAQfZdEjsrlwd7lF8=
+		Rld0LBM+TactS02cwMGXLM4Eu5c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -861,107 +925,107 @@
 		</data>
 		<key>PrivateHeaders/UAAction+Internal.h</key>
 		<data>
-		t0H6k7gOohtlhCNqrn5DxCgkT28=
+		i1Ozgs8YrXK8dmHWV9iflE6bTzo=
 		</data>
 		<key>PrivateHeaders/UAActionArguments+Internal.h</key>
 		<data>
-		t4SJp97deFa97mb/XKBdNmjwFCw=
+		Kp+7veAKbM9NbOMpta53RcQoq34=
 		</data>
 		<key>PrivateHeaders/UAActionRegistry+Internal.h</key>
 		<data>
-		URTTKgUiEAQCBG8VJLFwVBtHD1o=
+		Z3un5l1xS5hzLIyUoDhEG2R10TA=
 		</data>
 		<key>PrivateHeaders/UAActionRegistryEntry+Internal.h</key>
 		<data>
-		d3glB0tFmY0E/GifuzlUf+f8c9Y=
+		b2rIMRO/bfL1SmSXi36CyTEzff4=
 		</data>
 		<key>PrivateHeaders/UAActionResult+Internal.h</key>
 		<data>
-		9gsYJJIbuGz3w6HYIf3C0mDAMU4=
+		oSggmETDItYAbvrU5E1yytD8M1E=
 		</data>
 		<key>PrivateHeaders/UAAnalytics+Internal.h</key>
 		<data>
-		hMVDgoA7bNwIUqyPA3J1T2vYaqg=
+		jfdQ4hgllOaM28GTFFweYsR+PIc=
 		</data>
 		<key>PrivateHeaders/UAApplicationMetrics+Internal.h</key>
 		<data>
-		Nq/8rJ3ncwuH/ptSj24ejIFMBO4=
+		Bjny8D+8Qsj64wzN1hRkNuylNCo=
 		</data>
 		<key>PrivateHeaders/UAChannelRegistrar+Internal.h</key>
 		<data>
-		5wFEciIiN4UK1be2B/kUGeMuDI4=
+		AiP6nBO0sZRYE+9MFlPsvzTW+zE=
 		</data>
 		<key>PrivateHeaders/UAChannelRegistrationPayload+Internal.h</key>
 		<data>
-		rELYiEefjpAcxGx1FO1LxVal3hI=
+		L+O1Xrq7enr+bNA47xtsPzxR7qo=
 		</data>
 		<key>PrivateHeaders/UAConfig+Internal.h</key>
 		<data>
-		4D4TVvVaF+FbKW6rzG4WfjjhARc=
+		hdmzKegaSzIbn/JP2toNOwkbAoc=
 		</data>
 		<key>PrivateHeaders/UACustomEvent+Internal.h</key>
 		<data>
-		esPB5UFGD5TR3PGhs6jmzlZKVCk=
+		MaHap0mAzopbzWnUfmvjkyM84Dw=
 		</data>
 		<key>PrivateHeaders/UAEvent+Internal.h</key>
 		<data>
-		yi4b4G/CQsFjtHFLG16M6a1F4rQ=
+		YVYUNcq5KsMqBPX48dCGrg79HXI=
 		</data>
 		<key>PrivateHeaders/UAHTTPConnection+Internal.h</key>
 		<data>
-		p8rb0+uDEiQHQYX4iCRfbdXNmc0=
+		xiRkDdJHm41BU9PKwm6ayNzrfvo=
 		</data>
 		<key>PrivateHeaders/UAHTTPRequest+Internal.h</key>
 		<data>
-		meo42Q/B4BZISyrocZGGdFacJMg=
+		5uu8iHcKO7llG/vNZj1JQvfDIKU=
 		</data>
 		<key>PrivateHeaders/UAInbox+Internal.h</key>
 		<data>
-		EFK/bpXl8hcTDhNT9SUSI+aAEAQ=
+		6M6R0p1xk1FGqNxyBbksqOGmj1U=
 		</data>
 		<key>PrivateHeaders/UAInboxDBManager+Internal.h</key>
 		<data>
-		xOy73GM7B3aZTJS9Y3KISd3hnfA=
+		CoYI44HxX6fwuy/DG81kOeQrRLo=
 		</data>
 		<key>PrivateHeaders/UAInboxMessage+Internal.h</key>
 		<data>
-		yRnKAlRHQCulekFViYloTVI9xGA=
+		TqUXo/beX68jSFqdQ/9KsXZ0Xpc=
 		</data>
 		<key>PrivateHeaders/UAInboxMessageList+Internal.h</key>
 		<data>
-		wMJ164nxwZme2U3Eti0uctQ7gN4=
+		6kSG6SL4tPqe9VXjCiAePLPoWG4=
 		</data>
 		<key>PrivateHeaders/UAInboxPushHandler+Internal.h</key>
 		<data>
-		bCIYD4MNbt2FYOv9w9DcLiQxqKU=
+		PvEiX1HNEoRJHFuO8DC9KSINR/0=
 		</data>
 		<key>PrivateHeaders/UALocationService+Internal.h</key>
 		<data>
-		ulJyzYgK9IRpYdIuAFrDjk7PhlA=
+		PsDVbBmA8wyMkEZLh6SSgwRXo6k=
 		</data>
 		<key>PrivateHeaders/UAPush+Internal.h</key>
 		<data>
-		kdOL5k6YwprarySSf54FdCy5LQ0=
+		f2RaGjRDfm6VU/pJhHK01D8mnEM=
 		</data>
 		<key>PrivateHeaders/UASQLite.h</key>
 		<data>
-		F6v2EExVLwVEzs/ZkdYJQxYGClw=
+		7ngupVSdTQDfZGFKqkOOtDhbByQ=
 		</data>
 		<key>PrivateHeaders/UAUser+Internal.h</key>
 		<data>
-		Yu35dLoDtTjZnT77uq1hgCwv5nI=
+		fVZtIVFPrYOH9fJsegi1oetEuyQ=
 		</data>
 		<key>PrivateHeaders/UAUserNotificationCategories+Internal.h</key>
 		<data>
-		FA1GGkxZ6lK4VABWT9vwxmEM6qU=
+		vmodO310Tta5ExKegJRvIyr56/k=
 		</data>
 		<key>PrivateHeaders/UAirship+Internal.h</key>
 		<data>
-		7afVJw02lJq+QFAKzm1HrvQjKo4=
+		we0Js3xZWX3Xs67cFMiQRDPv76g=
 		</data>
 		<key>PrivateHeaders/UIWebView+UAAdditions.h</key>
 		<data>
-		KSQlKyQg13RmsaiHW3L4c4pTroc=
+		q5ItooNu3kEt4pNtmEJnT6MSLrk=
 		</data>
 	</dict>
 	<key>rules</key>

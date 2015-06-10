@@ -46,12 +46,12 @@
     UA_LDEBUG(@"Config:\n%@", [config description]);
     
     // Set the icon badge to zero on startup (optional)
-    [[UAPush shared] resetBadge];
+    [[UAirship push] resetBadge];
     
     // Set the notification types required for the app (optional). This value defaults
     // to badge, alert and sound, so it's only necessary to set it if you want
     // to add or remove types.
-    [UAPush shared].userNotificationTypes = (UIUserNotificationTypeAlert |
+    [UAirship push].userNotificationTypes = (UIUserNotificationTypeAlert |
                                              UIUserNotificationTypeBadge |
                                              UIUserNotificationTypeSound);
     
@@ -61,7 +61,7 @@
     // will be prompted to allow notifications. You should wait for a more appropriate
     // time to enable push to increase the likelihood that the user will accept
     // notifications.
-    [UAPush shared].userPushNotificationsEnabled = YES;
+    [UAirship push].userPushNotificationsEnabled = YES;
     
     //***********End UA********************************************
     
@@ -159,13 +159,13 @@
     
     
     // Add the beacon-nearby-<NAME> tag
-    [[UAPush shared] addTag:[NSString stringWithFormat:@"beacon-nearby-%@", visit.transmitter.name]];
+    [[UAirship push] addTag:[NSString stringWithFormat:@"beacon-nearby-%@", visit.transmitter.name]];
     
     // Add the beacon-visited-<NAME> tag
-    [[UAPush shared] addTag:[NSString stringWithFormat:@"beacon-visited-%@", visit.transmitter.name]];
+    [[UAirship push] addTag:[NSString stringWithFormat:@"beacon-visited-%@", visit.transmitter.name]];
     
     // Update registration
-    [[UAPush shared] updateRegistration];
+    [[UAirship push] updateRegistration];
     
     //   }
 }
@@ -186,12 +186,12 @@
     
     //DO WE WANT TO REMOVE TAGS WHEN THEY LEAVE? WHICH ONES?
     // Remove the beacon-nearby-<NAME> tag
-    [[UAPush shared] removeTag:[NSString stringWithFormat:@"beacon-nearby-%@", visit.transmitter.name]];
+    [[UAirship push] removeTag:[NSString stringWithFormat:@"beacon-nearby-%@", visit.transmitter.name]];
     
-    [[UAPush shared] removeTag:[NSString stringWithFormat:@"beacon-visited-%@", visit.transmitter.name]];
+    [[UAirship push] removeTag:[NSString stringWithFormat:@"beacon-visited-%@", visit.transmitter.name]];
     
     // Update registration
-    [[UAPush shared] updateRegistration];
+    [[UAirship push] updateRegistration];
     
 }
 
