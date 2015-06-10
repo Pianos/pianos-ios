@@ -68,7 +68,7 @@
     //Gimbal stuff/////
     
     
-    [FYX setAppId:@"ba2d3d98fabff232a889304c5cfa3d2643de5c517a188b6af3b5f33b1d4272e7" appSecret:@"5f01b3e6808bcdb869a1eb66b9d17f2ef56ea60ce1bc271d002afefb1f80d516" callbackUrl:@"combirddogmapsexample://authcode"];
+    [FYX setAppId:@"c8b8750e27d9fa4bd8915edc513a8afdacedc440854891f5db27bac7fae19443" appSecret:@"662ea7b4b8735fbe4eed1e8a6d857d0038095fccc24f7f57e2b188e102f10954" callbackUrl:@"compragmaticdesignstudiopianopushplay://authcode"];
     
     [FYXLogging setLogLevel:FYX_LOG_LEVEL_INFO];
     
