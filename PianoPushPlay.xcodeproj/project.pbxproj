@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3804B5471B27BB4200476BE6 /* AirshipKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 38D7E4B21A9265E100218A6C /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3870AB051A92663500FF02B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB041A92663500FF02B2 /* Security.framework */; };
 		3870AB071A92664700FF02B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB061A92664700FF02B2 /* SystemConfiguration.framework */; };
 		3870AB091A92665700FF02B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB081A92665700FF02B2 /* UIKit.framework */; };
@@ -16,7 +17,6 @@
 		3870AB111A92668000FF02B2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB101A92668000FF02B2 /* MessageUI.framework */; };
 		3870AB131A92668900FF02B2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB121A92668900FF02B2 /* AudioToolbox.framework */; };
 		3870AB151A9267D400FF02B2 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3870AB141A9267D400FF02B2 /* AirshipConfig.plist */; };
-		3870AB191A926A8100FF02B2 /* AirshipKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3870AB181A926A8100FF02B2 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3870AB1B1A92855000FF02B2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB1A1A92855000FF02B2 /* CoreBluetooth.framework */; };
 		3870AB1D1A92856A00FF02B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB1C1A92856A00FF02B2 /* CoreData.framework */; };
 		3870AB231A9286E600FF02B2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3870AB221A9286E600FF02B2 /* Common.framework */; };
@@ -116,7 +116,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3870AB191A926A8100FF02B2 /* AirshipKit.framework in CopyFiles */,
+				3804B5471B27BB4200476BE6 /* AirshipKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
