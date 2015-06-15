@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="-413" y="274"/>
         </scene>
-        <!--Piano Push Play-->
+        <!--PianoPushPlay-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -99,7 +99,7 @@
                             <constraint firstItem="aFU-Ud-A0E" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="zlw-cF-qjE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Piano Push Play" id="r5i-b0-gWe"/>
+                    <navigationItem key="navigationItem" title="PianoPushPlay" id="r5i-b0-gWe"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="pianoMap" destination="aFU-Ud-A0E" id="Has-Fn-VlB"/>
@@ -150,7 +150,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="Label">
                                                 <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="22" name="HelveticaNeue"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
@@ -317,66 +317,61 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-bI-6qg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAK-ac-ay3">
+                                <rect key="frame" x="0.0" y="20" width="320" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="wme-v0-G2G"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">We created this app to help people find and experience public pianos in Portland, Oregon, USA.  James Stiehl and Misty DeGiulio wrote it as part of their coursework at Portland Code School under the guidance of Erick Bennett.   Thanks to Megan McGeorge of Piano. Push. Play., Al Zimmerman of Pragmatic Design Studio, Benji Vuong for the photos, and all the amazing people at Gimbal and Urban Airship for all their help.   http://www.pianopushplay.org</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PDS_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wGv-Xz-DrT">
+                                <rect key="frame" x="46" y="313" width="240" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="NHa-B1-1qs"/>
+                                    <constraint firstAttribute="height" constant="53" id="cl4-b0-WYv"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Photos by Benji Vuong." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-Zs-zmQ">
-                                <rect key="frame" x="0.0" y="307" width="320" height="65"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" editable="NO" text="Thanks to Megan McGeorge of Piano! Push Play! and Al Zimmerman of Pragmatic Design Studio. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwf-VX-f9Q">
-                                <rect key="frame" x="15" y="234" width="290" height="74"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="For more information, visit http://www.pianopushplay.com " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-TX-9Cp">
-                                <rect key="frame" x="0.0" y="356" width="320" height="64"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" scrollEnabled="NO" editable="NO" text="This app was created for Piano! Push Play! to help people find and experience public pianos in Portland, Oregon, USA. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAh-M9-Z9B">
-                                <rect key="frame" x="20" y="72" width="280" height="90"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
-                                <rect key="frame" x="22" y="143" width="276" height="83"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">It was written by James Stiehl and Misty DeGiulio as part of their coursework at Portland Code School under the guidance of Erick Bennett.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PCS_Logo_Color" translatesAutoresizingMaskIntoConstraints="NO" id="433-8o-WIk">
+                                <rect key="frame" x="40" y="228" width="240" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="kuR-L7-HL7"/>
+                                    <constraint firstAttribute="width" constant="240" id="wgu-Hl-eA8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="UA_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6V0-9E-FCM">
+                                <rect key="frame" x="40" y="427" width="240" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="NqT-H4-ptQ"/>
+                                    <constraint firstAttribute="height" constant="72" id="rxG-U2-MVN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Gimbal_Logo_Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="S4m-4l-tio">
+                                <rect key="frame" x="40" y="384" width="240" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1wi-Fc-igR"/>
+                                    <constraint firstAttribute="width" constant="240" id="uFz-yl-ytd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="4" id="0Gg-G5-GJy"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="123" id="1Cc-6N-KcR"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="8Xa-TX-9Cp" secondAttribute="bottom" constant="99" id="BcD-nJ-57i"/>
-                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="top" secondItem="Wwf-VX-f9Q" secondAttribute="bottom" constant="48" id="Eqs-MF-Vrb"/>
-                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="FcQ-R9-8Jy"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="R6i-Zs-zmQ" secondAttribute="bottom" constant="147" id="Gjs-yl-2YG"/>
-                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="81" id="Ip1-FJ-9ah"/>
-                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="centerX" secondItem="EFh-uZ-6ct" secondAttribute="centerX" id="KMV-tX-n9D"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leading" id="LmC-i1-DGU"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="8" symbolic="YES" id="Mv0-r8-vfP"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="Nvz-EF-cSw"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="top" secondItem="TK3-iq-qtf" secondAttribute="top" id="Rww-ec-PBj"/>
-                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="52" id="SQf-ma-OzB"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="ZiK-au-slU"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="6" id="j2L-Tx-zhc"/>
-                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="jZq-f9-HM0"/>
-                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="trailing" secondItem="R6i-Zs-zmQ" secondAttribute="trailing" id="lDs-ls-U0c"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="FAh-M9-Z9B" secondAttribute="bottom" constant="72" id="lTw-xw-QEn"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="-1" id="loG-T9-mGl"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="bottom" secondItem="Y61-Gh-0Hj" secondAttribute="top" id="mLe-Yx-ECP"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="trailing" secondItem="8Xa-TX-9Cp" secondAttribute="trailing" id="pi6-N6-oAm"/>
-                            <constraint firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="tgQ-R3-lo8"/>
+                            <constraint firstAttribute="centerX" secondItem="6V0-9E-FCM" secondAttribute="centerX" id="376-j5-Gx5"/>
+                            <constraint firstItem="433-8o-WIk" firstAttribute="top" secondItem="PAK-ac-ay3" secondAttribute="bottom" id="FIt-jz-LCz"/>
+                            <constraint firstAttribute="centerX" secondItem="433-8o-WIk" secondAttribute="centerX" id="Gks-aE-PVB"/>
+                            <constraint firstAttribute="centerX" secondItem="PAK-ac-ay3" secondAttribute="centerX" id="MLu-85-c3y"/>
+                            <constraint firstItem="PAK-ac-ay3" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" id="PQ5-eh-6zA"/>
+                            <constraint firstAttribute="centerX" secondItem="S4m-4l-tio" secondAttribute="centerX" id="XCh-Y9-7Za"/>
+                            <constraint firstAttribute="centerX" secondItem="wGv-Xz-DrT" secondAttribute="centerX" id="cC1-PR-iaM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZOk-Yb-tBS"/>
@@ -384,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzq-lE-oHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448" y="1079"/>
+            <point key="canvasLocation" x="2066" y="1087"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ML-UZ-TCp">
@@ -429,7 +424,10 @@
     </scenes>
     <resources>
         <image name="1422863792_square-check-16.png" width="16" height="16"/>
-        <image name="about-background.jpg" width="828" height="1282"/>
+        <image name="Gimbal_Logo_Gradient" width="469" height="65"/>
+        <image name="PCS_Logo_Color" width="833" height="333"/>
+        <image name="PDS_Logo" width="475" height="96"/>
+        <image name="UA_logo" width="404" height="120"/>
         <image name="piano_icon.png" width="16" height="16"/>
         <image name="ppp_button.png" width="189" height="190"/>
         <image name="ppp_mainscreen_no_button.jpg" width="828" height="1282"/>

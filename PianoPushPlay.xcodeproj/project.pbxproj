@@ -1009,7 +1009,7 @@
 				INFOPLIST_FILE = PianoPushPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PianoPushPlay;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -1033,7 +1033,7 @@
 				INFOPLIST_FILE = PianoPushPlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PianoPushPlay;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -1053,7 +1053,7 @@
 				);
 				INFOPLIST_FILE = PianoPushPlayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PianoPushPlayTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoPushPlay.app/PianoPushPlay";
 			};
 			name = Debug;
@@ -1069,7 +1069,7 @@
 				);
 				INFOPLIST_FILE = PianoPushPlayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PianoPushPlayTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoPushPlay.app/PianoPushPlay";
 			};
 			name = Release;
