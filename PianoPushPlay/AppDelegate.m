@@ -7,20 +7,12 @@
 //
 
 #import "AppDelegate.h"
-//#import <AirshipKit/AirshipKit.h>
-//@import AirshipKit;
-//#import "Airshipkit.h"
 #import "UAirship.h"
 #import "UAConfig.h"
 #import "UAPush.h"
-//#import <FYX/FYX.h>
-//#import <FYX/FYXLogging.h>
-//#import <FYX/FYXVisitManager.h>
-//#import <FYX/FYXVisitManager.h>
-//#import <FYX/FYXTransmitter.h>
 #import "DetailsViewController.h"
 #import "GimbalAdapter.h"
-#import <Gimbal/Gimbal.h>
+
 
 @interface AppDelegate ()
 
@@ -71,23 +63,26 @@
     
     //***********End UA********************************************
     
-    //Gimbal stuff/////
-   [Gimbal setAPIKey:@"753dade9-b8f5-4d8f-9a2d-a92a495d3383" options:nil];
+    //Gimbal stuff:
+    
+    //Need to add the APPLICATION KEY HERE. Not the rest API key:
+    [Gimbal setAPIKey:@"753dade9-b8f5-4d8f-9a2d-a92a495d3383" options:nil];
+    
+    //Start the UA/Gimbal Adapter
     [[GimbalAdapter shared] startAdapter];
 
-    
+    //Initialize and start the place manager
     self.placeManager = [GMBLPlaceManager new];
     self.placeManager.delegate = self;
     [GMBLPlaceManager startMonitoring];
     
 
-    
+    //Initialize and start the communications manager
     self.communicationManager = [GMBLCommunicationManager new];
     self.communicationManager.delegate = self;
     [GMBLCommunicationManager startReceivingCommunications];
 
 
-    //Gimbal stuff/////
     
     return YES;
 }

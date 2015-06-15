@@ -135,7 +135,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="243" id="Twg-2E-keF"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -147,15 +146,7 @@
                                             <constraint firstAttribute="height" constant="44" id="p6y-T6-T2o"/>
                                             <constraint firstAttribute="width" constant="326" id="rct-WX-551"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Label">
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="22" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <attributedString key="attributedText"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmk-IK-e46">
@@ -320,32 +311,38 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-bI-6qg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Photos by Benji Vuong." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-Zs-zmQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Photos by Benji Vuong." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-Zs-zmQ">
                                 <rect key="frame" x="0.0" y="307" width="320" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="rg4-2p-rsY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" editable="NO" text="Thanks to Megan McGeorge of Piano! Push Play! and Al Zimmerman of Pragmatic Design Studio. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwf-VX-f9Q">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="Thanks to Megan McGeorge of Piano! Push Play! and Al Zimmerman of Pragmatic Design Studio. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwf-VX-f9Q">
                                 <rect key="frame" x="15" y="234" width="290" height="74"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="For more information, visit http://www.pianopushplay.com " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-TX-9Cp">
-                                <rect key="frame" x="0.0" y="356" width="320" height="64"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="For more information, visit http://www.pianopushplay.com " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-TX-9Cp">
+                                <rect key="frame" x="0.0" y="360" width="320" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="F1A-hj-ubO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" scrollEnabled="NO" editable="NO" text="This app was created for Piano! Push Play! to help people find and experience public pianos in Portland, Oregon, USA. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAh-M9-Z9B">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" text="This app was created for Piano! Push Play! to help people find and experience public pianos in Portland, Oregon, USA. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAh-M9-Z9B">
                                 <rect key="frame" x="20" y="72" width="280" height="90"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-uZ-6ct">
                                 <rect key="frame" x="22" y="143" width="276" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">It was written by James Stiehl and Misty DeGiulio as part of their coursework at Portland Code School under the guidance of Erick Bennett.</string>
@@ -355,27 +352,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="4" id="0Gg-G5-GJy"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="123" id="1Cc-6N-KcR"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="8Xa-TX-9Cp" secondAttribute="bottom" constant="99" id="BcD-nJ-57i"/>
-                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="top" secondItem="Wwf-VX-f9Q" secondAttribute="bottom" constant="48" id="Eqs-MF-Vrb"/>
-                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="FcQ-R9-8Jy"/>
-                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="R6i-Zs-zmQ" secondAttribute="bottom" constant="147" id="Gjs-yl-2YG"/>
-                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="81" id="Ip1-FJ-9ah"/>
-                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="centerX" secondItem="EFh-uZ-6ct" secondAttribute="centerX" id="KMV-tX-n9D"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="123" id="AN0-Fv-WsO"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="CFM-xP-sB8"/>
+                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="4" id="Eda-Hb-Cq1"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="-1" id="LPl-u0-AZr"/>
                             <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leading" id="LmC-i1-DGU"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="8" symbolic="YES" id="Mv0-r8-vfP"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="Nvz-EF-cSw"/>
+                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="81" id="Quu-QL-mQs"/>
                             <constraint firstItem="HVy-bI-6qg" firstAttribute="top" secondItem="TK3-iq-qtf" secondAttribute="top" id="Rww-ec-PBj"/>
-                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="52" id="SQf-ma-OzB"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="centerX" secondItem="Wwf-VX-f9Q" secondAttribute="centerX" id="ZiK-au-slU"/>
-                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="6" id="j2L-Tx-zhc"/>
-                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="jZq-f9-HM0"/>
-                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="trailing" secondItem="R6i-Zs-zmQ" secondAttribute="trailing" id="lDs-ls-U0c"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="FAh-M9-Z9B" secondAttribute="bottom" constant="72" id="lTw-xw-QEn"/>
-                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="-1" id="loG-T9-mGl"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="leading" secondItem="HVy-bI-6qg" secondAttribute="leading" id="SVU-2o-SmS"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="leading" secondItem="TK3-iq-qtf" secondAttribute="leadingMargin" constant="6" id="WQ5-Zg-kO2"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="FAh-M9-Z9B" secondAttribute="bottom" constant="72" id="WcV-QC-ZG0"/>
+                            <constraint firstItem="R6i-Zs-zmQ" firstAttribute="trailing" secondItem="8Xa-TX-9Cp" secondAttribute="trailing" id="Wcr-S3-NFu"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="top" secondItem="Wwf-VX-f9Q" secondAttribute="bottom" constant="52" id="YLN-Cb-DgL"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="leading" secondItem="R6i-Zs-zmQ" secondAttribute="leading" id="czU-RI-bfz"/>
+                            <constraint firstItem="8Xa-TX-9Cp" firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="d92-ga-Jwi"/>
+                            <constraint firstItem="FAh-M9-Z9B" firstAttribute="top" secondItem="OQg-Oq-3c0" secondAttribute="bottom" constant="52" id="f6Z-hb-AkH"/>
+                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="R6i-Zs-zmQ" secondAttribute="bottom" constant="147" id="h6Y-8c-Ong"/>
+                            <constraint firstItem="Y61-Gh-0Hj" firstAttribute="top" secondItem="8Xa-TX-9Cp" secondAttribute="bottom" constant="99" id="iwJ-xv-TL0"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="top" secondItem="EFh-uZ-6ct" secondAttribute="bottom" constant="8" symbolic="YES" id="jqe-J5-v8i"/>
+                            <constraint firstItem="EFh-uZ-6ct" firstAttribute="centerX" secondItem="FAh-M9-Z9B" secondAttribute="centerX" id="laK-WJ-sj1"/>
                             <constraint firstItem="HVy-bI-6qg" firstAttribute="bottom" secondItem="Y61-Gh-0Hj" secondAttribute="top" id="mLe-Yx-ECP"/>
-                            <constraint firstItem="HVy-bI-6qg" firstAttribute="trailing" secondItem="8Xa-TX-9Cp" secondAttribute="trailing" id="pi6-N6-oAm"/>
+                            <constraint firstItem="Wwf-VX-f9Q" firstAttribute="centerX" secondItem="R6i-Zs-zmQ" secondAttribute="centerX" id="pkS-qb-iLd"/>
                             <constraint firstAttribute="trailing" secondItem="HVy-bI-6qg" secondAttribute="trailing" id="tgQ-R3-lo8"/>
                         </constraints>
                     </view>
