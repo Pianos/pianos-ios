@@ -71,7 +71,7 @@
     
     NSDictionary *json = [notification object];
     
-    NSLog(@"%@", json);
+   // NSLog(@"%@", json);
     NSMutableArray *lats = [[NSMutableArray alloc] init];
     NSMutableArray *longs = [[NSMutableArray alloc] init];
     
