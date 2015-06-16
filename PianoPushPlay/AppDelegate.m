@@ -66,7 +66,7 @@
     //Gimbal stuff:
     
     //Need to add the APPLICATION KEY HERE. Not the rest API key:
-    [Gimbal setAPIKey:@"753dade9-b8f5-4d8f-9a2d-a92a495d3383" options:nil];
+    [Gimbal setAPIKey:@"9d60ff6d-7a1f-4161-8ef6-7625905d3d82" options:nil];
     
     //Start the UA/Gimbal Adapter
     [[GimbalAdapter shared] startAdapter];
