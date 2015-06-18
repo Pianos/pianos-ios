@@ -91,7 +91,7 @@
         [lats addObject:lat];
     }
     CLLocationCoordinate2D portland = CLLocationCoordinate2DMake([self center:lats], [self center:longs]);
-    MKCoordinateSpan span = MKCoordinateSpanMake(.05, .05);
+    MKCoordinateSpan span = MKCoordinateSpanMake(.19, .19);
     MKCoordinateRegion region = MKCoordinateRegionMake(portland, span);
     self.pianoMap.delegate = self;
     [self.pianoMap setRegion:region animated:YES];
