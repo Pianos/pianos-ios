@@ -1548,7 +1548,7 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Airship";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "9d97703e-2264-4941-a806-200b50303d53";
+				PROVISIONING_PROFILE = "db29d446-681d-4356-a591-816dd6d656a0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1569,7 +1569,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Airship";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "db29d446-681d-4356-a591-816dd6d656a0";
 			};
 			name = Debug;
 		};
@@ -1579,7 +1579,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Airship";
 				INFOPLIST_FILE = PianoPushPlay/Info.plist;
@@ -1588,7 +1588,7 @@
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Airship";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "db29d446-681d-4356-a591-816dd6d656a0";
 			};
 			name = Release;
 		};
